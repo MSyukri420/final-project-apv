@@ -1,0 +1,98 @@
+project:
+  name: "apv"
+  random_seed: 15
+
+paths:
+  competitions: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/competitions.json"
+  matches: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/matches/"
+  lineups: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/lineups/"
+  events: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/events/"
+  three_sixty: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/three-sixty/"
+  models: "models/"
+  outputs: "outputs/"
+
+dataset:
+  comp_seasons:
+    train:
+      - [43, 106]   # World Cup 2022
+      - [72, 107]   # Womens World Cup 2023
+      - [55, 43]    # Euro 2020
+      - [9, 281]    # Bundesliga 21/22
+      - [53, 106]   # Womens Euro (old)
+      - [53, 315]   # Womens Euro (new)
+      - [55, 282]   # Euro 2024 (holdout)
+    test:
+      # - [55, 282]   # Euro 2024 (holdout)
+
+targets:
+  horizon_secs: 60.0
+  xg_threshold: 0.04
+  strict_penalty_link: false
+
+clustering:
+  k: 3
+  max_iter: 500
+  n_init: 20
+  random_state: 15
+  temperature: 0.3
+
+
+models:
+  chance_for:
+    type: "logreg_binary"
+    C: 1.0
+    max_iter: 1000
+    class_weight: "balanced"
+    solver: "liblinear"
+    cv_folds: 5
+    min_positive_per_model: 30        
+    skip_sparse_archetypes: true
+
+  chance_against:
+    type: "logreg_binary"
+    C: 1.0
+    max_iter: 1000
+    class_weight: "balanced"
+    solver: "liblinear"
+    cv_folds: 5
+    min_positive: 15                  
+    pooled_only: true
+
+
+  shot_for_any:
+    type: "logreg_binary"
+    C: 1.0
+    max_iter: 1000
+    class_weight: "balanced"
+    solver: "liblinear"
+    cv_folds: 5
+    min_positive_per_model: 40       
+    skip_sparse_archetypes: true
+
+  shot_against_any:
+    type: "logreg_binary"
+    C: 1.0
+    max_iter: 1000
+    class_weight: "balanced"
+    solver: "liblinear"
+    cv_folds: 5
+    min_positive: 20                
+    pooled_only: true
+
+apv:
+  alpha: 1.0
+  beta: 1.0
+
+recommendations:
+  min_samples: 10
+
+
+explainability:
+  shap_sample_size: 500
+  enable_shap: true
+  enable_counterfactuals: true
+
+
+logging:
+  level: "INFO"
+  print_stage_summaries: true
