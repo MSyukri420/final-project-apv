@@ -1,4 +1,89 @@
 [ {
+  "match_id" : 70263,
+  "match_date" : "2012-12-01",
+  "kick_off" : "20:00:00.000",
+  "competition" : {
+    "competition_id" : 11,
+    "country_name" : "Spain",
+    "competition_name" : "La Liga"
+  },
+  "season" : {
+    "season_id" : 24,
+    "season_name" : "2012/2013"
+  },
+  "home_team" : {
+    "home_team_id" : 217,
+    "home_team_name" : "Barcelona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 1001722,
+      "name" : "Francesc Vilanova i Bayo",
+      "nickname" : "Tito Vilanova",
+      "dob" : "1969-09-17",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 215,
+    "away_team_name" : "Athletic Club",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 269,
+      "name" : "Marcelo Alberto Bielsa Caldera",
+      "nickname" : "Marcelo Bielsa",
+      "dob" : "1955-07-21",
+      "country" : {
+        "id" : 11,
+        "name" : "Argentina"
+      }
+    } ]
+  },
+  "home_score" : 5,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2024-08-08T15:58:16.003036",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 14,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 342,
+    "name" : "Spotify Camp Nou",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 180,
+    "name" : "Antonio Miguel Mateu Lahoz",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
   "match_id" : 266015,
   "match_date" : "2012-12-22",
   "kick_off" : "18:00:00.000",
@@ -188,7 +273,7 @@
 }, {
   "match_id" : 70308,
   "match_date" : "2012-11-03",
-  "kick_off" : "18:00:00.000",
+  "kick_off" : "16:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -222,7 +307,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:53:14.047130",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -366,7 +451,7 @@
   },
   "stadium" : {
     "id" : 4454,
-    "name" : "Estadi Mallorca Son Moix",
+    "name" : "Visit Mallorca Estadi",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -431,7 +516,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -448,7 +533,7 @@
 }, {
   "match_id" : 70304,
   "match_date" : "2012-10-20",
-  "kick_off" : "22:00:00.000",
+  "kick_off" : "20:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -482,7 +567,7 @@
   "away_score" : 5,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:50:24.676589",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -966,71 +1051,6 @@
     }
   }
 }, {
-  "match_id" : 70263,
-  "match_date" : "2012-12-01",
-  "kick_off" : "20:00:00.000",
-  "competition" : {
-    "competition_id" : 11,
-    "country_name" : "Spain",
-    "competition_name" : "La Liga"
-  },
-  "season" : {
-    "season_id" : 24,
-    "season_name" : "2012/2013"
-  },
-  "home_team" : {
-    "home_team_id" : 217,
-    "home_team_name" : "Barcelona",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  },
-  "away_team" : {
-    "away_team_id" : 215,
-    "away_team_name" : "Athletic Club",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  },
-  "home_score" : 5,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 14,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 342,
-    "name" : "Spotify Camp Nou",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  },
-  "referee" : {
-    "id" : 180,
-    "name" : "Antonio Miguel Mateu Lahoz",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  }
-}, {
   "match_id" : 70276,
   "match_date" : "2012-10-27",
   "kick_off" : "22:00:00.000",
@@ -1396,7 +1416,17 @@
     "country" : {
       "id" : 214,
       "name" : "Spain"
-    }
+    },
+    "managers" : [ {
+      "id" : 1001722,
+      "name" : "Francesc Vilanova i Bayo",
+      "nickname" : "Tito Vilanova",
+      "dob" : "1969-09-17",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
   },
   "away_team" : {
     "away_team_id" : 395,
@@ -1406,13 +1436,23 @@
     "country" : {
       "id" : 214,
       "name" : "Spain"
-    }
+    },
+    "managers" : [ {
+      "id" : 1621,
+      "name" : "Manuel Enrique Jiménez Jiménez",
+      "nickname" : "Manolo Jiménez",
+      "dob" : "1964-01-26",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
   },
   "home_score" : 3,
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2024-03-10T11:24:05.201066",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1703,7 +1743,7 @@
 }, {
   "match_id" : 266827,
   "match_date" : "2013-01-13",
-  "kick_off" : "21:00:00.000",
+  "kick_off" : "19:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -1737,7 +1777,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:51:38.918757",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",

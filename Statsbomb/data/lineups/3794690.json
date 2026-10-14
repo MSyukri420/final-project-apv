@@ -325,11 +325,11 @@
       "position_id" : 4,
       "position" : "Center Back",
       "from" : "00:00",
-      "to" : "60:56",
+      "to" : "51:30",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

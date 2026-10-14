@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4636,
     "player_name" : "Maria Thorisdottir",
@@ -290,8 +290,8 @@
     } ]
   }, {
     "player_id" : 61029,
-    "player_name" : "Ivana Fuso",
-    "player_nickname" : null,
+    "player_name" : "Ivana Ferreira Fuso",
+    "player_nickname" : "Ivana Fuso",
     "jersey_number" : 13,
     "country" : {
       "id" : 31,

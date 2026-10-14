@@ -267,7 +267,7 @@
   }, {
     "player_id" : 24374,
     "player_name" : "Ingrid Syrstad Engen",
-    "player_nickname" : null,
+    "player_nickname" : "Ingrid Engen",
     "jersey_number" : 14,
     "country" : {
       "id" : 171,
@@ -391,7 +391,7 @@
   "lineup" : [ {
     "player_id" : 4961,
     "player_name" : "Samantha May Kerr",
-    "player_nickname" : null,
+    "player_nickname" : "Sam Kerr",
     "jersey_number" : 20,
     "country" : {
       "id" : 14,
@@ -422,7 +422,7 @@
   }, {
     "player_id" : 5000,
     "player_name" : "Stephanie-Elise Catley",
-    "player_nickname" : null,
+    "player_nickname" : "Steph Catley",
     "jersey_number" : 7,
     "country" : {
       "id" : 14,
@@ -460,7 +460,7 @@
   }, {
     "player_id" : 5066,
     "player_name" : "Lydia Grace Yilkari Williams",
-    "player_nickname" : null,
+    "player_nickname" : "Lydia Williams",
     "jersey_number" : 1,
     "country" : {
       "id" : 14,
@@ -480,7 +480,7 @@
   }, {
     "player_id" : 5076,
     "player_name" : "Emily Louise van Egmond",
-    "player_nickname" : null,
+    "player_nickname" : "Emily van Egmond",
     "jersey_number" : 10,
     "country" : {
       "id" : 14,
@@ -500,7 +500,7 @@
   }, {
     "player_id" : 5078,
     "player_name" : "Alanna Stephanie Kennedy",
-    "player_nickname" : null,
+    "player_nickname" : "Alanna Kennedy",
     "jersey_number" : 14,
     "country" : {
       "id" : 14,
@@ -516,11 +516,11 @@
       "position_id" : 3,
       "position" : "Right Center Back",
       "from" : "00:00",
-      "to" : "105:33",
+      "to" : "103:27",
       "from_period" : 1,
       "to_period" : 3,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 10,
       "position" : "Center Defensive Midfield",
@@ -563,7 +563,7 @@
   }, {
     "player_id" : 6818,
     "player_name" : "Hayley Emma Raso",
-    "player_nickname" : null,
+    "player_nickname" : "Hayley Raso",
     "jersey_number" : 16,
     "country" : {
       "id" : 14,
@@ -583,7 +583,7 @@
   }, {
     "player_id" : 8382,
     "player_name" : "Clare Elizabeth Polkinghorne",
-    "player_nickname" : null,
+    "player_nickname" : "Clare Polkinghorne",
     "jersey_number" : 4,
     "country" : {
       "id" : 14,
@@ -621,7 +621,7 @@
   }, {
     "player_id" : 11338,
     "player_name" : "Caitlin Jade Foord",
-    "player_nickname" : null,
+    "player_nickname" : "Caitlin Foord",
     "jersey_number" : 9,
     "country" : {
       "id" : 14,
@@ -738,7 +738,7 @@
     } ]
   }, {
     "player_id" : 25742,
-    "player_name" : "Karly Roestbakken",
+    "player_name" : "Karly Røstbakken",
     "player_nickname" : null,
     "jersey_number" : 5,
     "country" : {
@@ -841,7 +841,7 @@
   }, {
     "player_id" : 131588,
     "player_name" : "Teagan Jade Micah",
-    "player_nickname" : null,
+    "player_nickname" : "Teagan Micah",
     "jersey_number" : 12,
     "country" : {
       "id" : 14,

@@ -280,7 +280,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 401928,
-    "player_name" : "Takako Seike",
+    "player_name" : "Kiko Seike",
     "player_nickname" : null,
     "jersey_number" : 17,
     "country" : {
@@ -410,7 +410,7 @@
   } ]
 }, {
   "team_id" : 6045,
-  "team_name" : "Zambia Women's",
+  "team_name" : "Zambia W",
   "lineup" : [ {
     "player_id" : 32854,
     "player_name" : "Racheal Kundananji",
@@ -667,7 +667,7 @@
     } ]
   }, {
     "player_id" : 131628,
-    "player_name" : "Hellen Nga''ndwe Chanda",
+    "player_name" : "Hellen Nga'ndwe Chanda",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {
@@ -700,11 +700,11 @@
       "position_id" : 1,
       "position" : "Goalkeeper",
       "from" : "00:00",
-      "to" : "98:18",
+      "to" : "96:32",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

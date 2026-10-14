@@ -470,8 +470,8 @@
     } ]
   }, {
     "player_id" : 401635,
-    "player_name" : "Clare Hunt",
-    "player_nickname" : null,
+    "player_name" : "Clare Josephine Hunt",
+    "player_nickname" : "Clare Hunt",
     "jersey_number" : 15,
     "country" : {
       "id" : 14,
@@ -922,7 +922,7 @@
   }, {
     "player_id" : 402017,
     "player_name" : "Maja Bay Østergaard",
-    "player_nickname" : null,
+    "player_nickname" : "Maja Østergaard",
     "jersey_number" : 22,
     "country" : {
       "id" : 61,

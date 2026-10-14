@@ -1,4 +1,89 @@
 [ {
+  "match_id" : 2275078,
+  "match_date" : "2020-01-11",
+  "kick_off" : "18:30:00.000",
+  "competition" : {
+    "competition_id" : 37,
+    "country_name" : "England",
+    "competition_name" : "FA Women's Super League"
+  },
+  "season" : {
+    "season_id" : 42,
+    "season_name" : "2019/2020"
+  },
+  "home_team" : {
+    "home_team_id" : 746,
+    "home_team_name" : "Manchester City WFC",
+    "home_team_gender" : "female",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 30,
+      "name" : "Nick Cushing",
+      "nickname" : null,
+      "dob" : "1984-11-09",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 967,
+    "away_team_name" : "Everton LFC",
+    "away_team_gender" : "female",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 639,
+      "name" : "Willie Kirk",
+      "nickname" : null,
+      "dob" : "1978-06-07",
+      "country" : {
+        "id" : 201,
+        "name" : "Scotland"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2024-02-12T15:05:34.211400",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 12,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 99,
+    "name" : "Joie Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 898,
+    "name" : "Amy Fearn",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
   "match_id" : 2275127,
   "match_date" : "2019-10-13",
   "kick_off" : "15:00:00.000",
@@ -118,7 +203,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -203,7 +288,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -288,7 +373,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -353,7 +438,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -438,7 +523,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -523,7 +608,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -628,7 +713,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -713,7 +798,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -798,7 +883,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -1004,7 +1089,7 @@
   },
   "stadium" : {
     "id" : 5332,
-    "name" : "\tARMCO Arena ",
+    "name" : "ARMCO Arena",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -1174,7 +1259,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2024,7 +2109,7 @@
   },
   "stadium" : {
     "id" : 4054,
-    "name" : "Select Security Stadium",
+    "name" : "DCBL Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2194,7 +2279,7 @@
   },
   "stadium" : {
     "id" : 5332,
-    "name" : "\tARMCO Arena ",
+    "name" : "ARMCO Arena",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2364,7 +2449,7 @@
   },
   "stadium" : {
     "id" : 223,
-    "name" : "Select Car Leasing Stadium",
+    "name" : "Madejski Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2534,7 +2619,7 @@
   },
   "stadium" : {
     "id" : 5332,
-    "name" : "\tARMCO Arena ",
+    "name" : "ARMCO Arena",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2619,7 +2704,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2874,7 +2959,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -3129,7 +3214,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -3223,91 +3308,6 @@
   "referee" : {
     "id" : 937,
     "name" : "Abigail Byrne",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 2275078,
-  "match_date" : "2020-01-11",
-  "kick_off" : "18:30:00.000",
-  "competition" : {
-    "competition_id" : 37,
-    "country_name" : "England",
-    "competition_name" : "FA Women's Super League"
-  },
-  "season" : {
-    "season_id" : 42,
-    "season_name" : "2019/2020"
-  },
-  "home_team" : {
-    "home_team_id" : 746,
-    "home_team_name" : "Manchester City WFC",
-    "home_team_gender" : "female",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 30,
-      "name" : "Nick Cushing",
-      "nickname" : null,
-      "dob" : "1984-11-09",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 967,
-    "away_team_name" : "Everton LFC",
-    "away_team_gender" : "female",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 639,
-      "name" : "Willie Kirk",
-      "nickname" : null,
-      "dob" : "1978-06-07",
-      "country" : {
-        "id" : 201,
-        "name" : "Scotland"
-      }
-    } ]
-  },
-  "home_score" : 3,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2023-07-25T01:06:08.439440",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 12,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 99,
-    "name" : "Academy Stadium ",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 898,
-    "name" : "Amy Fearn",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -3486,7 +3486,7 @@
 }, {
   "match_id" : 2275156,
   "match_date" : "2019-09-16",
-  "kick_off" : "20:30:00.000",
+  "kick_off" : "18:30:00.000",
   "competition" : {
     "competition_id" : 37,
     "country_name" : "England",
@@ -3498,7 +3498,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -3540,7 +3540,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2023-07-25T01:01:15.382395",
+  "last_updated" : "2026-04-12T16:06:58.541813",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3603,7 +3603,7 @@
   },
   "away_team" : {
     "away_team_id" : 1475,
-    "away_team_name" : "Manchester United",
+    "away_team_name" : "Manchester United W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -4149,7 +4149,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -4166,7 +4166,7 @@
 }, {
   "match_id" : 2275157,
   "match_date" : "2019-10-27",
-  "kick_off" : "13:30:00.000",
+  "kick_off" : "11:30:00.000",
   "competition" : {
     "competition_id" : 37,
     "country_name" : "England",
@@ -4178,7 +4178,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -4220,7 +4220,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2021-05-29T16:58:57.105",
+  "last_updated" : "2026-04-12T16:07:56.102610",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -4433,7 +4433,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -5509,7 +5509,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -6291,7 +6291,7 @@
 }, {
   "match_id" : 2275140,
   "match_date" : "2019-11-24",
-  "kick_off" : "13:00:00.000",
+  "kick_off" : "11:00:00.000",
   "competition" : {
     "competition_id" : 37,
     "country_name" : "England",
@@ -6303,7 +6303,7 @@
   },
   "home_team" : {
     "home_team_id" : 1475,
-    "home_team_name" : "Manchester United",
+    "home_team_name" : "Manchester United W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -6345,7 +6345,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2022-12-01T11:38:04.580944",
+  "last_updated" : "2026-04-12T07:46:17.172360",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -6614,7 +6614,7 @@
   },
   "stadium" : {
     "id" : 5332,
-    "name" : "\tARMCO Arena ",
+    "name" : "ARMCO Arena",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -6954,7 +6954,7 @@
   },
   "stadium" : {
     "id" : 5332,
-    "name" : "\tARMCO Arena ",
+    "name" : "ARMCO Arena",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -7039,7 +7039,7 @@
   },
   "stadium" : {
     "id" : 5332,
-    "name" : "\tARMCO Arena ",
+    "name" : "ARMCO Arena",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -7124,7 +7124,7 @@
   },
   "stadium" : {
     "id" : 99,
-    "name" : "Academy Stadium ",
+    "name" : "Joie Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"

@@ -330,7 +330,7 @@
       "name" : "Portugal"
     },
     "cards" : [ {
-      "time" : "95:25",
+      "time" : "95:12",
       "card_type" : "Yellow Card",
       "reason" : "Bad Behaviour",
       "period" : 2
@@ -471,7 +471,7 @@
   }, {
     "player_id" : 62913,
     "player_name" : "Francisca Ramos Ribeiro Nazareth Sousa",
-    "player_nickname" : "Francisca Nazareth",
+    "player_nickname" : "Kika Nazareth",
     "jersey_number" : 20,
     "country" : {
       "id" : 183,
@@ -879,7 +879,7 @@
   }, {
     "player_id" : 221888,
     "player_name" : "Kerstin Yasmijn Casparij",
-    "player_nickname" : null,
+    "player_nickname" : "Kerstin Casparij",
     "jersey_number" : 18,
     "country" : {
       "id" : 160,

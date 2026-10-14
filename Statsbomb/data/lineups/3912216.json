@@ -1,0 +1,831 @@
+[ {
+  "team_id" : 929,
+  "team_name" : "VfL Wolfsburg WFC",
+  "lineup" : [ {
+    "player_id" : 10264,
+    "player_name" : "Kristin Demann",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 10374,
+    "player_name" : "Svenja Huth",
+    "player_nickname" : null,
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : "75:54",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 10399,
+    "player_name" : "Kathrin Julia Hendrich",
+    "player_nickname" : "Kathrin Hendrich",
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 10666,
+    "player_name" : "Dominique Johanna Anna Petrone Janssen",
+    "player_nickname" : "Dominique Bloodworth",
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : "45:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "45:00",
+      "to" : "64:23",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 15178,
+    "player_name" : "Alexandra Popp",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "49:17",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "49:17",
+      "to" : "56:49",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "56:49",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 15179,
+    "player_name" : "Joelle Wedemeyer",
+    "player_nickname" : null,
+    "jersey_number" : 24,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "68:15",
+      "to" : "69:53",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "69:53",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 15443,
+    "player_name" : "Merle Frohms",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25478,
+    "player_name" : "Lena Oberdorf",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "00:00",
+      "to" : "69:53",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "69:53",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25491,
+    "player_name" : "Marina Hegering",
+    "player_nickname" : null,
+    "jersey_number" : 31,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : "45:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 30968,
+    "player_name" : "Lisa Schmitz",
+    "player_nickname" : null,
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 32333,
+    "player_name" : "Lynn Wilms",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : "69:53",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "69:53",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 32340,
+    "player_name" : "Fenna Kalma",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 46941,
+    "player_name" : "Vivien Endemann",
+    "player_nickname" : null,
+    "jersey_number" : 25,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "68:33",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46987,
+    "player_name" : "Jule Brand",
+    "player_nickname" : null,
+    "jersey_number" : 29,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "00:00",
+      "to" : "49:17",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "49:17",
+      "to" : "56:49",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "56:49",
+      "to" : "65:39",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "65:39",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46999,
+    "player_name" : "Chantal Hagel",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : "68:15",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 49923,
+    "player_name" : "Camilla Küver",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "64:23",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 50362,
+    "player_name" : "Nuria Rábano Blanco",
+    "player_nickname" : "Nuria Rábano",
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "45:00",
+      "to" : "45:00",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - On (Tactical)"
+    }, {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "45:00",
+      "to" : "49:17",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "49:17",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 135325,
+    "player_name" : "Riola Xhemaili",
+    "player_nickname" : null,
+    "jersey_number" : 27,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "75:54",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 190348,
+    "player_name" : "Sveindís Jane Jónsdóttir",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 104,
+      "name" : "Iceland"
+    },
+    "cards" : [ {
+      "time" : "61:45",
+      "card_type" : "Yellow Card",
+      "reason" : "Bad Behaviour",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "00:00",
+      "to" : "56:49",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "56:49",
+      "to" : "65:39",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "65:39",
+      "to" : "68:33",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  } ]
+}, {
+  "team_id" : 19107,
+  "team_name" : "RB Leipzig W",
+  "lineup" : [ {
+    "player_id" : 10665,
+    "player_name" : "Mimmi Wahlström",
+    "player_nickname" : null,
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "00:00",
+      "to" : "75:37",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 32087,
+    "player_name" : "Lydia Andrade",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "59:07",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46557,
+    "player_name" : "Barbara Brecht",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "75:37",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46559,
+    "player_name" : "Nina Räcke",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ {
+      "time" : "55:06",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46872,
+    "player_name" : "Sandra Starke",
+    "player_nickname" : null,
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "00:00",
+      "to" : "59:07",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 46893,
+    "player_name" : "Gianna Rackow",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "75:41",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46896,
+    "player_name" : "Elvira Herzog",
+    "player_nickname" : null,
+    "jersey_number" : 12,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46980,
+    "player_name" : "Luca Maria Graf",
+    "player_nickname" : null,
+    "jersey_number" : 26,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "00:00",
+      "to" : "83:57",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 47106,
+    "player_name" : "Julia Pollak",
+    "player_nickname" : null,
+    "jersey_number" : 29,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : "59:23",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Injury)"
+    } ]
+  }, {
+    "player_id" : 49045,
+    "player_name" : "Victoria Krug",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 193269,
+    "player_name" : "Julia Landenberger",
+    "player_nickname" : null,
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 409145,
+    "player_name" : "Michela Croatto",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 15,
+      "name" : "Austria"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "59:23",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Injury)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 409150,
+    "player_name" : "Gina Schüller",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 409152,
+    "player_name" : "Jenny Hipp",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 409153,
+    "player_name" : "Korina Lara Janež",
+    "player_nickname" : "Korina Janež",
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 208,
+      "name" : "Slovenia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "83:57",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 409155,
+    "player_name" : "Marlene Müller",
+    "player_nickname" : null,
+    "jersey_number" : 27,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "00:00",
+      "to" : "75:41",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 409156,
+    "player_name" : "Vanessa Fudalla",
+    "player_nickname" : null,
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 415551,
+    "player_name" : "Mia Werner",
+    "player_nickname" : null,
+    "jersey_number" : 32,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+} ]

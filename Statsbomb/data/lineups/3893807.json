@@ -3,7 +3,7 @@
   "team_name" : "Canada Women's",
   "lineup" : [ {
     "player_id" : 4951,
-    "player_name" : "Rebecca Quinn",
+    "player_name" : "Quinn Quinn",
     "player_nickname" : null,
     "jersey_number" : 5,
     "country" : {
@@ -525,7 +525,7 @@
       "name" : "Ireland"
     },
     "cards" : [ {
-      "time" : "97:03",
+      "time" : "97:01",
       "card_type" : "Yellow Card",
       "reason" : "Bad Behaviour",
       "period" : 2
@@ -902,8 +902,8 @@
     "positions" : [ ]
   }, {
     "player_id" : 401633,
-    "player_name" : "Aine O\"Gorman",
-    "player_nickname" : null,
+    "player_name" : "Áine Marie O'Gorman",
+    "player_nickname" : "Áine O'Gorman",
     "jersey_number" : 13,
     "country" : {
       "id" : 109,

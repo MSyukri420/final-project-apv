@@ -158,10 +158,19 @@
       "position_id" : 19,
       "position" : "Center Attacking Midfield",
       "from" : "00:00",
+      "to" : "27:05",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Foul Committed (Red Card)"
+    }, {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "30:17",
       "to" : null,
       "from_period" : 1,
       "to_period" : null,
-      "start_reason" : "Starting XI",
+      "start_reason" : "Tactical Shift",
       "end_reason" : "Final Whistle"
     } ]
   }, {

@@ -506,7 +506,7 @@
     } ]
   }, {
     "player_id" : 3534,
-    "player_name" : "Clinton Mua N''Jie",
+    "player_name" : "Clinton Mua N'Jie",
     "player_nickname" : "Clinton N'Jie",
     "jersey_number" : 7,
     "country" : {
@@ -922,8 +922,8 @@
     "player_nickname" : null,
     "jersey_number" : 9,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 39,
+      "name" : "Cameroon"
     },
     "cards" : [ ],
     "positions" : [ {

@@ -151,7 +151,7 @@
   }, {
     "player_id" : 10222,
     "player_name" : "Jonna Ann-Charlotte Andersson",
-    "player_nickname" : null,
+    "player_nickname" : "Jonna Andersson",
     "jersey_number" : 2,
     "country" : {
       "id" : 220,
@@ -162,7 +162,7 @@
   }, {
     "player_id" : 10224,
     "player_name" : "Sara Caroline Seger",
-    "player_nickname" : null,
+    "player_nickname" : "Caroline Seger",
     "jersey_number" : 17,
     "country" : {
       "id" : 220,
@@ -232,7 +232,7 @@
     } ]
   }, {
     "player_id" : 10665,
-    "player_name" : "Mimmi Larsson",
+    "player_name" : "Mimmi Wahlström",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {
@@ -428,7 +428,7 @@
   } ]
 }, {
   "team_id" : 1107,
-  "team_name" : "Thailand Women's",
+  "team_name" : "Thailand W",
   "lineup" : [ {
     "player_id" : 25668,
     "player_name" : "Orathai Srimanee",

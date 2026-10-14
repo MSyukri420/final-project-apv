@@ -1,0 +1,946 @@
+[ {
+  "team_id" : 11864,
+  "team_name" : "FC Levante Badalona",
+  "lineup" : [ {
+    "player_id" : 10147,
+    "player_name" : "Bárbara Latorre Viñals",
+    "player_nickname" : "Bárbara Latorre",
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 24376,
+    "player_name" : "Melanie Serrano Perez",
+    "player_nickname" : "Melanie Serrano",
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "57:40",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 30966,
+    "player_name" : "Morgane Nicoli",
+    "player_nickname" : null,
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 4,
+      "position" : "Center Back",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "57:40",
+      "to" : "70:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 4,
+      "position" : "Center Back",
+      "from" : "70:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 31629,
+    "player_name" : "Anissa Lahmari",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 154,
+      "name" : "Morocco"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : "57:37",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 45628,
+    "player_name" : "Dominika Čonč",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 208,
+      "name" : "Slovenia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "82:31",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 49839,
+    "player_name" : "Jessica Dahiana Martínez Villagra",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 178,
+      "name" : "Paraguay"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "57:40",
+      "to" : "69:55",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 50892,
+    "player_name" : "Cristina Baudet Lucena",
+    "player_nickname" : "Cristina Baudet",
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 53958,
+    "player_name" : "Allegra Poljak",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 203,
+      "name" : "Serbia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 7,
+      "position" : "Right Wing Back",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "57:40",
+      "to" : "70:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 7,
+      "position" : "Right Wing Back",
+      "from" : "70:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 66468,
+    "player_name" : "Nayluisa Jhaylenny Cáceres Acevedo",
+    "player_nickname" : null,
+    "jersey_number" : 25,
+    "country" : {
+      "id" : 246,
+      "name" : "Venezuela (Bolivarian Republic)"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 89009,
+    "player_name" : "Yasmin Katie Mrabet",
+    "player_nickname" : "Yasmin Mrabet",
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 154,
+      "name" : "Morocco"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "57:40",
+      "to" : "82:31",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 126980,
+    "player_name" : "Berta Bou Salas",
+    "player_nickname" : "Berta Bou",
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 244840,
+    "player_name" : "Laia García Dalmases",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 327678,
+    "player_name" : "Julia Mora Tobías",
+    "player_nickname" : "Julia Mora",
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 8,
+      "position" : "Left Wing Back",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "57:40",
+      "to" : "70:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 8,
+      "position" : "Left Wing Back",
+      "from" : "70:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 327679,
+    "player_name" : "Irina Priscilla Uribe García",
+    "player_nickname" : "Irina Uribe",
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 327681,
+    "player_name" : "Laura Martínez González",
+    "player_nickname" : "Laura Martínez",
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "57:37",
+      "to" : "57:40",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "57:40",
+      "to" : "70:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "70:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 353117,
+    "player_name" : "Natalia Escot",
+    "player_nickname" : null,
+    "jersey_number" : 27,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 402663,
+    "player_name" : "Ghizlane Chebbak",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 154,
+      "name" : "Morocco"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : "57:40",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "57:40",
+      "to" : "70:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "70:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 408660,
+    "player_name" : "Nerea Carmona",
+    "player_nickname" : null,
+    "jersey_number" : 40,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "69:55",
+      "to" : "70:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "70:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 410055,
+    "player_name" : "Aina Meya",
+    "player_nickname" : null,
+    "jersey_number" : 26,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 428399,
+    "player_name" : "Paula Sánchez Tendero",
+    "player_nickname" : "Paula Sánchez",
+    "jersey_number" : 33,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+}, {
+  "team_id" : 3277,
+  "team_name" : "Valencia CF",
+  "lineup" : [ {
+    "player_id" : 47542,
+    "player_name" : "Elish Sulola",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 49840,
+    "player_name" : "Claudia Florentino Vivó",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ {
+      "time" : "57:14",
+      "card_type" : "Yellow Card",
+      "reason" : "Bad Behaviour",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "00:00",
+      "to" : "69:44",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 50006,
+    "player_name" : "Estela Fernández Pablos",
+    "player_nickname" : "Estela Fernández",
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "69:44",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 50014,
+    "player_name" : "Macarena Portales Nieto",
+    "player_nickname" : "Macarena Portales",
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "51:12",
+      "to" : "51:20",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "51:20",
+      "to" : "70:23",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "70:23",
+      "to" : "81:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 8,
+      "position" : "Left Wing Back",
+      "from" : "81:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 50820,
+    "player_name" : "Marta Carro Nolasco",
+    "player_nickname" : "Marta Carro",
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ {
+      "time" : "71:30",
+      "card_type" : "Yellow Card",
+      "reason" : "Bad Behaviour",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 50821,
+    "player_name" : "Berta Pujadas Boix",
+    "player_nickname" : "Berta Pujadas",
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "69:38",
+      "to" : "70:23",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 4,
+      "position" : "Center Back",
+      "from" : "70:23",
+      "to" : "81:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "81:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 50825,
+    "player_name" : "Enith Salón",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 50827,
+    "player_name" : "Ascensión Martínez Salinas",
+    "player_nickname" : "Asun Martínez",
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "00:00",
+      "to" : "51:20",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "51:20",
+      "to" : "69:38",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 86279,
+    "player_name" : "Jimena López Fuentes",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 147,
+      "name" : "Mexico"
+    },
+    "cards" : [ {
+      "time" : "55:12",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : "81:02",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 126402,
+    "player_name" : "Ainhoa Alguacil Amores",
+    "player_nickname" : null,
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 128707,
+    "player_name" : "María  Molina Molero",
+    "player_nickname" : "María Molina",
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : "81:22",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "81:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 142136,
+    "player_name" : "Paula Sancho González",
+    "player_nickname" : "Pauleta",
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : "70:23",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 8,
+      "position" : "Left Wing Back",
+      "from" : "70:23",
+      "to" : "80:50",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Injury)"
+    } ]
+  }, {
+    "player_id" : 184608,
+    "player_name" : "Elena Gil",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 8,
+      "position" : "Left Wing Back",
+      "from" : "80:50",
+      "to" : "81:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Injury)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "81:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 184609,
+    "player_name" : "Irune Cervera",
+    "player_nickname" : null,
+    "jersey_number" : 28,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "81:02",
+      "to" : "81:22",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 4,
+      "position" : "Center Back",
+      "from" : "81:22",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 251159,
+    "player_name" : "Sara Tamarit",
+    "player_nickname" : null,
+    "jersey_number" : 26,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : "70:23",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 7,
+      "position" : "Right Wing Back",
+      "from" : "70:23",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 321797,
+    "player_name" : "Marina Martí Serna",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "00:00",
+      "to" : "51:12",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 325210,
+    "player_name" : "Ivonne Chacón",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 49,
+      "name" : "Colombia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "70:23",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "70:23",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 408998,
+    "player_name" : "Antonia Ignacia Canales Pacheco",
+    "player_nickname" : null,
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 45,
+      "name" : "Chile"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+} ]

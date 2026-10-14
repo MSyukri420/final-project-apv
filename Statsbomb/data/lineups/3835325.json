@@ -73,7 +73,7 @@
   }, {
     "player_id" : 10271,
     "player_name" : "Griedge Mbock Bathy Nka",
-    "player_nickname" : "Griedge Mbock Bathy",
+    "player_nickname" : "Griedge Mbock",
     "jersey_number" : 19,
     "country" : {
       "id" : 78,
@@ -363,7 +363,7 @@
     "player_id" : 31141,
     "player_name" : "Justine Lerond",
     "player_nickname" : null,
-    "jersey_number" : 10,
+    "jersey_number" : 16,
     "country" : {
       "id" : 78,
       "name" : "France"

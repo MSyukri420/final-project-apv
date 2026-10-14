@@ -394,10 +394,19 @@
     },
     "cards" : [ ],
     "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "45:00",
+      "to" : "45:00",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - On (Tactical)"
+    }, {
       "position_id" : 13,
       "position" : "Right Center Midfield",
       "from" : "45:00",
-      "to" : "45:00",
+      "to" : "73:25",
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Substitution - On (Tactical)",
@@ -405,7 +414,7 @@
     }, {
       "position_id" : 11,
       "position" : "Left Defensive Midfield",
-      "from" : "45:00",
+      "from" : "73:25",
       "to" : null,
       "from_period" : 2,
       "to_period" : null,
@@ -414,7 +423,7 @@
     } ]
   }, {
     "player_id" : 389319,
-    "player_name" : "Bethuel Muzeu",
+    "player_name" : "Muzeu Bethuel",
     "player_nickname" : null,
     "jersey_number" : 9,
     "country" : {
@@ -423,10 +432,19 @@
     },
     "cards" : [ ],
     "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "45:00",
+      "to" : "45:00",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - On (Tactical)"
+    }, {
       "position_id" : 12,
       "position" : "Right Midfield",
       "from" : "45:00",
-      "to" : "45:00",
+      "to" : "73:25",
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Substitution - On (Tactical)",
@@ -434,7 +452,7 @@
     }, {
       "position_id" : 17,
       "position" : "Right Wing",
-      "from" : "45:00",
+      "from" : "73:25",
       "to" : null,
       "from_period" : 2,
       "to_period" : null,

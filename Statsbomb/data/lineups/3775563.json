@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4636,
     "player_name" : "Maria Thorisdottir",
@@ -401,7 +401,7 @@
   }, {
     "player_id" : 6818,
     "player_name" : "Hayley Emma Raso",
-    "player_nickname" : null,
+    "player_nickname" : "Hayley Raso",
     "jersey_number" : 16,
     "country" : {
       "id" : 14,
@@ -763,8 +763,8 @@
     "player_nickname" : null,
     "jersey_number" : 1,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 201,
+      "name" : "Scotland"
     },
     "cards" : [ ],
     "positions" : [ {

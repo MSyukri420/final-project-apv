@@ -199,8 +199,8 @@
     "player_nickname" : null,
     "jersey_number" : 24,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 91,
+      "name" : "Guadeloupe"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -355,7 +355,7 @@
     } ]
   }, {
     "player_id" : 40700,
-    "player_name" : "Mamadou N''Diaye",
+    "player_name" : "Mamadou N'Diaye",
     "player_nickname" : null,
     "jersey_number" : 2,
     "country" : {
@@ -396,7 +396,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3075,
     "player_name" : "Javier Manquillo Gaitán",

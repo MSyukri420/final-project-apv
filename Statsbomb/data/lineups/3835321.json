@@ -104,7 +104,7 @@
   }, {
     "player_id" : 10165,
     "player_name" : "Irene Paredes Hernandez",
-    "player_nickname" : "Irene Hernandez",
+    "player_nickname" : "Irene Paredes",
     "jersey_number" : 4,
     "country" : {
       "id" : 214,
@@ -307,7 +307,7 @@
   }, {
     "player_id" : 49831,
     "player_name" : "Ivana Andrés Sanz",
-    "player_nickname" : null,
+    "player_nickname" : "Ivana Andrés",
     "jersey_number" : 5,
     "country" : {
       "id" : 214,

@@ -129,7 +129,7 @@
   }, {
     "player_id" : 10222,
     "player_name" : "Jonna Ann-Charlotte Andersson",
-    "player_nickname" : null,
+    "player_nickname" : "Jonna Andersson",
     "jersey_number" : 2,
     "country" : {
       "id" : 220,
@@ -140,7 +140,7 @@
   }, {
     "player_id" : 10224,
     "player_name" : "Sara Caroline Seger",
-    "player_nickname" : null,
+    "player_nickname" : "Caroline Seger",
     "jersey_number" : 17,
     "country" : {
       "id" : 220,
@@ -219,7 +219,7 @@
     } ]
   }, {
     "player_id" : 10665,
-    "player_name" : "Mimmi Larsson",
+    "player_name" : "Mimmi Wahlström",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {
@@ -449,7 +449,7 @@
     } ]
   }, {
     "player_id" : 25685,
-    "player_name" : "Yesenia López",
+    "player_name" : "Yessenia Andrea López López",
     "player_nickname" : null,
     "jersey_number" : 11,
     "country" : {
@@ -474,7 +474,7 @@
     } ]
   }, {
     "player_id" : 25686,
-    "player_name" : "Yanara Aedo",
+    "player_name" : "Yanara Katherine Nicole Aedo Muñoz",
     "player_nickname" : null,
     "jersey_number" : 10,
     "country" : {
@@ -534,8 +534,8 @@
     } ]
   }, {
     "player_id" : 25689,
-    "player_name" : "Rosario Balmaceda",
-    "player_nickname" : null,
+    "player_name" : "Rosario Francisca María Balmaceda Holley",
+    "player_nickname" : "Rosario Balmaceda",
     "jersey_number" : 21,
     "country" : {
       "id" : 45,
@@ -639,7 +639,7 @@
     } ]
   }, {
     "player_id" : 25694,
-    "player_name" : "María José Urrutia",
+    "player_name" : "María José Urrutia Sánchez",
     "player_nickname" : null,
     "jersey_number" : 9,
     "country" : {
@@ -732,7 +732,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 26090,
-    "player_name" : "Javiera Grez",
+    "player_name" : "Javiera Matilde Grez Valenzuela",
     "player_nickname" : null,
     "jersey_number" : 13,
     "country" : {
@@ -743,7 +743,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 130961,
-    "player_name" : "Natalia Carolina Campos Fernandez",
+    "player_name" : "Natalia Carolina Campos Fernández",
     "player_nickname" : null,
     "jersey_number" : 12,
     "country" : {
@@ -765,7 +765,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 401535,
-    "player_name" : "Ryann Torrero",
+    "player_name" : "Ryann Danielle Torrero Rojas",
     "player_nickname" : null,
     "jersey_number" : 23,
     "country" : {
@@ -776,7 +776,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 402725,
-    "player_name" : "Valentina Díaz",
+    "player_name" : "Valentina Fernanda Díaz Tapia",
     "player_nickname" : null,
     "jersey_number" : 5,
     "country" : {
@@ -787,7 +787,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 402731,
-    "player_name" : "Elisa Durán",
+    "player_name" : "Elisa Antonia Durán Barrera",
     "player_nickname" : null,
     "jersey_number" : 22,
     "country" : {

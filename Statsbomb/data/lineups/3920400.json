@@ -805,7 +805,7 @@
   }, {
     "player_id" : 121295,
     "player_name" : "Malcom Bokele Mputu",
-    "player_nickname" : null,
+    "player_nickname" : "Malcom Bokele",
     "jersey_number" : 25,
     "country" : {
       "id" : 39,
@@ -839,8 +839,8 @@
     "player_nickname" : null,
     "jersey_number" : 9,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 39,
+      "name" : "Cameroon"
     },
     "cards" : [ ],
     "positions" : [ {

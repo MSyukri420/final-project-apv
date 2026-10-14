@@ -1,0 +1,886 @@
+[ {
+  "team_id" : 762,
+  "team_name" : "Houston Dash",
+  "lineup" : [ {
+    "player_id" : 4945,
+    "player_name" : "Havana Solaun",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 113,
+      "name" : "Jamaica"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 4958,
+    "player_name" : "Kathleen Naughton",
+    "player_nickname" : "Kathleen Lind",
+    "jersey_number" : 25,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : "99:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off (Permanent)"
+    } ]
+  }, {
+    "player_id" : 4962,
+    "player_name" : "Caprice Dydasco",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5038,
+    "player_name" : "Allysha Lyn Chapman",
+    "player_nickname" : "Allysha Chapman",
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5056,
+    "player_name" : "Jane Campbell",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 15180,
+    "player_name" : "Sophie Schmidt",
+    "player_nickname" : null,
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : "42:33",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "42:33",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 30524,
+    "player_name" : "Marisa Marie DiGrande",
+    "player_nickname" : "Marisa DiGrande",
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "79:20",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 31527,
+    "player_name" : "Ebony Salmon",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "85:02",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Off Camera)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 31937,
+    "player_name" : "Ally Prisock",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 33135,
+    "player_name" : "Maria Guadalupe Sanchez Morales",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 147,
+      "name" : "Mexico"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "00:00",
+      "to" : "42:33",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "42:33",
+      "to" : "66:36",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 42260,
+    "player_name" : "Natalie Jacobs",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ {
+      "time" : "42:12",
+      "card_type" : "Red Card",
+      "reason" : "Foul Committed",
+      "period" : 1
+    } ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : "42:12",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Foul Committed (Red Card)"
+    }, {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "42:33",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 49057,
+    "player_name" : "Courtney Petersen",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 106836,
+    "player_name" : "Michelle Alozie",
+    "player_nickname" : null,
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 166,
+      "name" : "Nigeria"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "00:00",
+      "to" : "42:33",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "42:33",
+      "to" : "60:25",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "61:18",
+      "to" : "66:29",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Player On",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 134813,
+    "player_name" : "Emily Sofia Alvarado Natividad",
+    "player_nickname" : "Emily Alvarado",
+    "jersey_number" : 99,
+    "country" : {
+      "id" : 147,
+      "name" : "Mexico"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 219178,
+    "player_name" : "Diana Ordoñez",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 147,
+      "name" : "Mexico"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "85:02",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Off Camera)"
+    } ]
+  }, {
+    "player_id" : 219181,
+    "player_name" : "Cameron Tucker",
+    "player_nickname" : null,
+    "jersey_number" : 39,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "66:29",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 219560,
+    "player_name" : "Joelle Anderson",
+    "player_nickname" : null,
+    "jersey_number" : 29,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : "42:33",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "42:33",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 219561,
+    "player_name" : "Ryan Gareis",
+    "player_nickname" : null,
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "66:36",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 361136,
+    "player_name" : "Barbara Klarissa Olivieri",
+    "player_nickname" : "Barbara Olivieri",
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 246,
+      "name" : "Venezuela (Bolivarian Republic)"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 392129,
+    "player_name" : "Sophie Hirst",
+    "player_nickname" : null,
+    "jersey_number" : 30,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "00:00",
+      "to" : "42:33",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "42:33",
+      "to" : "79:20",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  } ]
+}, {
+  "team_id" : 760,
+  "team_name" : "Seattle Reign",
+  "lineup" : [ {
+    "player_id" : 4951,
+    "player_name" : "Quinn Quinn",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 4965,
+    "player_name" : "Nikki Stanton",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "45:00",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5003,
+    "player_name" : "Emily Ann Sonnett",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5039,
+    "player_name" : "Veronica Latsko",
+    "player_nickname" : null,
+    "jersey_number" : 24,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "00:00",
+      "to" : "54:54",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "54:54",
+      "to" : "76:08",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "76:08",
+      "to" : "95:31",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 5065,
+    "player_name" : "Lauren Barnes",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : "69:55",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "70:44",
+      "to" : "75:53",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Player On",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 5105,
+    "player_name" : "Sofia Huerta",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 24694,
+    "player_name" : "Alana Cook",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 26091,
+    "player_name" : "Jordyn Pamela Huitema",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "23:41",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "24:37",
+      "to" : "54:54",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Player On",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "54:54",
+      "to" : "76:08",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "76:08",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 30556,
+    "player_name" : "Bethany Balcer",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : "54:14",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 30955,
+    "player_name" : "Phallon Tullis-Joyce",
+    "player_nickname" : null,
+    "jersey_number" : 91,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 42200,
+    "player_name" : "Tziarra King",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "00:00",
+      "to" : "53:51",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 50391,
+    "player_name" : "Samantha Hiatt",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 218429,
+    "player_name" : "Olivia Van der Jagt",
+    "player_nickname" : null,
+    "jersey_number" : 33,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "00:00",
+      "to" : "45:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 218430,
+    "player_name" : "Laurel Carolyn Ivory",
+    "player_nickname" : null,
+    "jersey_number" : 18,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 218431,
+    "player_name" : "Olivia Athens",
+    "player_nickname" : null,
+    "jersey_number" : 12,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "54:14",
+      "to" : "54:54",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "54:54",
+      "to" : "76:08",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "76:08",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 218507,
+    "player_name" : "Elyse Bennett",
+    "player_nickname" : null,
+    "jersey_number" : 34,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "53:51",
+      "to" : "54:54",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "54:54",
+      "to" : "76:08",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "76:08",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 234768,
+    "player_name" : "Marley Canales",
+    "player_nickname" : null,
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 236264,
+    "player_name" : "Alyssa Malonson",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "95:31",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 273452,
+    "player_name" : "Ryanne Brown",
+    "player_nickname" : null,
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "75:53",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 389480,
+    "player_name" : "Shae Holmes",
+    "player_nickname" : null,
+    "jersey_number" : 25,
+    "country" : {
+      "id" : 241,
+      "name" : "United States of America"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+} ]

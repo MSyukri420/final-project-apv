@@ -173,7 +173,7 @@
   }, {
     "player_id" : 25470,
     "player_name" : "Osinachi Marvis Ohale",
-    "player_nickname" : null,
+    "player_nickname" : "Osinachi Ohale",
     "jersey_number" : 3,
     "country" : {
       "id" : 166,
@@ -323,7 +323,7 @@
   }, {
     "player_id" : 26156,
     "player_name" : "Rasheedat Busayo Ajibade",
-    "player_nickname" : null,
+    "player_nickname" : "Rasheedat Ajibade",
     "jersey_number" : 15,
     "country" : {
       "id" : 166,
@@ -336,22 +336,22 @@
       "period" : 2
     } ],
     "positions" : [ {
-      "position_id" : 6,
-      "position" : "Left Back",
+      "position_id" : 16,
+      "position" : "Left Midfield",
       "from" : "45:00",
       "to" : "45:00",
       "from_period" : 2,
       "to_period" : 2,
-      "start_reason" : "Substitution - On (Tactical)",
-      "end_reason" : "Tactical Shift"
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - On (Tactical)"
     }, {
-      "position_id" : 16,
-      "position" : "Left Midfield",
+      "position_id" : 6,
+      "position" : "Left Back",
       "from" : "45:00",
       "to" : "53:58",
       "from_period" : 2,
       "to_period" : 2,
-      "start_reason" : "Tactical Shift",
+      "start_reason" : "Substitution - On (Tactical)",
       "end_reason" : "Tactical Shift"
     }, {
       "position_id" : 12,

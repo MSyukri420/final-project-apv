@@ -77,8 +77,8 @@
     } ]
   }, {
     "player_id" : 25444,
-    "player_name" : "Mi-Na Lee",
-    "player_nickname" : "Lee Mi-Na",
+    "player_name" : "Min-A Lee",
+    "player_nickname" : "Lee Min-A",
     "jersey_number" : 7,
     "country" : {
       "id" : 121,
@@ -478,7 +478,7 @@
   }, {
     "player_id" : 24881,
     "player_name" : "Asisat Lamina Oshoala",
-    "player_nickname" : null,
+    "player_nickname" : "Asisat Oshoala",
     "jersey_number" : 8,
     "country" : {
       "id" : 166,
@@ -609,7 +609,7 @@
   }, {
     "player_id" : 25469,
     "player_name" : "Halimatu Ibrahim Ayinde",
-    "player_nickname" : null,
+    "player_nickname" : "Halimatu Ayinde",
     "jersey_number" : 18,
     "country" : {
       "id" : 166,
@@ -629,7 +629,7 @@
   }, {
     "player_id" : 25470,
     "player_name" : "Osinachi Marvis Ohale",
-    "player_nickname" : null,
+    "player_nickname" : "Osinachi Ohale",
     "jersey_number" : 3,
     "country" : {
       "id" : 166,
@@ -751,7 +751,7 @@
   }, {
     "player_id" : 26156,
     "player_name" : "Rasheedat Busayo Ajibade",
-    "player_nickname" : null,
+    "player_nickname" : "Rasheedat Ajibade",
     "jersey_number" : 15,
     "country" : {
       "id" : 166,

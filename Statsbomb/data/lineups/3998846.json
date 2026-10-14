@@ -395,7 +395,7 @@
   }, {
     "player_id" : 62913,
     "player_name" : "Francisca Ramos Ribeiro Nazareth Sousa",
-    "player_nickname" : "Francisca Nazareth",
+    "player_nickname" : "Kika Nazareth",
     "jersey_number" : 7,
     "country" : {
       "id" : 183,
@@ -902,8 +902,8 @@
     "player_nickname" : null,
     "jersey_number" : 13,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 112,
+      "name" : "Italy"
     },
     "cards" : [ ],
     "positions" : [ ]

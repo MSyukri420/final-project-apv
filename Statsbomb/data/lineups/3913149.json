@@ -1,0 +1,897 @@
+[ {
+  "team_id" : 749,
+  "team_name" : "Tottenham Hotspur Women",
+  "lineup" : [ {
+    "player_id" : 4638,
+    "player_name" : "Drew Spence",
+    "player_nickname" : null,
+    "jersey_number" : 24,
+    "country" : {
+      "id" : 113,
+      "name" : "Jamaica"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "00:00",
+      "to" : "45:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 4848,
+    "player_name" : "Ashleigh Neville",
+    "player_nickname" : null,
+    "jersey_number" : 29,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ {
+      "time" : "62:05",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 15550,
+    "player_name" : "Bethany England",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "53:24",
+      "to" : "54:11",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "54:11",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 16393,
+    "player_name" : "Ellie Brazil",
+    "player_nickname" : null,
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 18158,
+    "player_name" : "Rebecca Leigh Spencer",
+    "player_nickname" : "Rebecca Spencer",
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 113,
+      "name" : "Jamaica"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 21023,
+    "player_name" : "Amanda Nildén",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 21048,
+    "player_name" : "Rosella Ayane",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 154,
+      "name" : "Morocco"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "53:26",
+      "to" : "54:11",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "54:11",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 24400,
+    "player_name" : "Barbara Votíková",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 60,
+      "name" : "Czech Republic"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 24461,
+    "player_name" : "Shuang Wang",
+    "player_nickname" : "Wang Shuang",
+    "jersey_number" : 77,
+    "country" : {
+      "id" : 46,
+      "name" : "China"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 31533,
+    "player_name" : "Amy Turner",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 31551,
+    "player_name" : "Kit Graham",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "45:00",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46533,
+    "player_name" : "Ramona Petzelberger",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ {
+      "time" : "82:32",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "66:03",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46740,
+    "player_name" : "Grace Clinton",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : "66:03",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 46972,
+    "player_name" : "Luana Bühler",
+    "player_nickname" : null,
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 61467,
+    "player_name" : "Jessica Naz",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "54:11",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "54:11",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 87194,
+    "player_name" : "Celin Bizet Ildhusøy",
+    "player_nickname" : null,
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 171,
+      "name" : "Norway"
+    },
+    "cards" : [ {
+      "time" : "46:42",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 1
+    } ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "00:00",
+      "to" : "53:24",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 132034,
+    "player_name" : "Charlotte Layne Grant",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 14,
+      "name" : "Australia"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 191850,
+    "player_name" : "Eveliina Summanen",
+    "player_nickname" : null,
+    "jersey_number" : 25,
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "00:00",
+      "to" : "39:30",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "40:04",
+      "to" : "79:15",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Player On",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 224167,
+    "player_name" : "Matilda Liv Vinberg",
+    "player_nickname" : null,
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "00:00",
+      "to" : "53:26",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 229194,
+    "player_name" : "Olga Ahtinen",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "79:15",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  } ]
+}, {
+  "team_id" : 2652,
+  "team_name" : "Leicester City WFC",
+  "lineup" : [ {
+    "player_id" : 4865,
+    "player_name" : "Josie Green",
+    "player_nickname" : null,
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "70:06",
+      "to" : "70:17",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "70:17",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 10100,
+    "player_name" : "Janice Cayman",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "cards" : [ {
+      "time" : "72:27",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : "84:33",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 10260,
+    "player_name" : "Lena Petermann",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "65:48",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 15720,
+    "player_name" : "Sophie Howard",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : "70:17",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "70:17",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 16374,
+    "player_name" : "Aileen Whelan",
+    "player_nickname" : null,
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "00:00",
+      "to" : "19:34",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "19:34",
+      "to" : "45:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "45:00",
+      "to" : "65:48",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "65:48",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25601,
+    "player_name" : "Deanne Cynthia Rose",
+    "player_nickname" : "Deanne Rose",
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "65:48",
+      "to" : "65:48",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - On (Tactical)"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "65:48",
+      "to" : "70:17",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "70:17",
+      "to" : "84:44",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "84:44",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25604,
+    "player_name" : "Saori Takarada",
+    "player_nickname" : null,
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 114,
+      "name" : "Japan"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25662,
+    "player_name" : "Catherine Joan Bott",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 163,
+      "name" : "New Zealand"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 26520,
+    "player_name" : "Yuka Momiki",
+    "player_nickname" : null,
+    "jersey_number" : 29,
+    "country" : {
+      "id" : 114,
+      "name" : "Japan"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : "70:16",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 30856,
+    "player_name" : "Julie Thibaud",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : "70:06",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 36801,
+    "player_name" : "Aimee Palmer",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 46988,
+    "player_name" : "Janina Leitzig",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 63784,
+    "player_name" : "Lize Kop",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 112522,
+    "player_name" : "Missy Goodwin",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 132033,
+    "player_name" : "Courtney Jade Nevin",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 14,
+      "name" : "Australia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "84:33",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 135753,
+    "player_name" : "Samantha Tierney",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : "48:26",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "48:46",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Player On (Off Camera)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 182500,
+    "player_name" : "Ava Baker",
+    "player_nickname" : null,
+    "jersey_number" : 32,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 224822,
+    "player_name" : "Jutta Rantala",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "00:00",
+      "to" : "19:34",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "19:34",
+      "to" : "45:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "45:00",
+      "to" : "84:44",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "84:44",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 225180,
+    "player_name" : "Emilia Pelgander",
+    "player_nickname" : null,
+    "jersey_number" : 18,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "cards" : [ {
+      "time" : "87:39",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "70:16",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 241634,
+    "player_name" : "Remy Siemsen",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 14,
+      "name" : "Australia"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+} ]

@@ -793,11 +793,11 @@
       "position_id" : 11,
       "position" : "Left Defensive Midfield",
       "from" : "00:00",
-      "to" : null,
+      "to" : "78:23",
       "from_period" : 1,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Second Yellow)"
     } ]
   }, {
     "player_id" : 42703,

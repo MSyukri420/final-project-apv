@@ -425,8 +425,8 @@
     } ]
   }, {
     "player_id" : 69563,
-    "player_name" : "Mohamed Abdel Monem",
-    "player_nickname" : null,
+    "player_name" : "Mohamed Abdelmonem",
+    "player_nickname" : "Mohamed Abdel Monem",
     "jersey_number" : 24,
     "country" : {
       "id" : 66,
@@ -720,7 +720,7 @@
     } ]
   }, {
     "player_id" : 32868,
-    "player_name" : "Bryan Silva Teixera",
+    "player_name" : "Bryan Alberto Silva Teixeira Jr.",
     "player_nickname" : null,
     "jersey_number" : 19,
     "country" : {
@@ -741,7 +741,7 @@
   }, {
     "player_id" : 36271,
     "player_name" : "Roberto Lopes",
-    "player_nickname" : "Pico",
+    "player_nickname" : "R.Lopes",
     "jersey_number" : 4,
     "country" : {
       "id" : 41,

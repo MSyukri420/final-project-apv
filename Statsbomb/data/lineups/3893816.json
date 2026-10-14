@@ -75,7 +75,7 @@
   }, {
     "player_id" : 21860,
     "player_name" : "Paige Bailey Gayle",
-    "player_nickname" : null,
+    "player_nickname" : "Paige Gayle",
     "jersey_number" : 16,
     "country" : {
       "id" : 113,
@@ -291,7 +291,7 @@
   }, {
     "player_id" : 327719,
     "player_name" : "Atlanta Reigan Primus",
-    "player_nickname" : null,
+    "player_nickname" : "Atlanta Primus",
     "jersey_number" : 20,
     "country" : {
       "id" : 113,
@@ -446,7 +446,7 @@
   }, {
     "player_id" : 359388,
     "player_name" : "Aldrith Ivana Quintero Humphries",
-    "player_nickname" : null,
+    "player_nickname" : "Aldrith Quintero",
     "jersey_number" : 20,
     "country" : {
       "id" : 176,

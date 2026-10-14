@@ -258,7 +258,7 @@
   }, {
     "player_id" : 46677,
     "player_name" : "Matías David Espinoza Acosta",
-    "player_nickname" : null,
+    "player_nickname" : "Matías Espinoza",
     "jersey_number" : 4,
     "country" : {
       "id" : 178,
@@ -354,7 +354,7 @@
   }, {
     "player_id" : 62016,
     "player_name" : "Rodrigo Mario Morínigo Acosta",
-    "player_nickname" : null,
+    "player_nickname" : "Rodrigo Morínigo",
     "jersey_number" : 22,
     "country" : {
       "id" : 178,
@@ -374,7 +374,7 @@
   }, {
     "player_id" : 87429,
     "player_name" : "Mathías Adalberto Villasanti Rolón",
-    "player_nickname" : null,
+    "player_nickname" : "Mathías Villasanti",
     "jersey_number" : 23,
     "country" : {
       "id" : 178,
@@ -394,7 +394,7 @@
   }, {
     "player_id" : 87449,
     "player_name" : "Damián Josué Bobadilla Benítez",
-    "player_nickname" : null,
+    "player_nickname" : "Damián Bobadilla",
     "jersey_number" : 8,
     "country" : {
       "id" : 178,
@@ -434,7 +434,7 @@
   }, {
     "player_id" : 170230,
     "player_name" : "Alex Adrián Arce Barrios",
-    "player_nickname" : null,
+    "player_nickname" : "Alex Arce",
     "jersey_number" : 18,
     "country" : {
       "id" : 178,
@@ -454,7 +454,7 @@
   }, {
     "player_id" : 195989,
     "player_name" : "Néstor Rafael Giménez Florentín",
-    "player_nickname" : null,
+    "player_nickname" : "Néstor Giménez",
     "jersey_number" : 13,
     "country" : {
       "id" : 178,

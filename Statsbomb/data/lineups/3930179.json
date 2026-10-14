@@ -806,8 +806,8 @@
     "player_nickname" : null,
     "jersey_number" : 26,
     "country" : {
-      "id" : 122,
-      "name" : "Kosovo"
+      "id" : 3,
+      "name" : "Albania"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -826,8 +826,8 @@
     "player_nickname" : null,
     "jersey_number" : 16,
     "country" : {
-      "id" : 122,
-      "name" : "Kosovo"
+      "id" : 3,
+      "name" : "Albania"
     },
     "cards" : [ {
       "time" : "88:00",

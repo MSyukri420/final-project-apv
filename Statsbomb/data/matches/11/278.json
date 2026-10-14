@@ -49,7 +49,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"

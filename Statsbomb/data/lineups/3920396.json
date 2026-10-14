@@ -832,8 +832,8 @@
     } ]
   }, {
     "player_id" : 69563,
-    "player_name" : "Mohamed Abdel Monem",
-    "player_nickname" : null,
+    "player_name" : "Mohamed Abdelmonem",
+    "player_nickname" : "Mohamed Abdel Monem",
     "jersey_number" : 24,
     "country" : {
       "id" : 66,

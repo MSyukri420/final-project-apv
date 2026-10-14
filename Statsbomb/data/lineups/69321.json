@@ -4,7 +4,7 @@
   "lineup" : [ {
     "player_id" : 4949,
     "player_name" : "Rosemary Kathleen Lavelle",
-    "player_nickname" : null,
+    "player_nickname" : "Rose Lavelle",
     "jersey_number" : 16,
     "country" : {
       "id" : 241,
@@ -23,8 +23,8 @@
     } ]
   }, {
     "player_id" : 4999,
-    "player_name" : "Lindsey Michelle Horan",
-    "player_nickname" : "Lindsey Horan",
+    "player_name" : "Lindsey Michelle Heaps",
+    "player_nickname" : "Lindsey Heaps",
     "jersey_number" : 9,
     "country" : {
       "id" : 241,
@@ -96,8 +96,8 @@
     } ]
   }, {
     "player_id" : 5023,
-    "player_name" : "Mallory Pugh",
-    "player_nickname" : null,
+    "player_name" : "Mallory Diane Swanson",
+    "player_nickname" : "Mallory Swanson",
     "jersey_number" : 2,
     "country" : {
       "id" : 241,
@@ -173,7 +173,7 @@
   }, {
     "player_id" : 5085,
     "player_name" : "Alexandra Morgan Carrasco",
-    "player_nickname" : null,
+    "player_nickname" : "Alex Morgan",
     "jersey_number" : 13,
     "country" : {
       "id" : 241,
@@ -284,7 +284,7 @@
   }, {
     "player_id" : 5100,
     "player_name" : "Alyssa Michele Naeher",
-    "player_nickname" : null,
+    "player_nickname" : "Alyssa Naeher",
     "jersey_number" : 1,
     "country" : {
       "id" : 241,
@@ -304,7 +304,7 @@
   }, {
     "player_id" : 6811,
     "player_name" : "Julie Beth Ertz",
-    "player_nickname" : null,
+    "player_nickname" : "Julie Ertz",
     "jersey_number" : 8,
     "country" : {
       "id" : 241,
@@ -366,7 +366,7 @@
   }, {
     "player_id" : 8298,
     "player_name" : "Megan Anna Rapinoe",
-    "player_nickname" : null,
+    "player_nickname" : "Megan Rapinoe",
     "jersey_number" : 15,
     "country" : {
       "id" : 241,

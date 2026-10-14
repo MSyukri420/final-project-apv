@@ -43,7 +43,7 @@
     } ]
   }, {
     "player_id" : 15613,
-    "player_name" : "Rinsola Babajide",
+    "player_name" : "Rinsola Omowunmiajike Babajide",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {
@@ -291,7 +291,7 @@
   }, {
     "player_id" : 24239,
     "player_name" : "Jemma Elizabeth Purfield",
-    "player_nickname" : null,
+    "player_nickname" : "Jemma Purfield",
     "jersey_number" : 23,
     "country" : {
       "id" : 68,
@@ -623,8 +623,8 @@
     "player_nickname" : null,
     "jersey_number" : 25,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 109,
+      "name" : "Ireland"
     },
     "cards" : [ ],
     "positions" : [ {

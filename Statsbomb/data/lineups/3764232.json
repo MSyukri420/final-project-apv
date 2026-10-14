@@ -4,7 +4,7 @@
   "lineup" : [ {
     "player_id" : 4633,
     "player_name" : "Magdalena Lilly Eriksson",
-    "player_nickname" : null,
+    "player_nickname" : "Magdalena Eriksson",
     "jersey_number" : 16,
     "country" : {
       "id" : 220,
@@ -115,7 +115,7 @@
   }, {
     "player_id" : 4961,
     "player_name" : "Samantha May Kerr",
-    "player_nickname" : null,
+    "player_nickname" : "Sam Kerr",
     "jersey_number" : 20,
     "country" : {
       "id" : 14,
@@ -135,7 +135,7 @@
   }, {
     "player_id" : 10108,
     "player_name" : "Pernille Mosegaard Harder",
-    "player_nickname" : null,
+    "player_nickname" : "Pernille Harder",
     "jersey_number" : 23,
     "country" : {
       "id" : 61,
@@ -155,7 +155,7 @@
   }, {
     "player_id" : 10222,
     "player_name" : "Jonna Ann-Charlotte Andersson",
-    "player_nickname" : null,
+    "player_nickname" : "Jonna Andersson",
     "jersey_number" : 25,
     "country" : {
       "id" : 220,
@@ -215,7 +215,7 @@
   }, {
     "player_id" : 15549,
     "player_name" : "Sophie Louise Ingle",
-    "player_nickname" : null,
+    "player_nickname" : "Sophie Ingle",
     "jersey_number" : 5,
     "country" : {
       "id" : 249,
@@ -337,7 +337,7 @@
   }, {
     "player_id" : 25612,
     "player_name" : "Jessie Alexandra Fleming",
-    "player_nickname" : null,
+    "player_nickname" : "Jessie Fleming",
     "jersey_number" : 17,
     "country" : {
       "id" : 40,
@@ -359,7 +359,7 @@
   } ]
 }, {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4648,
     "player_name" : "Abbie McManus",

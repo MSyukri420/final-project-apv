@@ -1,4 +1,89 @@
 [ {
+  "match_id" : 3825739,
+  "match_date" : "2016-01-17",
+  "kick_off" : "17:00:00.000",
+  "competition" : {
+    "competition_id" : 11,
+    "country_name" : "Spain",
+    "competition_name" : "La Liga"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 220,
+    "home_team_name" : "Real Madrid",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 56,
+      "name" : "Zinédine Zidane",
+      "nickname" : null,
+      "dob" : "1972-06-23",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1041,
+    "away_team_name" : "Sporting Gijón",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 187,
+      "name" : "Abelardo Fernández Antuña",
+      "nickname" : "Abelardo",
+      "dob" : "1970-04-19",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 5,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2024-05-16T14:06:52.149840",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 20,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 353,
+    "name" : "Bernabéu",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 221,
+    "name" : "Alberto Undiano Mallenco",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
   "match_id" : 3825848,
   "match_date" : "2015-09-23",
   "kick_off" : "20:00:00.000",
@@ -55,7 +140,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-02-21T15:19:45.745471",
+  "last_updated" : "2024-08-23T09:35:15.821559",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -401,7 +486,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -1662,7 +1747,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-03-22T17:53:23.536170",
+  "last_updated" : "2024-07-31T16:42:34.108536",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3811,7 +3896,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -4491,7 +4576,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -4576,7 +4661,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -5586,7 +5671,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -6445,7 +6530,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -7815,7 +7900,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -8315,7 +8400,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -8817,7 +8902,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -9327,7 +9412,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -10007,7 +10092,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -10337,7 +10422,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -11017,7 +11102,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -11357,7 +11442,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -12462,7 +12547,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -12802,7 +12887,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -13298,7 +13383,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-02-28T17:16:13.323494",
+  "last_updated" : "2024-08-21T09:45:51.396148",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -14417,7 +14502,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -16712,7 +16797,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -16882,7 +16967,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -18327,7 +18412,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -18582,7 +18667,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -19007,7 +19092,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -19177,7 +19262,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -19262,7 +19347,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -19687,7 +19772,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -21906,7 +21991,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -22085,91 +22170,6 @@
   "referee" : {
     "id" : 222,
     "name" : "David Fernández Borbalan",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  }
-}, {
-  "match_id" : 3825739,
-  "match_date" : "2016-01-17",
-  "kick_off" : "17:00:00.000",
-  "competition" : {
-    "competition_id" : 11,
-    "country_name" : "Spain",
-    "competition_name" : "La Liga"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 220,
-    "home_team_name" : "Real Madrid",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 56,
-      "name" : "Zinédine Zidane",
-      "nickname" : null,
-      "dob" : "1972-06-23",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1041,
-    "away_team_name" : "Sporting Gijón",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 187,
-      "name" : "Abelardo Fernández Antuña",
-      "nickname" : "Abelardo",
-      "dob" : "1970-04-19",
-      "country" : {
-        "id" : 214,
-        "name" : "Spain"
-      }
-    } ]
-  },
-  "home_score" : 5,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2022-02-28T18:30:42.016145",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 20,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  },
-  "referee" : {
-    "id" : 221,
-    "name" : "Alberto Undiano Mallenco",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -23351,7 +23351,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -24295,7 +24295,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -25655,7 +25655,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -26165,7 +26165,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -26420,7 +26420,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -26930,7 +26930,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -27032,7 +27032,7 @@
 }, {
   "match_id" : 3825596,
   "match_date" : "2015-09-20",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -27086,7 +27086,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-02-14T13:58:51.467015",
+  "last_updated" : "2025-04-23T13:59:22.835792",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -27525,7 +27525,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -28205,7 +28205,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -29310,7 +29310,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -31101,7 +31101,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -31589,7 +31589,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2023-07-24T21:45:46.207168",
+  "last_updated" : "2023-09-20T17:21:32.111535",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -31765,7 +31765,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"

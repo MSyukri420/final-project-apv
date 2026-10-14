@@ -1,0 +1,846 @@
+[ {
+  "team_id" : 3154,
+  "team_name" : "Sassuolo W",
+  "lineup" : [ {
+    "player_id" : 10105,
+    "player_name" : "Davina Philtjens",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 10176,
+    "player_name" : "Lana Clelland",
+    "player_nickname" : null,
+    "jersey_number" : 26,
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "67:57",
+      "to" : "68:13",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "68:13",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 10206,
+    "player_name" : "Daniela Sabatino",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "00:00",
+      "to" : "89:03",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 31128,
+    "player_name" : "Solène Durand",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 32701,
+    "player_name" : "Caroline Pleidrup Gram",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 34498,
+    "player_name" : "Loreta Kullashi",
+    "player_nickname" : null,
+    "jersey_number" : 99,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : "67:57",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 45655,
+    "player_name" : "Lia Lonni",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 45887,
+    "player_name" : "Erika Santoro",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 45888,
+    "player_name" : "Benedetta Brignoli",
+    "player_nickname" : null,
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "88:41",
+      "to" : "92:43",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Injury)",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "95:04",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Player On",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 45893,
+    "player_name" : "Maria Luisa Filangeri",
+    "player_nickname" : null,
+    "jersey_number" : 85,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46232,
+    "player_name" : "Cecilia Prugna",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 46390,
+    "player_name" : "Sara Mella",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 47119,
+    "player_name" : "Giada Pondini",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : "67:45",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 49973,
+    "player_name" : "Valeria Monterubbiano",
+    "player_nickname" : null,
+    "jersey_number" : 27,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "89:03",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 63545,
+    "player_name" : "Isabella Kresche",
+    "player_nickname" : null,
+    "jersey_number" : 32,
+    "country" : {
+      "id" : 15,
+      "name" : "Austria"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 135571,
+    "player_name" : "Chiara Beccari",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "00:00",
+      "to" : "08:50",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "10:04",
+      "to" : "10:07",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Player On",
+      "end_reason" : "Substitution - Off (Injury)"
+    } ]
+  }, {
+    "player_id" : 135575,
+    "player_name" : "Giorgia Tudisco",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 276904,
+    "player_name" : "Kassandra Ndoutou Eboa Missipo",
+    "player_nickname" : null,
+    "jersey_number" : 12,
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "00:00",
+      "to" : "88:41",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Injury)"
+    } ]
+  }, {
+    "player_id" : 338147,
+    "player_name" : "Manuela Sciabica",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ {
+      "time" : "71:42",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "10:07",
+      "to" : "68:13",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Injury)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "68:13",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 422564,
+    "player_name" : "Naja Poje Mihelič",
+    "player_nickname" : "N.Mihelič",
+    "jersey_number" : 29,
+    "country" : {
+      "id" : 208,
+      "name" : "Slovenia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "67:45",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  } ]
+}, {
+  "team_id" : 11558,
+  "team_name" : "Como W",
+  "lineup" : [ {
+    "player_id" : 24392,
+    "player_name" : "Dominika Škorvánková",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 207,
+      "name" : "Slovakia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 31528,
+    "player_name" : "Matilde Lundorf Skovsen",
+    "player_nickname" : "Matilde Lundorf",
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : "59:01",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 34497,
+    "player_name" : "Julia Karlenäs",
+    "player_nickname" : "Julia Karlernäs",
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 9,
+      "position" : "Right Defensive Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 45627,
+    "player_name" : "Mária Korenčiová",
+    "player_nickname" : null,
+    "jersey_number" : 12,
+    "country" : {
+      "id" : 207,
+      "name" : "Slovakia"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 45641,
+    "player_name" : "Melania Martinovic",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "72:17",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 45743,
+    "player_name" : "Martina Zanoli",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ {
+      "time" : "68:59",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "59:01",
+      "to" : "59:09",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "59:09",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 45747,
+    "player_name" : "Astrid Gilardi",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 46340,
+    "player_name" : "Margherita Monnecchi",
+    "player_nickname" : null,
+    "jersey_number" : 27,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "00:00",
+      "to" : "58:44",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 63625,
+    "player_name" : "Lucia Pastrenge",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 135570,
+    "player_name" : "Liucija Vaitukaitytė",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 132,
+      "name" : "Lithuania"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "00:00",
+      "to" : "78:57",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 142315,
+    "player_name" : "Mina Schaathun Bergersen",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 171,
+      "name" : "Norway"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "72:17",
+      "to" : "72:31",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "72:31",
+      "to" : "79:31",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "79:31",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 180540,
+    "player_name" : "Andrea Colombo",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "79:04",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 226661,
+    "player_name" : "Zsanett Bernadett Kaján",
+    "player_nickname" : null,
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "00:00",
+      "to" : "72:31",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "72:31",
+      "to" : "79:04",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 309386,
+    "player_name" : "Alma Hila",
+    "player_nickname" : "Alma Hilaj",
+    "jersey_number" : 18,
+    "country" : {
+      "id" : 3,
+      "name" : "Albania"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 11,
+      "position" : "Left Defensive Midfield",
+      "from" : "78:57",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 309387,
+    "player_name" : "Emma Lipman",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 141,
+      "name" : "Malta"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 309389,
+    "player_name" : "Miriam Picchi",
+    "player_nickname" : null,
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 309391,
+    "player_name" : "Chiara Cecotti",
+    "player_nickname" : null,
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : "59:09",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "59:09",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 309392,
+    "player_name" : "Giulia Rizzon",
+    "player_nickname" : null,
+    "jersey_number" : 24,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : "82:00",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Player Off"
+    }, {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "82:26",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Player On",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 340097,
+    "player_name" : "Chiara Bianchi",
+    "player_nickname" : null,
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 362827,
+    "player_name" : "Oona Sevenius",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 21,
+      "position" : "Left Wing",
+      "from" : "58:44",
+      "to" : "79:31",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 17,
+      "position" : "Right Wing",
+      "from" : "79:31",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  } ]
+} ]

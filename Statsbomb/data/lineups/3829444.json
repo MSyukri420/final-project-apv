@@ -278,8 +278,8 @@
     "player_nickname" : "Aldo Kalulu",
     "jersey_number" : 26,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 52,
+      "name" : "Congo, (Kinshasa)"
     },
     "cards" : [ ],
     "positions" : [ ]
@@ -337,7 +337,7 @@
   } ]
 }, {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2959,
     "player_name" : "Julien Féret",
@@ -549,11 +549,11 @@
       "position_id" : 3,
       "position" : "Right Center Back",
       "from" : "50:08",
-      "to" : "74:00",
+      "to" : "72:52",
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Player On",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

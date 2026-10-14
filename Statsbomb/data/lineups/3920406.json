@@ -616,8 +616,8 @@
     "player_nickname" : "Mohammed Sagaf",
     "jersey_number" : 27,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 225,
+      "name" : "Tanzania, United Republic of"
     },
     "cards" : [ ],
     "positions" : [ ]
@@ -647,8 +647,8 @@
     "player_nickname" : null,
     "jersey_number" : 21,
     "country" : {
-      "id" : 14,
-      "name" : "Australia"
+      "id" : 225,
+      "name" : "Tanzania, United Republic of"
     },
     "cards" : [ ],
     "positions" : [ {

@@ -115,7 +115,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 16637,
-    "player_name" : "Christian Jesús Martinez",
+    "player_name" : "Cristian Jesús Martínez",
     "player_nickname" : "Christian Martínez",
     "jersey_number" : 6,
     "country" : {
@@ -986,7 +986,7 @@
   }, {
     "player_id" : 271579,
     "player_name" : "Robson Matheus Tome de Araujo Benegas",
-    "player_nickname" : null,
+    "player_nickname" : "Robson Tome",
     "jersey_number" : 14,
     "country" : {
       "id" : 27,

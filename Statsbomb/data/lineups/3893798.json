@@ -93,7 +93,7 @@
   }, {
     "player_id" : 21860,
     "player_name" : "Paige Bailey Gayle",
-    "player_nickname" : null,
+    "player_nickname" : "Paige Gayle",
     "jersey_number" : 16,
     "country" : {
       "id" : 113,
@@ -256,11 +256,11 @@
       "position_id" : 23,
       "position" : "Center Forward",
       "from" : "81:37",
-      "to" : null,
+      "to" : "90:59",
       "from_period" : 2,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Player On",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Second Yellow)"
     } ]
   }, {
     "player_id" : 25557,
@@ -316,7 +316,7 @@
   }, {
     "player_id" : 327719,
     "player_name" : "Atlanta Reigan Primus",
-    "player_nickname" : null,
+    "player_nickname" : "Atlanta Primus",
     "jersey_number" : 20,
     "country" : {
       "id" : 113,

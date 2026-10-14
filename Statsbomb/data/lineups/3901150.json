@@ -369,7 +369,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3075,
     "player_name" : "Javier Manquillo Gaitán",
@@ -585,11 +585,11 @@
       "position_id" : 3,
       "position" : "Right Center Back",
       "from" : "00:00",
-      "to" : "61:12",
+      "to" : "59:54",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

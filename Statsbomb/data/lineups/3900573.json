@@ -1,6 +1,6 @@
 [ {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2955,
     "player_name" : "Ronny Rodelin",
@@ -521,7 +521,7 @@
     } ]
   }, {
     "player_id" : 4469,
-    "player_name" : "Guy Adolphe N''Gosso Massouma",
+    "player_name" : "Guy Adolphe N'Gosso Massouma",
     "player_nickname" : "Guy Ngosso",
     "jersey_number" : 26,
     "country" : {
@@ -552,7 +552,7 @@
     } ]
   }, {
     "player_id" : 5676,
-    "player_name" : "Cheikh N''Doye",
+    "player_name" : "Cheikh N'Doye",
     "player_nickname" : "Cheikh N'Doye",
     "jersey_number" : 17,
     "country" : {

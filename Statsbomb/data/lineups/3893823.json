@@ -198,7 +198,7 @@
     } ]
   }, {
     "player_id" : 34485,
-    "player_name" : "Gabriela Guillén Alvarez",
+    "player_name" : "Gabriela Guillén Álvarez",
     "player_nickname" : null,
     "jersey_number" : 2,
     "country" : {
@@ -488,7 +488,7 @@
   } ]
 }, {
   "team_id" : 6045,
-  "team_name" : "Zambia Women's",
+  "team_name" : "Zambia W",
   "lineup" : [ {
     "player_id" : 32854,
     "player_name" : "Racheal Kundananji",
@@ -687,7 +687,7 @@
     } ]
   }, {
     "player_id" : 131628,
-    "player_name" : "Hellen Nga''ndwe Chanda",
+    "player_name" : "Hellen Nga'ndwe Chanda",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {

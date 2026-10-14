@@ -415,11 +415,11 @@
       "position_id" : 2,
       "position" : "Right Back",
       "from" : "24:12",
-      "to" : "80:52",
+      "to" : "80:25",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Tactical Shift",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",
@@ -493,7 +493,7 @@
   } ]
 }, {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2955,
     "player_name" : "Ronny Rodelin",

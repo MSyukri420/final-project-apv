@@ -423,7 +423,7 @@
     } ]
   }, {
     "player_id" : 40700,
-    "player_name" : "Mamadou N''Diaye",
+    "player_name" : "Mamadou N'Diaye",
     "player_nickname" : null,
     "jersey_number" : 2,
     "country" : {
@@ -455,7 +455,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3075,
     "player_name" : "Javier Manquillo Gaitán",
@@ -506,11 +506,11 @@
       "position_id" : 17,
       "position" : "Right Wing",
       "from" : "58:26",
-      "to" : "69:24",
+      "to" : "68:23",
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Substitution - On (Tactical)",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

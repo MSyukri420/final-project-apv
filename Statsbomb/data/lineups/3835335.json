@@ -478,7 +478,7 @@
   }, {
     "player_id" : 49697,
     "player_name" : "Carlotte Wubben-Moy",
-    "player_nickname" : null,
+    "player_nickname" : "Lotte Wubben-Moy",
     "jersey_number" : 22,
     "country" : {
       "id" : 68,
@@ -489,7 +489,7 @@
   } ]
 }, {
   "team_id" : 2457,
-  "team_name" : "Northern Ireland",
+  "team_name" : "Northern Ireland W",
   "lineup" : [ {
     "player_id" : 15706,
     "player_name" : "Rachel Furness",

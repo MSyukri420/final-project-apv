@@ -680,7 +680,7 @@
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
-      "end_reason" : "Player Off (Permanent)"
+      "end_reason" : "Player Off"
     }, {
       "position_id" : 6,
       "position" : "Left Back",

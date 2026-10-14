@@ -736,11 +736,11 @@
       "position_id" : 2,
       "position" : "Right Back",
       "from" : "00:00",
-      "to" : "37:22",
+      "to" : "35:28",
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

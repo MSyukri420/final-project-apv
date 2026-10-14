@@ -7,8 +7,8 @@
     "player_nickname" : null,
     "jersey_number" : 7,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 113,
+      "name" : "Jamaica"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -281,8 +281,8 @@
     } ]
   }, {
     "player_id" : 129288,
-    "player_name" : "Alex Marshall",
-    "player_nickname" : null,
+    "player_name" : "Alexander Andre Marshsall",
+    "player_nickname" : "Alex Marshall",
     "jersey_number" : 18,
     "country" : {
       "id" : 113,
@@ -380,7 +380,7 @@
   }, {
     "player_id" : 405926,
     "player_name" : "Renaldo Showayne Cephas",
-    "player_nickname" : null,
+    "player_nickname" : "Renaldo Cephas",
     "jersey_number" : 20,
     "country" : {
       "id" : 113,
@@ -608,7 +608,7 @@
     } ]
   }, {
     "player_id" : 23205,
-    "player_name" : "José David Contreras Verna",
+    "player_name" : "José David Contreras Bernard ",
     "player_nickname" : "José Contreras",
     "jersey_number" : 12,
     "country" : {

@@ -116,8 +116,8 @@
     "player_nickname" : "Sikou Niakaté",
     "jersey_number" : 6,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 140,
+      "name" : "Mali"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -809,7 +809,7 @@
     } ]
   }, {
     "player_id" : 389319,
-    "player_name" : "Bethuel Muzeu",
+    "player_name" : "Muzeu Bethuel",
     "player_nickname" : null,
     "jersey_number" : 9,
     "country" : {

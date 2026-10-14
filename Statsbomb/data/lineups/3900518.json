@@ -1,6 +1,6 @@
 [ {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2955,
     "player_name" : "Ronny Rodelin",
@@ -346,11 +346,11 @@
       "position_id" : 3,
       "position" : "Right Center Back",
       "from" : "00:00",
-      "to" : "35:13",
+      "to" : "31:22",
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",
@@ -688,7 +688,7 @@
     } ]
   }, {
     "player_id" : 4469,
-    "player_name" : "Guy Adolphe N''Gosso Massouma",
+    "player_name" : "Guy Adolphe N'Gosso Massouma",
     "player_nickname" : "Guy Ngosso",
     "jersey_number" : 26,
     "country" : {
@@ -768,7 +768,7 @@
     } ]
   }, {
     "player_id" : 5676,
-    "player_name" : "Cheikh N''Doye",
+    "player_name" : "Cheikh N'Doye",
     "player_nickname" : "Cheikh N'Doye",
     "jersey_number" : 17,
     "country" : {

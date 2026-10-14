@@ -168,7 +168,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 6984,
-    "player_name" : "Danilo D''Ambrosio",
+    "player_name" : "Danilo D'Ambrosio",
     "player_nickname" : "Danilo D'Ambrosio",
     "jersey_number" : 33,
     "country" : {
@@ -884,8 +884,8 @@
     "player_nickname" : null,
     "jersey_number" : 74,
     "country" : {
-      "id" : 85,
-      "name" : "Germany"
+      "id" : 112,
+      "name" : "Italy"
     },
     "cards" : [ ],
     "positions" : [ ]

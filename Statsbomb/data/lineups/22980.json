@@ -181,11 +181,11 @@
       "position_id" : 6,
       "position" : "Left Back",
       "from" : "00:00",
-      "to" : "84:00",
+      "to" : "72:08",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 13,
       "position" : "Right Center Midfield",
@@ -228,7 +228,7 @@
   }, {
     "player_id" : 25470,
     "player_name" : "Osinachi Marvis Ohale",
-    "player_nickname" : null,
+    "player_nickname" : "Osinachi Ohale",
     "jersey_number" : 3,
     "country" : {
       "id" : 166,
@@ -409,7 +409,7 @@
   }, {
     "player_id" : 26156,
     "player_name" : "Rasheedat Busayo Ajibade",
-    "player_nickname" : null,
+    "player_nickname" : "Rasheedat Ajibade",
     "jersey_number" : 15,
     "country" : {
       "id" : 166,
@@ -637,7 +637,7 @@
   }, {
     "player_id" : 10271,
     "player_name" : "Griedge Mbock Bathy Nka",
-    "player_nickname" : "Griedge Mbock Bathy",
+    "player_nickname" : "Griedge Mbock",
     "jersey_number" : 19,
     "country" : {
       "id" : 78,

@@ -55,7 +55,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2024-02-12T12:48:48.479157",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.0.3"
@@ -67,7 +67,7 @@
   },
   "stadium" : {
     "id" : 611,
-    "name" : "Estádio do Sport Lisboa e Benfica",
+    "name" : "Estádio da Luz",
     "country" : {
       "id" : 183,
       "name" : "Portugal"

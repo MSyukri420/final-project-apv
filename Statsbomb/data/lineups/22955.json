@@ -75,7 +75,7 @@
   }, {
     "player_id" : 5076,
     "player_name" : "Emily Louise van Egmond",
-    "player_nickname" : null,
+    "player_nickname" : "Emily van Egmond",
     "jersey_number" : 10,
     "country" : {
       "id" : 14,
@@ -95,7 +95,7 @@
   }, {
     "player_id" : 5078,
     "player_name" : "Alanna Stephanie Kennedy",
-    "player_nickname" : null,
+    "player_nickname" : "Alanna Kennedy",
     "jersey_number" : 14,
     "country" : {
       "id" : 14,
@@ -446,7 +446,7 @@
     } ]
   }, {
     "player_id" : 5082,
-    "player_name" : "Marta Vieira da Silva",
+    "player_name" : "Marta Vieira da Silva Veiga",
     "player_nickname" : "Marta",
     "jersey_number" : 10,
     "country" : {

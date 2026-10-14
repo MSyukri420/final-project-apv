@@ -559,7 +559,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -576,7 +576,7 @@
 }, {
   "match_id" : 69295,
   "match_date" : "2011-01-22",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -630,7 +630,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:41:27.668146",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -746,7 +746,7 @@
 }, {
   "match_id" : 69303,
   "match_date" : "2011-03-19",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -800,7 +800,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:39:05.179839",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -899,7 +899,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -1256,7 +1256,7 @@
 }, {
   "match_id" : 69246,
   "match_date" : "2011-04-30",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -1310,7 +1310,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:40:09.675919",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1664,7 +1664,7 @@
   },
   "stadium" : {
     "id" : 4454,
-    "name" : "Estadi Mallorca Son Moix",
+    "name" : "Visit Mallorca Estadi",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -1681,7 +1681,7 @@
 }, {
   "match_id" : 69280,
   "match_date" : "2011-01-08",
-  "kick_off" : "22:00:00.000",
+  "kick_off" : "20:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -1735,7 +1735,7 @@
   "away_score" : 4,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:37:46.499134",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -2021,7 +2021,7 @@
 }, {
   "match_id" : 69234,
   "match_date" : "2011-05-08",
-  "kick_off" : "19:00:00.000",
+  "kick_off" : "17:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -2075,7 +2075,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:39:07.275002",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -2106,7 +2106,7 @@
 }, {
   "match_id" : 69272,
   "match_date" : "2011-05-11",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -2160,7 +2160,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:51:54.910296",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",

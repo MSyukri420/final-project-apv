@@ -1,4 +1,778 @@
 [ {
+  "match_id" : 3879608,
+  "match_date" : "2015-11-07",
+  "kick_off" : "17:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 226,
+    "home_team_name" : "Hellas Verona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 240,
+    "away_team_name" : "Bologna",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 136,
+      "name" : "Roberto Donadoni",
+      "nickname" : null,
+      "dob" : "1963-09-09",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-08-15T14:12:51.209333",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 12,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4488,
+    "name" : "Stadio Marc'Antonio Bentegodi",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 269,
+    "name" : "Daniele Orsato",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879551,
+  "match_date" : "2015-09-27",
+  "kick_off" : "13:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 226,
+    "home_team_name" : "Hellas Verona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 236,
+    "away_team_name" : "Lazio",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 436,
+      "name" : "Stefano Pioli",
+      "nickname" : null,
+      "dob" : "1965-10-20",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-08-15T14:07:54.221225",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 6,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4488,
+    "name" : "Stadio Marc'Antonio Bentegodi",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 250,
+    "name" : "Piero Giacomelli",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879575,
+  "match_date" : "2015-10-18",
+  "kick_off" : "13:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 226,
+    "home_team_name" : "Hellas Verona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 230,
+    "away_team_name" : "Udinese",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 1000693,
+      "name" : "Stefano Colantuono",
+      "nickname" : null,
+      "dob" : "1962-10-23",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-08-15T14:11:13.695281",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 8,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4488,
+    "name" : "Stadio Marc'Antonio Bentegodi",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 256,
+    "name" : "Claudio Gavillucci",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879542,
+  "match_date" : "2015-09-23",
+  "kick_off" : "18:45:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 238,
+    "home_team_name" : "Inter Milan",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 226,
+    "away_team_name" : "Hellas Verona",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-08-15T14:10:03.727003",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 388,
+    "name" : "Stadio Giuseppe Meazza    ",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 1946,
+    "name" : "Carmine Russo",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879600,
+  "match_date" : "2015-11-01",
+  "kick_off" : "14:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 1683,
+    "home_team_name" : "Carpi",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 484,
+      "name" : "Giuseppe Sannino",
+      "nickname" : null,
+      "dob" : "1957-04-30",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 226,
+    "away_team_name" : "Hellas Verona",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-08-15T14:28:50.169562",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 11,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1001068,
+    "name" : "Stadio Alberto Braglia (Modena)",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 259,
+    "name" : "Paolo Silvio Mazzoleni",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879557,
+  "match_date" : "2015-10-03",
+  "kick_off" : "18:45:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 231,
+    "home_team_name" : "Chievo",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 114,
+      "name" : "Rolando Maran",
+      "nickname" : null,
+      "dob" : "1963-07-14",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 226,
+    "away_team_name" : "Hellas Verona",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-08-15T13:58:20.453354",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 7,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4488,
+    "name" : "Stadio Marc'Antonio Bentegodi",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 262,
+    "name" : "Daniele Doveri",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879819,
+  "match_date" : "2016-04-16",
+  "kick_off" : "16:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 1683,
+    "home_team_name" : "Carpi",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 4149,
+      "name" : "Fabrizio Castori",
+      "nickname" : null,
+      "dob" : "1954-07-11",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 233,
+    "away_team_name" : "Genoa",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 402,
+      "name" : "Gian Piero Gasperini",
+      "nickname" : null,
+      "dob" : "1958-01-26",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 4,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2025-07-21T05:01:00.434081",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 33,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1001068,
+    "name" : "Stadio Alberto Braglia (Modena)",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 419,
+    "name" : "Nicola Rizzoli",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3878541,
+  "match_date" : "2015-08-22",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 226,
+    "home_team_name" : "Hellas Verona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 1002096,
+      "name" : "Rafael Márquez Álvarez",
+      "nickname" : null,
+      "dob" : "1979-02-13",
+      "country" : {
+        "id" : 147,
+        "name" : "Mexico"
+      }
+    }, {
+      "id" : 4071,
+      "name" : "Andrea Mandorlini",
+      "nickname" : null,
+      "dob" : "1960-07-17",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 229,
+    "away_team_name" : "AS Roma",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 265,
+      "name" : "Rudi Garcia",
+      "nickname" : null,
+      "dob" : "1964-02-20",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2024-03-10T16:12:05.867037",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4488,
+    "name" : "Stadio Marc'Antonio Bentegodi",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 261,
+    "name" : "Marco Guida",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3879664,
+  "match_date" : "2015-12-20",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 12,
+    "country_name" : "Italy",
+    "competition_name" : "Serie A"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 234,
+    "home_team_name" : "Sampdoria",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 232,
+      "name" : "Vincenzo Montella",
+      "nickname" : null,
+      "dob" : "1974-06-18",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 2256,
+    "away_team_name" : "Palermo",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 625,
+      "name" : "Davide Ballardini",
+      "nickname" : null,
+      "dob" : "1964-01-06",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2024-01-02T14:05:59.244514",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 17,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 387,
+    "name" : "Stadio Comunale Luigi Ferraris",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 249,
+    "name" : "Michael Fabbri",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
   "match_id" : 3879863,
   "match_date" : "2016-05-08",
   "kick_off" : "15:00:00.000",
@@ -69,7 +843,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -225,7 +999,7 @@
   "away_score" : 5,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-09T05:04:05.234384",
+  "last_updated" : "2023-11-10T20:34:11.122378",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -239,7 +1013,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -579,7 +1353,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -650,7 +1424,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-30T12:58:29.091199",
+  "last_updated" : "2024-06-25T09:29:47.193602",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -820,7 +1594,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-04T12:00:50.957739",
+  "last_updated" : "2023-12-02T11:13:45.370951",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1330,7 +2104,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-08T22:42:09.888054",
+  "last_updated" : "2023-12-16T09:14:09.112569",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1446,7 +2220,7 @@
 }, {
   "match_id" : 3879663,
   "match_date" : "2015-12-20",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 12,
     "country_name" : "Italy",
@@ -1500,7 +2274,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-20T15:21:17.016538",
+  "last_updated" : "2025-08-15T14:13:57.513912",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1514,7 +2288,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -1769,7 +2543,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -3214,7 +3988,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -3299,7 +4073,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -3455,7 +4229,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-14T12:41:00.319524",
+  "last_updated" : "2023-12-27T21:07:56.398939",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3625,7 +4399,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-31T07:44:36.505974",
+  "last_updated" : "2023-12-02T15:15:26.051272",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3724,7 +4498,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -3880,7 +4654,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-07T14:25:44.322136",
+  "last_updated" : "2023-12-02T16:00:47.490984",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3894,7 +4668,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -4829,7 +5603,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -4985,7 +5759,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-31T16:46:34.290341",
+  "last_updated" : "2023-09-20T17:27:29.913439",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -5424,7 +6198,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -5594,7 +6368,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -6104,7 +6878,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -6519,7 +7293,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -6859,7 +7633,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -7199,7 +7973,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -7284,7 +8058,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -7369,7 +8143,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -7454,7 +8228,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -7695,7 +8469,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-08T10:16:07.284533",
+  "last_updated" : "2024-01-07T14:12:25.529719",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -8205,7 +8979,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-05T10:02:57.448533",
+  "last_updated" : "2024-01-04T22:38:02.548749",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -8219,7 +8993,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -8304,7 +9078,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -8375,7 +9149,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-03T12:54:01.981335",
+  "last_updated" : "2023-09-20T17:30:31.810474",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -8800,7 +9574,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-03T12:51:28.453031",
+  "last_updated" : "2023-09-20T17:29:02.343263",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -8899,7 +9673,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -9055,7 +9829,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-03T15:49:11.729307",
+  "last_updated" : "2023-09-03T03:32:46.516780",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -10089,7 +10863,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -10174,7 +10948,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -10514,7 +11288,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -10684,7 +11458,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -10769,7 +11543,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -11010,7 +11784,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-07T03:17:04.490288",
+  "last_updated" : "2023-11-03T11:44:43.357930",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -11109,7 +11883,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -11279,7 +12053,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -11350,7 +12124,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-05T18:52:42.458217",
+  "last_updated" : "2023-09-20T17:28:12.818665",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -11364,7 +12138,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -11543,91 +12317,6 @@
   "referee" : {
     "id" : 250,
     "name" : "Piero Giacomelli",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
-  "match_id" : 3879819,
-  "match_date" : "2016-04-16",
-  "kick_off" : "18:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 1683,
-    "home_team_name" : "Carpi",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4149,
-      "name" : "Fabrizio Castori",
-      "nickname" : null,
-      "dob" : "1954-07-11",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 233,
-    "away_team_name" : "Genoa",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 402,
-      "name" : "Gian Piero Gasperini",
-      "nickname" : null,
-      "dob" : "1958-01-26",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 4,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-16T15:43:05.819249",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 33,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1001068,
-    "name" : "Stadio Alberto Braglia (Modena)",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 419,
-    "name" : "Nicola Rizzoli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -12554,7 +13243,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -12724,7 +13413,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -12894,7 +13583,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -12979,7 +13668,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -13815,7 +14504,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-06T15:48:43.231133",
+  "last_updated" : "2023-11-12T06:26:15.347952",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -13999,7 +14688,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -14169,7 +14858,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -14325,7 +15014,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-22T10:20:56.410473",
+  "last_updated" : "2023-09-08T11:50:30.195901",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -14410,7 +15099,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-08T18:23:57.976576",
+  "last_updated" : "2023-11-24T07:54:10.908368",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -14509,7 +15198,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -14679,7 +15368,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -14750,7 +15439,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-05T01:31:59.190756",
+  "last_updated" : "2023-12-16T05:33:04.715367",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -15090,7 +15779,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-07T09:03:15.128299",
+  "last_updated" : "2023-10-28T23:30:14.464051",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -15345,7 +16034,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-01T12:16:27.661415",
+  "last_updated" : "2023-12-23T04:18:33.909640",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -15614,7 +16303,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -15685,7 +16374,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-22T12:00:36.293863",
+  "last_updated" : "2024-08-23T10:32:37.501638",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -15770,7 +16459,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-10T13:29:30.296302",
+  "last_updated" : "2023-09-02T05:14:42.584131",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -15954,7 +16643,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -16011,10 +16700,10 @@
       "name" : "Italy"
     },
     "managers" : [ {
-      "id" : 710,
-      "name" : "Gian Piero Ventura\t",
+      "id" : 4159,
+      "name" : "Giovanni Tedesco",
       "nickname" : null,
-      "dob" : "1948-01-14",
+      "dob" : "1972-05-13",
       "country" : {
         "id" : 112,
         "name" : "Italy"
@@ -16025,7 +16714,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-05T15:23:33.410198",
+  "last_updated" : "2024-03-10T16:11:49.575481",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -16634,7 +17323,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -17399,7 +18088,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -17569,7 +18258,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -17824,7 +18513,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -18136,13 +18825,13 @@
       "name" : "Italy"
     },
     "managers" : [ {
-      "id" : 1002922,
-      "name" : "Fabio Viviani",
+      "id" : 1632,
+      "name" : "Guillermo Barros Schelotto",
       "nickname" : null,
-      "dob" : "1966-09-29",
+      "dob" : "1973-05-04",
       "country" : {
-        "id" : 112,
-        "name" : "Italy"
+        "id" : 11,
+        "name" : "Argentina"
       }
     } ]
   },
@@ -18150,7 +18839,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-20T12:50:14.893845",
+  "last_updated" : "2024-03-10T16:14:00.166197",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -18334,7 +19023,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -18419,7 +19108,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -18476,15 +19165,6 @@
       "name" : "Italy"
     },
     "managers" : [ {
-      "id" : 1001978,
-      "name" : "Leandro Greco",
-      "nickname" : null,
-      "dob" : "1986-07-19",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    }, {
       "id" : 664,
       "name" : "Luigi Delneri",
       "nickname" : null,
@@ -18499,7 +19179,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-20T13:31:43.626485",
+  "last_updated" : "2024-03-10T16:13:56.345859",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -18768,7 +19448,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -18839,7 +19519,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-08T18:22:48.076992",
+  "last_updated" : "2023-09-20T17:26:39.853343",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -19023,7 +19703,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -19193,7 +19873,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -20043,7 +20723,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -20128,7 +20808,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -20653,91 +21333,6 @@
     }
   }
 }, {
-  "match_id" : 3879664,
-  "match_date" : "2015-12-20",
-  "kick_off" : "19:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 234,
-    "home_team_name" : "Sampdoria",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 232,
-      "name" : "Vincenzo Montella",
-      "nickname" : null,
-      "dob" : "1974-06-18",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 2256,
-    "away_team_name" : "Palermo",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 625,
-      "name" : "Davide Ballardini",
-      "nickname" : null,
-      "dob" : "1964-01-06",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 2,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-17T22:00:55.830263",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 17,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 387,
-    "name" : "Stadio Comunale Luigi Ferraris",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 249,
-    "name" : "Michael Fabbri",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
   "match_id" : 3879662,
   "match_date" : "2015-12-20",
   "kick_off" : "16:00:00.000",
@@ -20893,7 +21488,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -20964,7 +21559,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-12T08:55:22.290252",
+  "last_updated" : "2024-06-25T23:56:11.910924",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -21488,7 +22083,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -21559,7 +22154,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-21T13:09:02.908189",
+  "last_updated" : "2023-09-20T17:25:53.469595",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -21729,7 +22324,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-08-05T05:43:18.396394",
+  "last_updated" : "2023-11-17T02:28:36.033450",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -21913,7 +22508,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -22168,7 +22763,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -22423,7 +23018,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -23103,7 +23698,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -23684,7 +24279,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-21T13:08:14.636670",
+  "last_updated" : "2023-09-20T17:25:01.652277",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -24138,91 +24733,6 @@
     }
   }
 }, {
-  "match_id" : 3879608,
-  "match_date" : "2015-11-07",
-  "kick_off" : "19:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 226,
-    "home_team_name" : "Hellas Verona",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 240,
-    "away_team_name" : "Bologna",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 136,
-      "name" : "Roberto Donadoni",
-      "nickname" : null,
-      "dob" : "1963-09-09",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-20T12:39:21.756686",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 12,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 269,
-    "name" : "Daniele Orsato",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
   "match_id" : 3879607,
   "match_date" : "2015-11-07",
   "kick_off" : "21:45:00.000",
@@ -24378,7 +24888,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -24619,7 +25129,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-20T17:17:19.369236",
+  "last_updated" : "2023-09-20T17:24:07.218549",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -24633,7 +25143,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -24812,91 +25322,6 @@
   "referee" : {
     "id" : 261,
     "name" : "Marco Guida",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
-  "match_id" : 3879600,
-  "match_date" : "2015-11-01",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 1683,
-    "home_team_name" : "Carpi",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 484,
-      "name" : "Giuseppe Sannino",
-      "nickname" : null,
-      "dob" : "1957-04-30",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 226,
-    "away_team_name" : "Hellas Verona",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-19T16:30:07.761877",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 11,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1001068,
-    "name" : "Stadio Alberto Braglia (Modena)",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 259,
-    "name" : "Paolo Silvio Mazzoleni",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -25245,7 +25670,7 @@
 }, {
   "match_id" : 3879595,
   "match_date" : "2015-10-28",
-  "kick_off" : "21:45:00.000",
+  "kick_off" : "19:45:00.000",
   "competition" : {
     "competition_id" : 12,
     "country_name" : "Italy",
@@ -25299,7 +25724,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-19T17:52:47.884266",
+  "last_updated" : "2025-08-15T14:24:11.035221",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -25313,7 +25738,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -25908,7 +26333,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -25925,7 +26350,7 @@
 }, {
   "match_id" : 3879586,
   "match_date" : "2015-10-25",
-  "kick_off" : "12:30:00.000",
+  "kick_off" : "10:30:00.000",
   "competition" : {
     "competition_id" : 12,
     "country_name" : "Italy",
@@ -25979,7 +26404,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-19T20:32:02.472526",
+  "last_updated" : "2025-08-15T14:09:00.734233",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -26078,7 +26503,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -26248,7 +26673,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -26574,7 +26999,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-19T18:47:05.224552",
+  "last_updated" : "2023-09-20T17:23:18.190330",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -26597,91 +27022,6 @@
   "referee" : {
     "id" : 270,
     "name" : "Massimiliano Irrati",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
-  "match_id" : 3879575,
-  "match_date" : "2015-10-18",
-  "kick_off" : "15:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 226,
-    "home_team_name" : "Hellas Verona",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 230,
-    "away_team_name" : "Udinese",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 1000693,
-      "name" : "Stefano Colantuono",
-      "nickname" : null,
-      "dob" : "1962-10-23",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-19T16:09:11.878525",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 8,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 256,
-    "name" : "Claudio Gavillucci",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -27013,7 +27353,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -27169,7 +27509,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-17T11:00:41.945542",
+  "last_updated" : "2023-12-26T23:27:28.200206",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -27254,7 +27594,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-16T14:15:10.051342",
+  "last_updated" : "2023-12-27T00:53:39.969607",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -27793,91 +28133,6 @@
     }
   }
 }, {
-  "match_id" : 3879557,
-  "match_date" : "2015-10-03",
-  "kick_off" : "20:45:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 231,
-    "home_team_name" : "Chievo",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 114,
-      "name" : "Rolando Maran",
-      "nickname" : null,
-      "dob" : "1963-07-14",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 226,
-    "away_team_name" : "Hellas Verona",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-12T22:36:09.807292",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 7,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 262,
-    "name" : "Daniele Doveri",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
   "match_id" : 3879555,
   "match_date" : "2015-09-28",
   "kick_off" : "21:00:00.000",
@@ -27948,7 +28203,7 @@
   },
   "stadium" : {
     "id" : 4954,
-    "name" : "Gewiss Stadium",
+    "name" : "New Balance Arena",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -28218,91 +28473,6 @@
     }
   }
 }, {
-  "match_id" : 3879551,
-  "match_date" : "2015-09-27",
-  "kick_off" : "15:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 226,
-    "home_team_name" : "Hellas Verona",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 236,
-    "away_team_name" : "Lazio",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 436,
-      "name" : "Stefano Pioli",
-      "nickname" : null,
-      "dob" : "1965-10-20",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-15T14:19:58.189730",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 6,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 250,
-    "name" : "Piero Giacomelli",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
   "match_id" : 3879550,
   "match_date" : "2015-09-27",
   "kick_off" : "20:45:00.000",
@@ -28444,7 +28614,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-17T13:59:00.407637",
+  "last_updated" : "2023-12-27T01:38:20.214093",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -28699,7 +28869,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-03-30T15:04:03.848633",
+  "last_updated" : "2023-12-13T17:11:23.472244",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -28983,91 +29153,6 @@
     }
   }
 }, {
-  "match_id" : 3879542,
-  "match_date" : "2015-09-23",
-  "kick_off" : "20:45:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 238,
-    "home_team_name" : "Inter Milan",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 2997,
-      "name" : "Roberto Mancini",
-      "nickname" : null,
-      "dob" : "1964-11-27",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 226,
-    "away_team_name" : "Hellas Verona",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-03-30T22:07:47.923074",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 5,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 388,
-    "name" : "Stadio Giuseppe Meazza    ",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 1946,
-    "name" : "Carmine Russo",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
   "match_id" : 3879541,
   "match_date" : "2015-09-23",
   "kick_off" : "20:45:00.000",
@@ -29223,7 +29308,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -29464,7 +29549,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-03-23T15:37:30.130117",
+  "last_updated" : "2023-12-13T17:32:46.423081",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -29478,7 +29563,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -29733,7 +29818,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -30328,7 +30413,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -30838,7 +30923,7 @@
   },
   "stadium" : {
     "id" : 385,
-    "name" : "Dacia Arena",
+    "name" : "Stadio Friuli",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -31178,7 +31263,7 @@
   },
   "stadium" : {
     "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
+    "name" : "Stadio Marc'Antonio Bentegodi",
     "country" : {
       "id" : 112,
       "name" : "Italy"
@@ -32122,100 +32207,6 @@
   "referee" : {
     "id" : 265,
     "name" : "Paolo Valeri",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  }
-}, {
-  "match_id" : 3878541,
-  "match_date" : "2015-08-22",
-  "kick_off" : "18:00:00.000",
-  "competition" : {
-    "competition_id" : 12,
-    "country_name" : "Italy",
-    "competition_name" : "Serie A"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 226,
-    "home_team_name" : "Hellas Verona",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 1002096,
-      "name" : "Rafael Márquez Álvarez",
-      "nickname" : null,
-      "dob" : "1979-02-13",
-      "country" : {
-        "id" : 147,
-        "name" : "Mexico"
-      }
-    }, {
-      "id" : 4071,
-      "name" : "Andrea Mandorlini",
-      "nickname" : null,
-      "dob" : "1960-07-17",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 229,
-    "away_team_name" : "AS Roma",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 265,
-      "name" : "Rudi Garcia",
-      "nickname" : null,
-      "dob" : "1964-02-20",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-03-11T20:21:10.529895",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4488,
-    "name" : "Stadio Marc''Antonio Bentegodi",
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    }
-  },
-  "referee" : {
-    "id" : 261,
-    "name" : "Marco Guida",
     "country" : {
       "id" : 112,
       "name" : "Italy"

@@ -4,7 +4,7 @@
   "lineup" : [ {
     "player_id" : 4633,
     "player_name" : "Magdalena Lilly Eriksson",
-    "player_nickname" : null,
+    "player_nickname" : "Magdalena Eriksson",
     "jersey_number" : 6,
     "country" : {
       "id" : 220,
@@ -124,7 +124,7 @@
   }, {
     "player_id" : 10222,
     "player_name" : "Jonna Ann-Charlotte Andersson",
-    "player_nickname" : null,
+    "player_nickname" : "Jonna Andersson",
     "jersey_number" : 2,
     "country" : {
       "id" : 220,
@@ -153,7 +153,7 @@
   }, {
     "player_id" : 10224,
     "player_name" : "Sara Caroline Seger",
-    "player_nickname" : null,
+    "player_nickname" : "Caroline Seger",
     "jersey_number" : 17,
     "country" : {
       "id" : 220,
@@ -173,7 +173,7 @@
   }, {
     "player_id" : 10229,
     "player_name" : "Emma Stina Blackstenius",
-    "player_nickname" : null,
+    "player_nickname" : "Stina Blackstenius",
     "jersey_number" : 11,
     "country" : {
       "id" : 220,
@@ -264,7 +264,7 @@
   }, {
     "player_id" : 25697,
     "player_name" : "Lina Mona Andréa Hurtig",
-    "player_nickname" : null,
+    "player_nickname" : "Lina Hurtig",
     "jersey_number" : 8,
     "country" : {
       "id" : 220,
@@ -931,7 +931,7 @@
   }, {
     "player_id" : 221888,
     "player_name" : "Kerstin Yasmijn Casparij",
-    "player_nickname" : null,
+    "player_nickname" : "Kerstin Casparij",
     "jersey_number" : 18,
     "country" : {
       "id" : 160,

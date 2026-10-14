@@ -55,7 +55,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-18T19:28:39.443883",
+  "last_updated" : "2024-02-12T14:45:05.702250",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -151,7 +151,7 @@
 }, {
   "match_id" : 3750245,
   "match_date" : "1989-03-15",
-  "kick_off" : "20:30:00.000",
+  "kick_off" : "18:30:00.000",
   "competition" : {
     "competition_id" : 35,
     "country_name" : "Europe",
@@ -183,7 +183,7 @@
   },
   "away_team" : {
     "away_team_id" : 1076,
-    "away_team_name" : "Juventus",
+    "away_team_name" : "Juventus W",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -205,7 +205,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2023-05-22T16:05:43.468317",
+  "last_updated" : "2026-04-11T12:48:10.012987",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",

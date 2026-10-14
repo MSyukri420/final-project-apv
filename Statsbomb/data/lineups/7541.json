@@ -550,11 +550,11 @@
       "position_id" : 15,
       "position" : "Left Center Midfield",
       "from" : "00:00",
-      "to" : "06:54",
+      "to" : "02:48",
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 11,
       "position" : "Left Defensive Midfield",

@@ -49,7 +49,7 @@
   }, {
     "player_id" : 22911,
     "player_name" : "Zakaria Diallo",
-    "player_nickname" : "Z. Diallo",
+    "player_nickname" : null,
     "jersey_number" : 79,
     "country" : {
       "id" : 78,
@@ -378,7 +378,7 @@
   } ]
 }, {
   "team_id" : 7282,
-  "team_name" : "ATK Mohun Bagan",
+  "team_name" : "Mohun Bagan Super Giant",
   "lineup" : [ {
     "player_id" : 24303,
     "player_name" : "Joni Ensio Kauko",

@@ -308,8 +308,8 @@
     "player_nickname" : "Aldo Kalulu",
     "jersey_number" : 26,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 52,
+      "name" : "Congo, (Kinshasa)"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -374,7 +374,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3075,
     "player_name" : "Javier Manquillo Gaitán",

@@ -378,11 +378,11 @@
       "position_id" : 3,
       "position" : "Right Center Back",
       "from" : "75:42",
-      "to" : "81:48",
+      "to" : "80:29",
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Player On",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

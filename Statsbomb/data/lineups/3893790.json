@@ -3,7 +3,7 @@
   "team_name" : "Canada Women's",
   "lineup" : [ {
     "player_id" : 4951,
-    "player_name" : "Rebecca Quinn",
+    "player_name" : "Quinn Quinn",
     "player_nickname" : null,
     "jersey_number" : 5,
     "country" : {
@@ -683,7 +683,7 @@
   }, {
     "player_id" : 50020,
     "player_name" : "Antionette Oyedupe Payne",
-    "player_nickname" : null,
+    "player_nickname" : "Toni Payne",
     "jersey_number" : 7,
     "country" : {
       "id" : 166,
@@ -857,11 +857,11 @@
       "position_id" : 15,
       "position" : "Left Center Midfield",
       "from" : "00:00",
-      "to" : null,
+      "to" : "95:31",
       "from_period" : 1,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Red Card)"
     } ]
   }, {
     "player_id" : 401727,

@@ -468,7 +468,7 @@
   }, {
     "player_id" : 76083,
     "player_name" : "Esteban Andres Pavez Suazo",
-    "player_nickname" : null,
+    "player_nickname" : "Esteban Pavez",
     "jersey_number" : 17,
     "country" : {
       "id" : 45,
@@ -479,7 +479,7 @@
   }, {
     "player_id" : 106357,
     "player_name" : "Maximiliano Gabriel Guerrero Pena",
-    "player_nickname" : null,
+    "player_nickname" : "Maximiliano Guerrero",
     "jersey_number" : 20,
     "country" : {
       "id" : 45,
