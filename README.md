@@ -4,7 +4,7 @@
 
 Pick the delivery, the target zone and where your players stand. The tool shows how often similar real corners won the first ball and created a good chance, alongside a model estimate tested on competitions it never saw.
 
-![Corner Chance Planner: setting up a corner and comparing real corners with the model](notebooks/images/planner.png)
+![Corner Chance Planner: setting up a corner and comparing real corners with the model](notebooks/images/planner-dark.png)
 
 ## Key findings
 
@@ -49,8 +49,8 @@ Expected goals for and against (APV = xG created − xG conceded) are kept as a 
 | Set up a corner and compare **real corners** (similar past corners, with a 90% range) with **the model** (an estimate for your exact setup). Quick wins suggest single changes that the models agree help and real corners don't contradict. | What actually happened in real corners, step by step: target zone, delivery type, spare attackers, and the factors that make little difference. | Groups of real corners (delivery, target, players in the box), ranked by good chances. Each opens its average setup in the planner. |
 
 <p>
-  <img src="notebooks/images/insights.png" alt="Insights tab" width="49%">
-  <img src="notebooks/images/playbook.png" alt="Playbook tab" width="49%">
+  <img src="notebooks/images/insights-dark.png" alt="Insights tab" width="49%">
+  <img src="notebooks/images/playbook-dark.png" alt="Playbook tab" width="49%">
 </p>
 
 ### Stakeholder notebook
