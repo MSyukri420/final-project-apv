@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Literal, Optional, Tuple, overload
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,18 +10,18 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_samples, silhouette_score
 from sklearn.preprocessing import StandardScaler
 
-from src.constants import DEFENSIVE_FEATURES
+from src.constants import DEFENSIVE_FEATURES, SHAPE_ORDER
 
 
 # helper: softmax with temperature
 
 def _softmax(scores: np.ndarray, temperature: float = 1.0) -> np.ndarray:
-    # compute softmax over the last axis with temperature scaling
+    # softmax over the last axis, with a temperature
     if temperature <= 0:
         temperature = 1.0
 
     z = scores / float(temperature)
-    # numerical stability
+    # subtract the max to avoid overflow
     z = z - np.max(z, axis=1, keepdims=True)
     exp_z = np.exp(z)
     denom = np.sum(exp_z, axis=1, keepdims=True)
@@ -29,23 +29,23 @@ def _softmax(scores: np.ndarray, temperature: float = 1.0) -> np.ndarray:
     return exp_z / denom
 
 
-# helper: semantic labels for clusters
+# helper: readable names for the clusters
 
 def _assign_cluster_labels(centroids: pd.DataFrame) -> Dict[int, str]:
-    # assign interpretable labels to clusters based on their centroids
+    # name each cluster from its centroid
     cols = set(centroids.columns)
     labels_default = {idx: f"Cluster_{idx}" for idx in centroids.index}
 
     if "def_in_6yd" not in cols:
         return labels_default
 
-    # zonal: high six yard occupancy, optionally posts
+    # zonal: most players in the six-yard box, plus anyone on the posts
     zonal_score = centroids["def_in_6yd"].copy()
     if "players_on_posts" in cols:
         zonal_score = zonal_score + 0.5 * centroids["players_on_posts"]
     idx_zonal = int(zonal_score.idxmax())
 
-    # man: high line and high marking ratio if available
+    # man: high line and high marking ratio, if available
     if "marking_ratio_pen" in cols and "def_line_height" in cols:
         man_score = centroids["marking_ratio_pen"] + 0.3 * centroids["def_line_height"]
     elif "marking_ratio_pen" in cols:
@@ -55,12 +55,12 @@ def _assign_cluster_labels(centroids: pd.DataFrame) -> Dict[int, str]:
     else:
         return labels_default
 
-    # avoid picking the same cluster twice
+    # don't pick the same cluster twice
     man_score = man_score.copy()
     man_score.loc[idx_zonal] = man_score.min() - 1.0
     idx_man = int(man_score.idxmax())
 
-    # hybrid: whichever cluster is left
+    # hybrid: the cluster that's left
     remaining = [idx for idx in centroids.index if idx not in (idx_zonal, idx_man)]
     if not remaining:
         return labels_default
@@ -80,20 +80,37 @@ def _assign_cluster_labels(centroids: pd.DataFrame) -> Dict[int, str]:
     return labels
 
 
-# main entry: defensive archetype clustering (stage 4)
+# k-means defensive clusters (stage 4), kept as the benchmark for the rules
+
+@overload
+def cluster_defensive_archetypes(
+    df_features: pd.DataFrame,
+    cfg: Optional[dict] = ...,
+    return_model: Literal[False] = ...,
+) -> pd.DataFrame: ...
+
+
+@overload
+def cluster_defensive_archetypes(
+    df_features: pd.DataFrame,
+    cfg: Optional[dict] = ...,
+    *,
+    return_model: Literal[True],
+) -> Tuple[pd.DataFrame, KMeans, StandardScaler, List[str], Dict[int, str]]: ...
+
 
 def cluster_defensive_archetypes(
     df_features: pd.DataFrame,
     cfg: Optional[dict] = None,
     return_model: bool = False,
 ):
-    # cluster defensive shapes with kmeans and attach archetype labels
+    # cluster defensive shapes with k-means and attach the labels
     if df_features is None or df_features.empty:
         raise ValueError("cluster_defensive_archetypes: df_features is empty.")
 
     df = df_features.copy()
 
-    # hyper parameters
+    # settings
     clustering_cfg = (cfg or {}).get("clustering", {}) or {}
     k = int(clustering_cfg.get("k", 3))
     max_iter = int(clustering_cfg.get("max_iter", 500))
@@ -121,7 +138,7 @@ def cluster_defensive_archetypes(
             "cluster_defensive_archetypes: all defensive features are near constant."
         )
 
-    # median impute and scale
+    # fill gaps with the median, then scale
     medians = X[used_features].median(axis=0)
     X_imputed = X[used_features].fillna(medians)
 
@@ -137,20 +154,20 @@ def cluster_defensive_archetypes(
     )
     hard_labels = kmeans.fit_predict(X_scaled)
 
-    # softmax confidence over distances
+    # confidence: softmax over the distances to each centroid
     dists = kmeans.transform(X_scaled)
     scores = -dists
     probs = _softmax(scores, temperature=temperature)
     confidence = probs.max(axis=1)
     hard_labels_soft = probs.argmax(axis=1)
 
-    # prefer the hard kmeans labels if they disagree with argmax-softmax
+    # keep the plain k-means label if the two disagree
     if not np.array_equal(hard_labels, hard_labels_soft):
         hard_final = hard_labels
     else:
         hard_final = hard_labels_soft
 
-    # attach cluster fields
+    # attach the cluster columns
     df["A_id"] = hard_final
     df["A_confidence"] = confidence
 
@@ -158,7 +175,7 @@ def cluster_defensive_archetypes(
     cluster_label_map = _assign_cluster_labels(centroids)
     df["A_name"] = df["A_id"].map(cluster_label_map).fillna("Unknown")
 
-    # console diagnostics (no reliability threshold any more)
+    # print a summary
     print("------------------------------------------------------")
     print("stage 4: defensive archetype clustering")
     print("------------------------------------------------------")
@@ -187,14 +204,122 @@ def cluster_defensive_archetypes(
     return df
 
 
-# diagnostics: figures for dissertation
+# rule-based defensive shapes (stage 4)
+#
+# k-means finds weak, unstable groups here, and one freeze frame can't show who
+# marks whom. Two simple rules give almost the same groups, don't change when
+# new corners are added, and can be checked by eye:
+#   1. anyone on a post                                -> Posts covered
+#   2. else box defenders within high_line_yards of goal -> Deep line
+#   3. else                                            -> High line
+
+def _shape_rules(clustering_cfg: dict) -> Tuple[int, float]:
+    min_on_posts = int(clustering_cfg.get("min_on_posts", 1))
+    high_line_yards = float(clustering_cfg.get("high_line_yards", 7.5))
+    return min_on_posts, high_line_yards
+
+
+def assign_defensive_shapes(df_features: pd.DataFrame, cfg: Optional[dict] = None) -> pd.DataFrame:
+    # give every corner a rule-based defensive shape (A_name)
+    if df_features is None or df_features.empty:
+        raise ValueError("assign_defensive_shapes: df_features is empty.")
+    missing = [c for c in ("players_on_posts", "def_line_height") if c not in df_features.columns]
+    if missing:
+        raise KeyError(f"assign_defensive_shapes: missing columns {missing}")
+
+    clustering_cfg = (cfg or {}).get("clustering", {}) or {}
+    min_on_posts, high_line_yards = _shape_rules(clustering_cfg)
+
+    df = df_features.copy()
+    on_posts = df["players_on_posts"].fillna(0) >= min_on_posts
+    # no defenders in the box (no line height) counts as deep
+    deep = ~(df["def_line_height"] > high_line_yards)
+    names = np.where(on_posts, SHAPE_ORDER[0], np.where(deep, SHAPE_ORDER[1], SHAPE_ORDER[2]))
+
+    df["A_name"] = names
+    df["A_id"] = pd.Series(names, index=df.index).map({n: i for i, n in enumerate(SHAPE_ORDER)})
+    # rules leave no doubt, so every label is certain
+    df["A_confidence"] = 1.0
+
+    print("------------------------------------------------------")
+    print("stage 4: defensive shapes (rules)")
+    print("------------------------------------------------------")
+    print(f"posts covered: {min_on_posts}+ defender(s) within the post radius")
+    print(f"deep line:     box defenders on average <= {high_line_yards:g} yards from goal")
+    print(df["A_name"].value_counts().reindex(SHAPE_ORDER).to_string())
+    print("")
+    return df
+
+
+def compare_shape_methods(
+    df_rules: pd.DataFrame,
+    df_kmeans: pd.DataFrame,
+    used_features: List[str],
+    scaler: StandardScaler,
+    cfg: Optional[dict] = None,
+    n_boot: int = 50,
+    seed: int = 0,
+) -> pd.DataFrame:
+    # compare the rules with k-means: how well each separates the defences, and how
+    # stable each is when the data is resampled
+    from sklearn.metrics import adjusted_rand_score, calinski_harabasz_score, davies_bouldin_score
+
+    clustering_cfg = (cfg or {}).get("clustering", {}) or {}
+    k = int(clustering_cfg.get("k", 3))
+    min_on_posts, _ = _shape_rules(clustering_cfg)
+
+    X = df_kmeans[used_features].copy()
+    X_scaled = scaler.transform(X.fillna(X.median()))
+    rng = np.random.default_rng(seed)
+    n = len(df_kmeans)
+
+    labels_k = df_kmeans["A_id"].to_numpy()
+    labels_r = df_rules["A_id"].to_numpy()
+    no_post = (df_rules["players_on_posts"].fillna(0) < min_on_posts).to_numpy()
+    line = df_rules["def_line_height"].to_numpy()
+
+    stab_k: List[float] = []
+    stab_r: List[float] = []
+    for i in range(n_boot):
+        idx = rng.choice(n, n)
+        refit = KMeans(n_clusters=k, n_init=10, random_state=i).fit(X_scaled[idx])
+        stab_k.append(adjusted_rand_score(labels_k, refit.predict(X_scaled)))
+        # redo the rules on the resample: line threshold at its no-post median
+        threshold = float(np.nanmedian(line[idx][no_post[idx]]))
+        relabel = np.where(~no_post, 0, np.where(~(line > threshold), 1, 2))
+        stab_r.append(adjusted_rand_score(labels_r, relabel))
+
+    def row(method: str, labels: np.ndarray, names: pd.Series, stab: List[float]) -> Dict:
+        sizes = names.value_counts()
+        return {
+            "method": method,
+            "groups": int(sizes.size),
+            "sizes": "; ".join(f"{k_}={v}" for k_, v in sizes.items()),
+            "silhouette": float(silhouette_score(X_scaled, labels)),
+            "calinski_harabasz": float(calinski_harabasz_score(X_scaled, labels)),
+            "davies_bouldin": float(davies_bouldin_score(X_scaled, labels)),
+            "stability_ari_mean": float(np.mean(stab)),
+            "stability_ari_min": float(np.min(stab)),
+        }
+
+    out = pd.DataFrame(
+        [
+            row("rules", labels_r, df_rules["A_name"], stab_r),
+            row("kmeans", labels_k, df_kmeans["A_name"], stab_k),
+        ]
+    )
+    out["agreement_ari"] = float(adjusted_rand_score(labels_r, labels_k))
+    return out
+
+
+# figures for the report
 
 def plot_cluster_counts(
     df_clustered: pd.DataFrame,
     out_dir: Optional[str] = None,
     prefix: str = "cluster_counts",
 ):
-    # bar chart for cluster sizes per A_name, plus optional csv summary
+    # bar chart of how many corners each shape has, plus a csv
     if df_clustered is None or df_clustered.empty:
         print("plot_cluster_counts: empty df_clustered, skipping")
         return None
@@ -241,7 +366,7 @@ def plot_cluster_feature_profiles(
     out_dir: Optional[str] = None,
     prefix: str = "cluster_profiles",
 ):
-    # plot defensive feature profiles by archetype, plus attacker counts by zone
+    # average defensive features per shape, plus attacker counts by zone
     if df_clustered is None or df_clustered.empty:
         print("plot_cluster_feature_profiles: empty df_clustered, skipping")
         return None
@@ -251,14 +376,14 @@ def plot_cluster_feature_profiles(
 
     df = df_clustered.copy()
 
-    # order archetypes in a coach friendly way if possible
-    archetype_order = ["Hybrid", "Man", "Zonal"]
+    # a coach-friendly order where possible
+    archetype_order = SHAPE_ORDER
     present = [a for a in archetype_order if a in df["A_name"].unique()]
     if not present:
         present = sorted(df["A_name"].unique())
     archetypes = present
 
-    # defensive features we want to show
+    # defensive features to show
     defensive_features = [
         "def_line_height",
         "def_in_6yd",
@@ -286,7 +411,7 @@ def plot_cluster_feature_profiles(
         .loc[archetypes]
     )
 
-    # -------- defensive features  --------
+    # defensive features
     if defensive_features:
         n_plots = min(len(defensive_features), 4)
         fig_def, axes = plt.subplots(2, 2, figsize=(8, 6))
@@ -322,7 +447,7 @@ def plot_cluster_feature_profiles(
             print(f"saved defensive cluster profile figure to {fig_path_def}")
             plt.close(fig_def)
 
-    # --------  attacker counts by zone --------
+    # attacker counts by zone
     if attacker_zone_features:
         zones = attacker_zone_features
         zone_labels = {
@@ -367,7 +492,7 @@ def plot_cluster_silhouette(
     out_dir: Optional[str] = None,
     prefix: str = "cluster_silhouette",
 ):
-    # plot mean silhouette score per cluster (based on scaled defensive features)
+    # average silhouette score per cluster, on the scaled defensive features
     if df_clustered is None or df_clustered.empty:
         print("plot_cluster_silhouette: empty df_clustered, skipping")
         return None
@@ -384,7 +509,7 @@ def plot_cluster_silhouette(
         print("plot_cluster_silhouette: no rows after filtering, skipping")
         return None
 
-    # restrict to features that still exist
+    # keep only features that still exist
     used_features = [f for f in used_features if f in df_sub.columns]
     if not used_features:
         print(

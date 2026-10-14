@@ -1,0 +1,41 @@
+match_id,minute,second,delivery_route,pass.outcome.name,first_contact_attack,first_contact_type,first_contact_events
+3788770,40,22,direct,,1.0,header_shot,A:Ball Receipt* > A:Shot > D:Goal Keeper
+3893827,97,22,direct,Incomplete,0.0,defender_clears,D:Clearance > D:Half End > A:Half End
+3788755,52,17,direct,Incomplete,0.0,keeper_claims,D:Goal Keeper > D:Duel > A:Pass
+3895074,64,58,direct,,1.0,header_shot,A:Ball Receipt* > A:Shot > D:Goal Keeper
+3893811,56,4,direct,Incomplete,0.0,defender_clears,D:Clearance > D:Clearance > A:Pass
+3998851,55,55,direct,Incomplete,0.0,defender_clears,D:Clearance > D:Clearance > A:Pass
+3895086,35,46,direct,Incomplete,0.0,defender_clears,D:Clearance > D:Clearance > A:Ball Recovery
+3895153,69,13,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Ball Recovery > A:Carry
+3794689,20,3,direct,Incomplete,0.0,defender_clears,A:Ball Receipt* > D:Clearance > A:Block
+3869152,12,34,short_routine,,0.0,defence_wins,A:Ball Receipt* > D:Block > D:Clearance
+3895167,26,33,short_routine,,1.0,header_shot,A:Ball Receipt* > D:Duel > A:Shot
+3930159,71,32,direct,,1.0,header_shot,A:Ball Receipt* > D:Duel > A:Shot
+3893818,48,18,direct,Incomplete,0.0,defender_clears,A:Ball Receipt* > D:Clearance > A:Block
+3941018,47,8,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Pass > D:Clearance
+3893809,12,39,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Ball Recovery > A:Carry
+3904628,43,58,direct,Incomplete,0.0,keeper_claims,D:Goal Keeper > A:Ball Recovery > A:Shot
+3938642,58,4,direct,,1.0,header_shot,A:Ball Receipt* > D:Duel > A:Shot
+3802793,32,6,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Clearance > D:Pass
+3788776,80,11,direct,Incomplete,0.0,defender_clears,D:Clearance > D:Error > A:Ball Recovery
+3941021,57,45,direct,,1.0,header_shot,A:Ball Receipt* > A:Shot > D:Goal Keeper
+3857284,97,55,direct,Incomplete,0.0,keeper_claims,D:Goal Keeper > A:Pass > A:Ball Receipt*
+3857298,52,56,direct,Incomplete,0.0,defence_wins,A:Ball Receipt* > A:Duel > D:Clearance
+3893811,55,25,direct,Incomplete,0.0,defence_wins,A:Ball Receipt* > A:Duel > D:Clearance
+3930170,84,52,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Pass > D:Goal Keeper
+3788771,92,24,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Ball Recovery > A:Carry
+3930161,66,57,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Pass > A:Ball Receipt*
+3942349,27,5,short_routine,,0.0,defender_clears,D:Clearance > D:Pass > D:Ball Receipt*
+3893809,90,1,direct,Incomplete,0.0,keeper_claims,D:Goal Keeper > A:Ball Recovery > A:Shot
+3773672,17,30,short_routine,,1.0,attacker_controls,A:Ball Receipt* > A:Miscontrol > A:Foul Committed
+3893821,88,34,direct,Incomplete,0.0,defender_clears,A:Ball Receipt* > D:Clearance > A:Ball Recovery
+3773661,18,23,direct,Incomplete,0.0,keeper_claims,D:Goal Keeper > A:Ball Recovery > A:Carry
+3893799,94,23,direct,Incomplete,0.0,keeper_claims,D:Goal Keeper > D:Duel > A:Pass
+3901735,65,54,direct,Out,,out,
+3835334,33,12,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Ball Recovery > A:Carry
+3895167,92,5,direct,Incomplete,0.0,keeper_claims,A:Ball Receipt* > D:Goal Keeper > A:Ball Recovery
+3930179,4,49,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Pass > D:Pass
+3998838,17,39,direct,Out,,out,
+3773474,10,2,direct,,1.0,header_shot,A:Ball Receipt* > D:Duel > A:Shot
+3998838,91,33,direct,,1.0,header_shot,A:Ball Receipt* > D:Duel > A:Shot
+3869486,4,29,direct,Incomplete,0.0,defender_clears,D:Clearance > A:Pass > D:Ball Recovery

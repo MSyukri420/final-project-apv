@@ -1,0 +1,4 @@
+A_name,n_att_near,n_att_central,n_att_far,n_blockers,n_edge_of_box,n_rest_defence,def_line_height,def_in_6yd,gk_start_line,def_near,def_central,def_far,def_spot,free_att_near,free_att_central,free_att_far,free_att_spot,delivery_depth,delivery_high,delivery_type,short_corner_flag,end_zone,score_state,minute_bucket
+Deep line,0.0,2.0,0.0,0.0,3.0,3.0,6.5003822109069205,6.0,1.3724126286132972,1.0,5.0,0.0,3.0,0.0,0.0,0.0,0.0,5.299999999999997,1.0,inswing,0,central,drawing,75-90+
+High line,0.0,2.0,0.0,0.0,3.0,4.0,8.622014827021061,4.0,1.9401587757322718,1.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0,7.099999999999994,1.0,outswing,0,central,drawing,45-60
+Posts covered,0.0,2.0,0.0,1.0,2.0,3.0,5.947818733524784,7.0,1.1793049199809644,1.0,6.0,0.0,2.0,0.0,0.0,0.0,0.0,5.400000000000006,1.0,inswing,0,central,drawing,75-90+

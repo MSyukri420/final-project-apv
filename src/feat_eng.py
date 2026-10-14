@@ -9,9 +9,14 @@ import numpy as np
 import pandas as pd
 from matplotlib.patches import Rectangle, Circle
 
-from src.constants import DEFENSIVE_FEATURES, ATTACKING_NUMERIC_FEATURES
+from src.constants import (
+    ATTACKING_NUMERIC_FEATURES,
+    DEFENDER_ZONE_FEATURES,
+    DEFENSIVE_FEATURES,
+    MATCHUP_ZONES,
+)
 
-# geometric constants for statsbomb pitch, attacking towards x = 120
+# pitch measurements (StatsBomb), attacking towards x = 120
 
 GOAL_X = 120.0
 GOAL_Y_LOW, GOAL_Y_HIGH = 36.0, 44.0
@@ -32,10 +37,10 @@ POST_RADIUS = 1.5
 GK_MIN_X_IN_BOX = PEN_X_MIN
 
 
-# basic context helpers (minute bucket, delivery, short / direct, end zone)
+# match context: minute bucket, delivery type, short or direct, target zone
 
 def minute_bucket(minute: float) -> str:
-    # map minute to a coarse game phase bucket
+    # group the minute into a phase of the game
     try:
         m = float(minute)
     except Exception:
@@ -55,7 +60,7 @@ def minute_bucket(minute: float) -> str:
 
 
 def infer_delivery_type(row: pd.Series) -> str:
-    # simplify pass qualifiers into inswing / outswing / straight / other
+    # turn the pass details into inswing / outswing / straight / other
     if row.get("pass.inswinging") is True:
         return "inswing"
     if row.get("pass.outswinging") is True:
@@ -66,7 +71,7 @@ def infer_delivery_type(row: pd.Series) -> str:
 
 
 def infer_short_corner(row: pd.Series) -> int:
-    # flag short corners where the pass end x is before the penalty area
+    # short corner: the pass ends before the penalty area
     loc = row.get("pass.end_location")
     if not isinstance(loc, (list, tuple)) or len(loc) < 2:
         return 0
@@ -80,7 +85,7 @@ def infer_short_corner(row: pd.Series) -> int:
 
 
 def infer_end_zone(row: pd.Series) -> str:
-    # landing zone of the delivery: near / central / far / unknown
+    # where the delivery lands: near / central / far / unknown
     loc = row.get("pass.end_location")
     if not isinstance(loc, (list, tuple)) or len(loc) < 2:
         return "unknown"
@@ -90,33 +95,69 @@ def infer_end_zone(row: pd.Series) -> str:
     except Exception:
         return "unknown"
 
-    # short or very short deliveries that do not enter the box
+    # short deliveries that never reach the box
     if x < PEN_X_MIN:
         return "central"
 
     dy = y - GOAL_Y_CENTER
 
-    # central band around the goal centre line
+    # middle band in line with the goal
     if abs(dy) <= 6.0:
         return "central"
 
     side = row.get("corner_side", None)
 
-    # near / far defined relative to corner side
+    # near / far depend on which side the corner is taken from
     if side == "left":
         return "near" if dy < -6.0 else "far"
     elif side == "right":
         return "near" if dy > 6.0 else "far"
 
-    # fallback if side is missing
+    # if the side is unknown
     return "near" if dy < -6.0 else "far"
+
+
+def infer_delivery_depth(row: pd.Series) -> float:
+    # yards from the goal line to where the delivery ends
+    loc = row.get("pass.end_location")
+    if not isinstance(loc, (list, tuple)) or len(loc) < 2:
+        return math.nan
+    try:
+        x = float(loc[0])
+    except Exception:
+        return math.nan
+    return float(min(max(GOAL_X - x, 0.0), 40.0))
+
+
+def infer_delivery_high(row: pd.Series) -> int:
+    # 1 for a lofted delivery, 0 for a low one
+    return 1 if row.get("pass.height.name") == "High Pass" else 0
+
+
+def add_derived_features(df: pd.DataFrame) -> pd.DataFrame:
+    # spare attackers per zone, once each defender there takes one. Used by both
+    # training and the app, so both build them the same way.
+    out = df.copy()
+    for col, (att_col, def_col) in MATCHUP_ZONES.items():
+        if att_col in out.columns and def_col in out.columns:
+            att = pd.to_numeric(out[att_col], errors="coerce")
+            dfn = pd.to_numeric(out[def_col], errors="coerce")
+            out[col] = (att - dfn).clip(lower=0.0)
+    return out
+
+
+def _lateral_bands(y: np.ndarray, corner_side: str):
+    # near / far: more than 6 yards either side of the goal centre, by corner side
+    if corner_side == "right":
+        return y > GOAL_Y_CENTER + 6.0, y < GOAL_Y_CENTER - 6.0
+    return y < GOAL_Y_CENTER - 6.0, y > GOAL_Y_CENTER + 6.0
 
 
 def add_score_state(
     df_events_time: Optional[pd.DataFrame],
     df_corners: pd.DataFrame,
 ) -> pd.DataFrame:
-    # add score_state (winning / drawing / losing) for attacking team at each corner
+    # add score_state (winning / drawing / losing) for the attacking team
     df = df_corners.copy()
 
     if df_events_time is None or df_events_time.empty:
@@ -174,13 +215,13 @@ def add_score_state(
     return df
 
 
-# geometry for defensive and attacking features
+# player positions to features
 
 def _compute_def_att_features_for_corner(
     df_ff: pd.DataFrame,
     corner_side: str,
 ) -> Dict[str, float]:
-    # compute defensive and attacking features for a single corner freeze frame
+    # defensive and attacking features for one corner's freeze frame
     df_ff = df_ff.dropna(subset=["x", "y"])
     if df_ff.empty:
         return {
@@ -198,9 +239,11 @@ def _compute_def_att_features_for_corner(
             "n_blockers": 0,
             "n_edge_of_box": 0,
             "n_rest_defence": 0,
+            **{col: 0 for col in DEFENDER_ZONE_FEATURES},
+            "n_def_outside_box": 0,
         }
 
-    # split attackers / defenders
+    # split into attackers and defenders
     teammate_mask = df_ff["teammate"].astype(bool)
     atk = df_ff[teammate_mask].copy()
     deff = df_ff[~teammate_mask].copy()
@@ -217,12 +260,12 @@ def _compute_def_att_features_for_corner(
     x_d = deff["x"].to_numpy()
     y_d = deff["y"].to_numpy()
 
-    # goalkeeper mask among defenders
+    # which defender is the keeper
     is_gk_mask = np.zeros_like(x_d, dtype=bool)
 
     n_attackers = len(x_a)
 
-    # goalkeeper position (used for gk_start_line and blockers)
+    # keeper position (for gk_start_line and blockers)
     gk_start_line = math.nan
     gk_x = float(GOAL_X)
     gk_y = float(GOAL_Y_CENTER)
@@ -230,13 +273,13 @@ def _compute_def_att_features_for_corner(
     if len(deff) > 0:
         gk_idx: Optional[int] = None
 
-        # prefer explicit keeper flag from statsbomb 360
+        # use StatsBomb's keeper flag if there is one
         if "keeper" in deff.columns:
             keeper_mask = deff["keeper"].fillna(False).astype(bool).to_numpy()
             if keeper_mask.any():
                 gk_idx = int(np.nonzero(keeper_mask)[0][0])
 
-        # fallback: deepest defender in a goalkeeper zone
+        # otherwise: the deepest defender near goal
         if gk_idx is None and x_d.size > 0:
             mask_gk_zone = x_d >= GK_MIN_X_IN_BOX
             if not mask_gk_zone.any():
@@ -253,9 +296,9 @@ def _compute_def_att_features_for_corner(
 
         gk_start_line = float(GOAL_X - gk_x)
 
-    # attacking classification: unique roles, then scale to 10
+    # attackers: one zone each, then scaled to 10 players
     if n_attackers == 0:
-        # no visible attackers, treat as all staying back
+        # no attackers visible: treat them all as staying back
         n_att_near = 0
         n_att_central = 0
         n_att_far = 0
@@ -264,15 +307,15 @@ def _compute_def_att_features_for_corner(
         n_rest_defence = 10
         in_box_a = np.zeros(0, dtype=bool)
     else:
-        # base masks
+        # starting masks
         in_box_a = (x_a >= PEN_X_MIN) & (y_a >= PEN_Y_MIN) & (y_a <= PEN_Y_MAX)
 
-        # blockers close to goalkeeper
+        # blockers: close to the keeper
         dist_to_gk = np.sqrt((x_a - gk_x) ** 2 + (y_a - gk_y) ** 2)
         GK_BLOCK_RADIUS = 3.0
         block_mask = in_box_a & (dist_to_gk <= GK_BLOCK_RADIUS)
 
-        # edge-of-box rectangle, excluding blockers
+        # penalty-spot rectangle, not counting blockers
         edge_mask_a = (
             (x_a >= EDGE_X_MIN)
             & (x_a <= EDGE_X_MAX)
@@ -281,19 +324,11 @@ def _compute_def_att_features_for_corner(
         )
         effective_edge_mask = edge_mask_a & (~block_mask)
 
-        # remaining in-box attackers for near / central / far allocation
+        # the rest of the box, split into near / central / far
         remaining_in_box = in_box_a & (~block_mask) & (~effective_edge_mask)
 
-        # lateral bands for remaining in-box players
-        if corner_side == "left":
-            near_band = y_a < GOAL_Y_CENTER - 6.0
-            far_band = y_a > GOAL_Y_CENTER + 6.0
-        elif corner_side == "right":
-            near_band = y_a > GOAL_Y_CENTER + 6.0
-            far_band = y_a < GOAL_Y_CENTER - 6.0
-        else:
-            near_band = y_a < GOAL_Y_CENTER - 6.0
-            far_band = y_a > GOAL_Y_CENTER + 6.0
+        # sideways bands for those players
+        near_band, far_band = _lateral_bands(y_a, corner_side)
 
         central_band = (~near_band) & (~far_band)
 
@@ -301,14 +336,14 @@ def _compute_def_att_features_for_corner(
         far_mask = remaining_in_box & far_band
         central_mask = remaining_in_box & central_band
 
-        # raw unique counts per role
+        # raw counts per zone
         n_blockers_raw = int(block_mask.sum())
         n_edge_raw = int(effective_edge_mask.sum())
         n_near_raw = int(near_mask.sum())
         n_central_raw = int(central_mask.sum())
         n_far_raw = int(far_mask.sum())
 
-        # anything not in above buckets is rest defence
+        # everyone else is outside the box
         n_rest_raw = int(
             n_attackers
             - (n_blockers_raw + n_edge_raw + n_near_raw + n_central_raw + n_far_raw)
@@ -325,7 +360,7 @@ def _compute_def_att_features_for_corner(
             "n_rest_defence": n_rest_raw,
         }
 
-        # scale to a synthetic 10-player allocation
+        # scale to 10 outfield players
         total_roles = sum(raw_counts.values())
         if total_roles <= 0:
             n_att_near = 0
@@ -340,7 +375,7 @@ def _compute_def_att_features_for_corner(
             remainder = 10 - sum(base.values())
 
             if remainder > 0:
-                # add to roles with largest fractional parts
+                # add to the zones with the largest remainders
                 frac = {k: quotas[k] - base[k] for k in raw_counts.keys()}
                 for k in sorted(frac.keys(), key=lambda kk: frac[kk], reverse=True):
                     if remainder <= 0:
@@ -348,7 +383,7 @@ def _compute_def_att_features_for_corner(
                     base[k] += 1
                     remainder -= 1
             elif remainder < 0:
-                # remove from roles with smallest fractional parts
+                # take from the zones with the smallest remainders
                 frac = {k: quotas[k] - base[k] for k in raw_counts.keys()}
                 for k in sorted(frac.keys(), key=lambda kk: frac[kk]):
                     if remainder >= 0:
@@ -364,20 +399,38 @@ def _compute_def_att_features_for_corner(
             n_edge_of_box = base["n_edge_of_box"]
             n_rest_defence = base["n_rest_defence"]
 
-    # defensive classification
+    # defenders
     in_box_d = (x_d >= PEN_X_MIN) & (y_d >= PEN_Y_MIN) & (y_d <= PEN_Y_MAX)
 
-    # defenders in six-yard box
+    # defenders in the attackers' zones (not the keeper), to see where we outnumber them
+    spot_d = (
+        (x_d >= EDGE_X_MIN)
+        & (x_d <= EDGE_X_MAX)
+        & (y_d >= EDGE_Y_MIN)
+        & (y_d <= EDGE_Y_MAX)
+        & (~is_gk_mask)
+    )
+    zoned_d = in_box_d & (~is_gk_mask) & (~spot_d)
+    near_d, far_d = _lateral_bands(y_d, corner_side)
+    def_near = int((zoned_d & near_d).sum())
+    def_far = int((zoned_d & far_d).sum())
+    def_central = int((zoned_d & ~near_d & ~far_d).sum())
+    def_spot = int(spot_d.sum())
+
+    # visible opponents outside their box: where a counter-attack starts
+    n_def_outside_box = int(((~in_box_d) & (~is_gk_mask)).sum())
+
+    # defenders in the six-yard box
     in_6yd = in_box_d & (x_d >= SIX_YARD_X_MIN)
     def_in_6yd = int(in_6yd.sum())
 
-    # players on posts
+    # defenders on the posts
     dist_l = np.sqrt((x_d - POST_L[0]) ** 2 + (y_d - POST_L[1]) ** 2)
     dist_r = np.sqrt((x_d - POST_R[0]) ** 2 + (y_d - POST_R[1]) ** 2)
     on_posts = (dist_l <= POST_RADIUS) | (dist_r <= POST_RADIUS)
     players_on_posts = int(on_posts.sum())
 
-    # defensive line height and vertical spread
+    # how deep the defenders stand, and how spread out
     in_box_outfield = in_box_d & (~is_gk_mask)
 
     if in_box_outfield.any():
@@ -394,7 +447,7 @@ def _compute_def_att_features_for_corner(
         def_line_height = math.nan
         def_spread_y = 0.0
 
-    # edge-of-box defensive density
+    # defenders around the penalty spot
     edge_mask_d = (
         (x_d >= EDGE_X_MIN)
         & (x_d <= EDGE_X_MAX)
@@ -403,14 +456,14 @@ def _compute_def_att_features_for_corner(
     )
     def_edge_density = int(edge_mask_d.sum())
 
-    # marking ratio in the penalty area
+    # defenders per attacker in the penalty area
     n_def_pen = int(in_box_d.sum())
     n_att_pen = int(in_box_a.sum()) if n_attackers > 0 else 0
     marking_ratio_pen = (
         float(n_def_pen) / float(n_att_pen) if n_att_pen > 0 else math.nan
     )
 
-    # maximum attackers assigned to the same defender by nearest neighbour pairing
+    # most attackers paired to one defender (nearest neighbour)
     if n_def_pen > 0 and n_att_pen > 0:
         A = np.column_stack([x_d[in_box_d], y_d[in_box_d]])
         B = np.column_stack([x_a[in_box_a], y_a[in_box_a]])
@@ -437,10 +490,15 @@ def _compute_def_att_features_for_corner(
         "n_blockers": n_blockers,
         "n_edge_of_box": n_edge_of_box,
         "n_rest_defence": n_rest_defence,
+        "def_near": def_near,
+        "def_central": def_central,
+        "def_far": def_far,
+        "def_spot": def_spot,
+        "n_def_outside_box": n_def_outside_box,
     }
 
 
-# stage 3 entry point: one row per corner with defensive, attacking, context features
+# stage 3: one row per corner with defensive, attacking and context features
 
 def build_defensive_features(
     df_corners: pd.DataFrame,
@@ -471,6 +529,10 @@ def build_defensive_features(
         df_corners_ctx.apply(infer_short_corner, axis=1).astype("int64")
     )
     df_corners_ctx["end_zone"] = df_corners_ctx.apply(infer_end_zone, axis=1)
+    df_corners_ctx["delivery_depth"] = df_corners_ctx.apply(infer_delivery_depth, axis=1)
+    df_corners_ctx["delivery_high"] = (
+        df_corners_ctx.apply(infer_delivery_high, axis=1).astype("int64")
+    )
 
     required = ["match_id", "corner_uuid", "corner_side"]
     for col in required:
@@ -503,6 +565,7 @@ def build_defensive_features(
         on=["match_id", "corner_uuid"],
         how="inner",
     )
+    df_features = add_derived_features(df_features)
 
     expected = set(DEFENSIVE_FEATURES + ATTACKING_NUMERIC_FEATURES)
     missing = [c for c in expected if c not in df_features.columns]
@@ -519,10 +582,10 @@ def build_defensive_features(
 
 
 
-# pitch drawing helpers for visualisations
+# pitch drawing for the figures
 
 def _draw_full_pitch(ax) -> None:
-    # draw a full statsbomb style pitch (120 x 80)
+    # draw a full StatsBomb pitch (120 x 80)
     x_min, x_max = 0.0, 120.0
     y_min, y_max = 0.0, 80.0
 
@@ -580,11 +643,11 @@ def plot_attacking_direction_pitch(
     out_path: Optional[str | Path] = None,
     show: bool = False,
 ) -> None:
-    # plot a full pitch with example attacking directions for corners
+    # full pitch showing which way corners are attacked
     fig, ax = plt.subplots(figsize=(9, 5))
     _draw_full_pitch(ax)
 
-    # corner deliveries from left and right
+    # corners from the left and the right
     corner_from_right = (GOAL_X, 0.0)
     target_from_right = (GOAL_X - 18.0, GOAL_Y_LOW - 4.0)
 
@@ -604,7 +667,7 @@ def plot_attacking_direction_pitch(
         arrowprops=dict(arrowstyle="->", linewidth=2.0, color="green"),
     )
 
-    # global attacking direction arrow
+    # arrow for the attacking direction
     attack_arrow_start = (5.0, GOAL_Y_CENTER)
     attack_arrow_end = (GOAL_X - 5.0, GOAL_Y_CENTER)
 
@@ -615,7 +678,7 @@ def plot_attacking_direction_pitch(
         arrowprops=dict(arrowstyle="->", linewidth=2.5, color="black"),
     )
 
-    # dummy lines for legend labels
+    # invisible lines for the legend
     ax.plot([], [], color="red", label="Corner from right")
     ax.plot([], [], color="green", label="Corner from left")
     ax.plot([], [], color="black", label="Attacking direction")
@@ -641,11 +704,11 @@ def plot_zone_definitions_pitch(
     out_path: Optional[str | Path] = None,
     show: bool = False,
 ) -> None:
-    # plot full pitch with the three delivery zones used by infer_end_zone
+    # full pitch with the three target zones used by infer_end_zone
     fig, ax = plt.subplots(figsize=(9, 5))
     _draw_full_pitch(ax)
 
-    # vertical band limits (matching infer_end_zone)
+    # band limits (same as infer_end_zone)
     y_near_min = PEN_Y_MIN
     y_near_max = GOAL_Y_CENTER - 6.0
     y_central_min = GOAL_Y_CENTER - 6.0
@@ -653,7 +716,7 @@ def plot_zone_definitions_pitch(
     y_far_min = GOAL_Y_CENTER + 6.0
     y_far_max = PEN_Y_MAX
 
-    # horizontal extent of delivery zones inside the box
+    # how far the zones reach into the box
     x_min = PEN_X_MIN
     x_max = GOAL_X
 
@@ -731,7 +794,7 @@ def plot_archetype_example_freeze_frames(
     out_dir: Optional[str | Path] = None,
     prefix: str = "archetype_example_freeze_frames",
 ) -> pd.DataFrame:
-    # plot one example 360 freeze frame for each defensive archetype
+    # one example freeze frame for each defensive shape
     if df_corners is None or df_corners.empty:
         print("plot_archetype_example_freeze_frames: df_corners is empty, skipping")
         return pd.DataFrame()
@@ -768,11 +831,11 @@ def plot_archetype_example_freeze_frames(
             f"{missing_360}"
         )
 
-    # work on copies to avoid side effects
+    # work on copies
     df_cluster = df_clustered.copy()
     df_corner_map = df_corners[["match_id", "event_uuid", "corner_uuid"]].drop_duplicates()
 
-    # keep rows with a proper archetype name
+    # keep rows with a proper shape name
     df_cluster = df_cluster[df_cluster["A_name"].notna()]
     df_cluster = df_cluster[df_cluster["A_name"] != "Unknown"]
 
@@ -786,14 +849,14 @@ def plot_archetype_example_freeze_frames(
             print("plot_archetype_example_freeze_frames: no rows with A_confidence")
             return pd.DataFrame()
 
-    # decide ordering of archetypes for panels
+    # order of the panels
     archetype_values = df_cluster["A_name"].unique().tolist()
-    preferred_order = ["Man", "Hybrid", "Zonal"]
+    preferred_order = ["Posts covered", "Deep line", "High line"]
     ordered = [a for a in preferred_order if a in archetype_values]
     ordered += [a for a in sorted(archetype_values) if a not in ordered]
     archetypes = ordered
 
-    # pick one representative corner per archetype
+    # one example corner per shape
     example_rows = []
     for a_name in archetypes:
         df_a = df_cluster[df_cluster["A_name"] == a_name]
@@ -820,7 +883,7 @@ def plot_archetype_example_freeze_frames(
 
     df_examples = pd.DataFrame(example_rows)
 
-    # attach event_uuid for the selected corners
+    # add event_uuid for the chosen corners
     df_examples = df_examples.merge(
         df_corner_map,
         on=["match_id", "corner_uuid"],
@@ -838,7 +901,7 @@ def plot_archetype_example_freeze_frames(
         print("plot_archetype_example_freeze_frames: no examples with event_uuid")
         return df_examples
 
-    # pull the 360 rows for those events
+    # their 360 rows
     df_examples["event_uuid"] = df_examples["event_uuid"].astype(str)
     df_360_clean = df_360_clean.copy()
     df_360_clean["event_uuid"] = df_360_clean["event_uuid"].astype(str)
@@ -856,7 +919,7 @@ def plot_archetype_example_freeze_frames(
         )
         return df_examples
 
-    # build the figure
+    # draw the figure
     n_arch = len(df_examples["A_name"].unique())
     fig, axes = plt.subplots(
         1,
@@ -897,7 +960,7 @@ def plot_archetype_example_freeze_frames(
             label="Defenders",
         )
 
-        # highlight goalkeeper if available
+        # highlight the keeper if known
         if "keeper" in subset.columns:
             gk_mask = (~teammate_mask) & subset["keeper"].fillna(False).astype(bool)
             gk = subset[gk_mask]
@@ -914,7 +977,7 @@ def plot_archetype_example_freeze_frames(
         ax.set_xticks([])
         ax.set_yticks([])
 
-    # single legend at the bottom
+    # one legend at the bottom
     handles, labels = axes[0].get_legend_handles_labels()
     if handles:
         fig.legend(
