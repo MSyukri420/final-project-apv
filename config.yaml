@@ -3,96 +3,82 @@ project:
   random_seed: 15
 
 paths:
-  competitions: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/competitions.json"
-  matches: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/matches/"
-  lineups: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/lineups/"
-  events: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/events/"
-  three_sixty: "C:/Users/Syukri/Desktop/Github Repo/Statsbomb/data/three-sixty/"
+  # StatsBomb open data, inside this project
+  competitions: "Statsbomb/data/competitions.json"
+  matches: "Statsbomb/data/matches/"
+  lineups: "Statsbomb/data/lineups/"
+  events: "Statsbomb/data/events/"
+  three_sixty: "Statsbomb/data/three-sixty/"
   models: "models/"
   outputs: "outputs/"
+  # evaluation tables and figures
+  reports: "outputs/reports/"
 
 dataset:
   comp_seasons:
+    # all competitions train the final models; testing leaves out a match or a competition
     train:
       - [43, 106]   # World Cup 2022
       - [72, 107]   # Womens World Cup 2023
       - [55, 43]    # Euro 2020
-      - [9, 281]    # Bundesliga 21/22
-      - [53, 106]   # Womens Euro (old)
-      - [53, 315]   # Womens Euro (new)
-      - [55, 282]   # Euro 2024 (holdout)
-    test:
-      # - [55, 282]   # Euro 2024 (holdout)
+      - [9, 281]    # Bundesliga 2023/24
+      - [53, 106]   # Womens Euro 2022
+      - [53, 315]   # Womens Euro 2025
+      - [55, 282]   # Euro 2024
+      - [7, 108]    # Ligue 1 2021/22
+      - [7, 235]    # Ligue 1 2022/23
+      - [11, 90]    # La Liga 2020/21
+      # left out: MLS 2023 [44, 107], whose corner freeze frames show too few players
+      # (17-18) to count attackers reliably, and the African Cup of Nations 2023 (almost
+      # no 360 data)
+    test: []
 
 targets:
-  horizon_secs: 60.0
+  # outcomes count within this many seconds, in our possession after the corner
+  # (for) or the opponent's next one (against)
+  horizon_secs: 60
+  # a "good chance" is a shot worth at least this much xG
   xg_threshold: 0.04
-  strict_penalty_link: false
+  # other time windows, for the sensitivity report
+  sensitivity_horizons: [30, 60, 90]
 
 clustering:
+  # defensive shapes use two rules; k-means (k etc.) is only the benchmark
+  min_on_posts: 1        # this many defenders on a post -> "Posts covered"
+  high_line_yards: 7.5   # box defenders within this many yards of goal -> "Deep line", else "High line"
   k: 3
   max_iter: 500
   n_init: 20
   random_state: 15
   temperature: 0.3
 
-
 models:
-  chance_for:
-    type: "logreg_binary"
-    C: 1.0
-    max_iter: 1000
-    class_weight: "balanced"
-    solver: "liblinear"
-    cv_folds: 5
-    min_positive_per_model: 30        
-    skip_sparse_archetypes: true
-
-  chance_against:
-    type: "logreg_binary"
-    C: 1.0
-    max_iter: 1000
-    class_weight: "balanced"
-    solver: "liblinear"
-    cv_folds: 5
-    min_positive: 15                  
-    pooled_only: true
-
-
-  shot_for_any:
-    type: "logreg_binary"
-    C: 1.0
-    max_iter: 1000
-    class_weight: "balanced"
-    solver: "liblinear"
-    cv_folds: 5
-    min_positive_per_model: 40       
-    skip_sparse_archetypes: true
-
-  shot_against_any:
-    type: "logreg_binary"
-    C: 1.0
-    max_iter: 1000
-    class_weight: "balanced"
-    solver: "liblinear"
-    cv_folds: 5
-    min_positive: 20                
-    pooled_only: true
+  # cross-validation folds, grouped by match so one game is never on both sides
+  cv_folds: 5
+  # regularisation strengths to try, picked by cross-validation
+  logistic_C_grid: [0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0]
+  poisson_alpha_grid: [0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0, 30.0]
+  # bootstrap models for the ranges shown in the app
+  bootstrap_samples: 100
 
 apv:
+  # APV_net = alpha * xG created - beta * xG conceded (in goals)
   alpha: 1.0
   beta: 1.0
 
 recommendations:
-  min_samples: 10
+  min_samples: 10  # default minimum corners for a playbook group
 
+app:
+  # how the first-contact model is labelled, judged on unseen competitions: both met
+  # = "tested"; better than the average but short of these = "rough guide";
+  # no better than the average = hidden
+  estimate_min_auc: 0.60
+  estimate_min_brier_skill: 0.02
+  # a quick win needs this share of bootstrap models to agree it helps
+  suggestion_agreement: 0.9
 
 explainability:
-  shap_sample_size: 500
+  # real corners the planner averages its estimates over; keep them all
+  shap_sample_size: 5000
   enable_shap: true
-  enable_counterfactuals: true
-
-
-logging:
-  level: "INFO"
-  print_stage_summaries: true

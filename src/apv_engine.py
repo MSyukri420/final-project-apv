@@ -8,20 +8,18 @@ import numpy as np
 import pandas as pd
 import shap
 
-from src.apv import add_apv_columns
-from src.constants import MODELLING_TARGETS, OUTCOME_FEATURES
+from src.apv import add_apv_columns, predict_outcomes
+from src.constants import CHAIN_TARGETS, MODELLING_TARGETS, SHAPE_ORDER, all_model_features
+from src.feat_eng import add_derived_features
 from src.insights import (
     build_coach_explanation,
-    select_best_setups,
-    suggest_tweaks_simple,
-    PATTERN_GROUP_COLS,
     _value_label,
     _risk_label,
     _value_risk_tag,
 )
 
 
-# Coach friendly labels for key features used in SHAP explanations
+# readable labels for the features shown in explanations
 _FEATURE_LABEL_MAP: Dict[str, str] = {
     "def_line_height": "Defensive line height",
     "def_in_6yd": "Defenders in six yard box",
@@ -33,16 +31,31 @@ _FEATURE_LABEL_MAP: Dict[str, str] = {
     "n_blockers": "Blockers around markers",
     "n_edge_of_box": "Players on edge of box",
     "n_rest_defence": "Players in rest defence",
+    "free_att_near": "Spare attackers at near post",
+    "free_att_central": "Spare attackers in central zone",
+    "free_att_far": "Spare attackers at far post",
+    "free_att_spot": "Spare attackers around penalty spot",
+    "def_near": "Defenders at near post",
+    "def_central": "Defenders in central zone",
+    "def_far": "Defenders at far post",
+    "def_spot": "Defenders around penalty spot",
+    "n_def_outside_box": "Opponents outside the box",
+    "delivery_depth": "Delivery depth",
+    "delivery_high": "High delivery",
     "delivery_type": "Delivery type",
     "end_zone": "Delivery end zone",
     "short_corner_flag": "Short corner flag",
 }
 
+# the explanation ("what the model sees") is about winning the first contact
+EXPLAIN_TARGET = "first_contact_attack"
+
+# estimates average over up to this many real situations per defensive shape
+MAX_SITUATIONS = 50
+
 
 class APVEngine:
-    """
-    Runtime engine that works only with trained models and artefacts.
-    """
+    """Scores corner setups using the trained models and app files."""
 
     def __init__(self, cfg: Dict[str, Any]) -> None:
         self.cfg = cfg or {}
@@ -62,8 +75,13 @@ class APVEngine:
         project_cfg = self.cfg.get("project", {}) or {}
         self.random_seed = int(project_cfg.get("random_seed", 42))
 
-        # Runtime state
+        # state
         self.models: Dict[str, Any] = {}
+        self.bootstrap: List[Dict[str, Any]] = []
+        self.delivery_defaults: Optional[pd.DataFrame] = None
+        # real corners with their outcomes, and the evaluation report
+        self.corner_outcomes: pd.DataFrame = pd.DataFrame()
+        self.evaluation: pd.DataFrame = pd.DataFrame()
 
         self.pattern_library: Optional[pd.DataFrame] = None
         self.apv_baselines: Optional[pd.DataFrame] = None
@@ -73,13 +91,15 @@ class APVEngine:
 
         self.feature_columns: List[str] = []
         self.archetype_defaults: Dict[str, Dict[str, Any]] = {}
+        self._archetype_defaults_table: Optional[pd.DataFrame] = None
 
-        # Runtime SHAP state (lazy initialised)
+        # SHAP, built on first use
         self._shap_explainer: Any = None
         self._shap_feature_names: List[str] = []
         self._shap_preprocess: Optional[Any] = None
+        self._shap_columns: List[str] = []
 
-        # Load everything
+        # load everything
         self._load_models()
         self._load_artefacts()
         self._build_archetype_defaults()
@@ -101,14 +121,10 @@ class APVEngine:
             f"archetypes: {self.get_archetypes()}"
         )
 
-    # ============================================================
-    # Loading models and artefacts
-    # ============================================================
+    # loading models and app files
 
     def _load_models(self) -> None:
-        """
-        Load pooled logistic regression pipelines for all modelling targets.
-        """
+        """Load the outcome models and the bootstrap models for the ranges."""
         self.models = {}
         for target_name in MODELLING_TARGETS:
             path = self.models_dir / f"{target_name}_pooled.joblib"
@@ -116,13 +132,18 @@ class APVEngine:
                 print(f"[APVEngine] Model not found for {target_name}: {path}")
                 continue
             self.models[target_name] = joblib.load(path)
-            print(f"[APVEngine] Loaded model for {target_name} from {path}")
+        print(f"[APVEngine] Loaded models: {sorted(self.models)}")
+
+        boot_path = self.models_dir / "bootstrap_ensemble.joblib"
+        if boot_path.exists():
+            self.bootstrap = joblib.load(boot_path)
+            print(f"[APVEngine] Loaded {len(self.bootstrap)} bootstrap model pairs")
+        else:
+            print("[APVEngine] No bootstrap ensemble found - ratings will have no ranges.")
 
     def _load_artefacts(self) -> None:
-        """
-        Load pattern library, APV baselines, feature baselines and SHAP background.
-        """
-        # Pattern library
+        """Load the setup library, APV baselines, feature baselines and SHAP background."""
+        # setup library
         patterns_path = self.artefacts_dir / "patterns" / "pattern_library.csv"
         if patterns_path.exists():
             self.pattern_library = pd.read_csv(patterns_path)
@@ -137,7 +158,7 @@ class APVEngine:
             )
             self.pattern_library = pd.DataFrame()
 
-        # APV baselines and feature baselines
+        # APV and feature baselines
         baselines_dir = self.artefacts_dir / "baselines"
         apv_baselines_path = baselines_dir / "apv_baselines.csv"
         if apv_baselines_path.exists():
@@ -169,32 +190,40 @@ class APVEngine:
         else:
             print("[APVEngine] Feature baselines not found.")
 
-        # SHAP background (used only for archetype defaults, SHAP itself is not used)
+        archetype_defaults_path = baselines_dir / "archetype_defaults.csv"
+        self._archetype_defaults_table = (
+            pd.read_csv(archetype_defaults_path) if archetype_defaults_path.exists() else None
+        )
+
+        outcomes_path = self.artefacts_dir / "patterns" / "corner_outcomes.csv"
+        if outcomes_path.exists():
+            self.corner_outcomes = pd.read_csv(outcomes_path)
+
+        reports_dir = Path((self.cfg.get("paths", {}) or {}).get("reports", "reports")).expanduser()
+        evaluation_path = reports_dir / "train" / "model_evaluation_train.csv"
+        if evaluation_path.exists():
+            self.evaluation = pd.read_csv(evaluation_path)
+
+        delivery_defaults_path = baselines_dir / "delivery_defaults.csv"
+        if delivery_defaults_path.exists():
+            self.delivery_defaults = pd.read_csv(delivery_defaults_path)
+
+        # SHAP background: real corners covering every model input
         explain_dir = self.artefacts_dir / "explainability"
-        shap_bg_path = explain_dir / "shap_background_chance_for.csv"
+        shap_bg_path = explain_dir / "shap_background.csv"
         if shap_bg_path.exists():
             self.shap_background = pd.read_csv(shap_bg_path)
             print(
                 "[APVEngine] Loaded SHAP background from "
                 f"{shap_bg_path} with shape {self.shap_background.shape}"
             )
-            self.feature_columns = list(self.shap_background.columns)
         else:
-            print(
-                "[APVEngine] SHAP background not found. "
-                "Falling back to OUTCOME_FEATURES for feature list."
-            )
+            print("[APVEngine] SHAP background not found - explanations disabled.")
             self.shap_background = None
-            outcome_cfg = OUTCOME_FEATURES.get("outcome_chance_for", {}) or {}
-            num_cols = outcome_cfg.get("numeric") or []
-            cat_cols = outcome_cfg.get("categorical") or []
-            self.feature_columns = list(dict.fromkeys(list(num_cols) + list(cat_cols)))
+        self.feature_columns = all_model_features()
 
     def _ensure_pattern_library_loaded(self) -> None:
-        """
-        Make sure pattern_library is non empty. If it is empty, try to reload
-        from artefacts/patterns/pattern_library.csv.
-        """
+        """Reload the setup library from disk if it is empty."""
         if self.pattern_library is not None and not self.pattern_library.empty:
             return
 
@@ -214,25 +243,38 @@ class APVEngine:
 
     def _build_archetype_defaults(self) -> None:
         """
-        Build default feature rows per defensive archetype from the SHAP background.
+        Typical opponent and match situation per defensive shape (medians or most
+        common values); the coach's choices are applied on top.
         """
         self.archetype_defaults = {}
+        table = self._archetype_defaults_table
+        if table is not None and "A_name" in table.columns:
+            for rec in table.to_dict("records"):
+                self.archetype_defaults[str(rec["A_name"])] = rec
+            return
 
-        if self.shap_background is not None and "A_name" in self.shap_background.columns:
-            for archetype, group in self.shap_background.groupby("A_name"):
-                row = group.iloc[0]
-                self.archetype_defaults[str(archetype)] = row.to_dict()
+        # otherwise: build it from the SHAP background
+        bg = self.shap_background
+        if bg is not None and "A_name" in bg.columns:
+            for archetype, group in bg.groupby("A_name"):
+                rec: Dict[str, Any] = {}
+                for col in group.columns:
+                    s = group[col].dropna()
+                    if s.empty:
+                        continue
+                    rec[col] = s.median() if pd.api.types.is_numeric_dtype(s) else s.mode().iloc[0]
+                rec["A_name"] = archetype
+                self.archetype_defaults[str(archetype)] = rec
 
-    # ============================================================
-    # Public helpers
-    # ============================================================
+    # public helpers
 
     def get_archetypes(self) -> List[str]:
-        """
-        List defensive archetypes known to the engine.
-        """
+        """The defensive shapes the engine knows."""
         if self.apv_baselines is not None and "A_name" in self.apv_baselines.columns:
             return sorted(self.apv_baselines["A_name"].unique().tolist())
+
+        if self.archetype_defaults:
+            return sorted(self.archetype_defaults)
 
         if self.shap_background is not None and "A_name" in self.shap_background.columns:
             return sorted(self.shap_background["A_name"].unique().tolist())
@@ -242,16 +284,12 @@ class APVEngine:
 
         return []
 
-    # ============================================================
-    # Runtime SHAP helpers
-    # ============================================================
+    # SHAP explanations
 
     def _ensure_shap_explainer(self) -> None:
         """
-        Lazily build a SHAP explainer for the pooled chance_for model.
-
-        This uses the logistic regression step on top of the preprocessed,
-        numeric feature space to avoid issues with string features.
+        Build the SHAP explainer for the explained model on first use, working on the
+        model's numeric inputs (after encoding) to avoid problems with text features.
         """
         if self._shap_explainer is not None:
             return
@@ -260,16 +298,16 @@ class APVEngine:
             print("[APVEngine] shap package not available - runtime SHAP disabled.")
             return
 
-        model = self.models.get("chance_for")
+        model = self.models.get(EXPLAIN_TARGET)
         if model is None:
-            print("[APVEngine] chance_for model not loaded - runtime SHAP disabled.")
+            print(f"[APVEngine] {EXPLAIN_TARGET} model not loaded - runtime SHAP disabled.")
             return
 
         if self.shap_background is None or self.shap_background.empty:
             print("[APVEngine] No SHAP background - runtime SHAP disabled.")
             return
 
-        # We expect a Pipeline with 'preprocess' and 'clf' steps
+        # expects a pipeline with 'preprocess' and 'clf' steps
         if not hasattr(model, "named_steps"):
             print(
                 "[APVEngine] chance_for model is not a Pipeline with named_steps - "
@@ -287,21 +325,16 @@ class APVEngine:
             )
             return
 
-        # Use the same feature columns as training
-        cols = self.feature_columns or list(self.shap_background.columns)
-        try:
-            X_bg_raw = self.shap_background[cols].copy()
-        except KeyError:
-            cols = [c for c in cols if c in self.shap_background.columns]
-            if not cols:
-                print(
-                    "[APVEngine] SHAP background does not contain any feature columns - "
-                    "runtime SHAP disabled."
-                )
-                return
-            X_bg_raw = self.shap_background[cols].copy()
+        # same input columns as in training
+        cols = list(getattr(model, "feature_names_in_", self.feature_columns))
+        missing = [c for c in cols if c not in self.shap_background.columns]
+        if missing:
+            print(f"[APVEngine] SHAP background lacks {missing} - runtime SHAP disabled.")
+            return
+        X_bg_raw = self.shap_background[cols].copy()
+        self._shap_columns = cols
 
-        # Downsample background for speed
+        # fewer background rows, for speed
         max_bg = 200
         if len(X_bg_raw) > max_bg:
             X_bg_raw = X_bg_raw.sample(
@@ -309,18 +342,18 @@ class APVEngine:
             ).reset_index(drop=True)
 
         try:
-            # Transform raw features to the numeric feature space used by the model
+            # encode the inputs the way the model sees them
             X_bg_proc = preprocess.transform(X_bg_raw)
             if hasattr(X_bg_proc, "toarray"):
                 X_bg_proc_dense = X_bg_proc.toarray()
             else:
                 X_bg_proc_dense = np.asarray(X_bg_proc)
 
-            # LinearExplainer is appropriate for LogisticRegression
+            # LinearExplainer suits logistic regression
             self._shap_explainer = shap.LinearExplainer(clf, X_bg_proc_dense)
             self._shap_preprocess = preprocess
 
-            # Feature names from the preprocessor if available
+            # feature names from the preprocessor, if it has them
             if hasattr(preprocess, "get_feature_names_out"):
                 self._shap_feature_names = list(preprocess.get_feature_names_out())
             else:
@@ -345,16 +378,8 @@ class APVEngine:
         X_row: pd.DataFrame,
     ) -> Optional[pd.DataFrame]:
         """
-        Compute local SHAP values for a single feature row and return a coach
-        friendly summary DataFrame with columns:
-
-        - feature
-        - shap
-        - abs_shap
-        - direction ('positive' / 'negative')
-        - feature_label (human readable label)
-
-        Returns None if SHAP is not available.
+        SHAP values for the given rows, as a table with feature, shap, abs_shap,
+        direction ('positive' / 'negative') and feature_label. None if SHAP isn't available.
         """
         if X_row is None or X_row.empty:
             return None
@@ -365,17 +390,13 @@ class APVEngine:
         if self._shap_explainer is None or self._shap_preprocess is None:
             return None
 
-        # Align raw row with training feature columns
-        cols = self.feature_columns or list(X_row.columns)
-        try:
-            X_raw = X_row[cols].copy()
-        except KeyError:
-            cols = [c for c in cols if c in X_row.columns]
-            if not cols:
-                return None
-            X_raw = X_row[cols].copy()
+        # same columns as the model was trained on
+        cols = self._shap_columns
+        if any(c not in X_row.columns for c in cols):
+            return None
+        X_raw = X_row[cols].copy()
 
-        # Transform to the numeric feature space used during training
+        # encode them the way the model sees them
         try:
             X_proc = self._shap_preprocess.transform(X_raw)
             if hasattr(X_proc, "toarray"):
@@ -388,7 +409,7 @@ class APVEngine:
             print(f"[APVEngine] Failed to compute SHAP values: {exc}")
             return None
 
-        # Extract raw SHAP array
+        # the raw SHAP values
         values_arr = getattr(shap_values, "values", None)
         if values_arr is None:
             try:
@@ -398,19 +419,19 @@ class APVEngine:
 
         values_arr = np.asarray(values_arr)
 
-        # Handle possible shapes:
-        # (n_samples, n_features) or (n_samples, n_classes, n_features)
+        # shape is (rows, features) or (rows, classes, features); average over the rows,
+        # which are the same setup in many real situations
         if values_arr.ndim == 2:
-            vals = values_arr[0]
+            vals = values_arr.mean(axis=0)
         elif values_arr.ndim == 3:
-            # For binary classification, take the positive class (last index)
-            vals = values_arr[0, -1, :]
+            # yes/no model: take the "yes" class
+            vals = values_arr[:, -1, :].mean(axis=0)
         else:
             vals = values_arr.reshape(-1)
 
         vals = np.asarray(vals, dtype=float).reshape(-1)
 
-        # Use SHAP feature names if available, otherwise fall back
+        # SHAP's feature names if available
         feat_names = self._shap_feature_names or [
             f"f_{i}" for i in range(len(vals))
         ]
@@ -428,7 +449,7 @@ class APVEngine:
         df["abs_shap"] = df["shap"].abs()
         df["direction"] = np.where(df["shap"] >= 0, "positive", "negative")
 
-        # Map to coach friendly labels by matching substrings to base features
+        # readable labels, matched on the base feature name
         labels: List[str] = []
         for f in df["feature"]:
             label = None
@@ -437,7 +458,7 @@ class APVEngine:
                     label = human_label
                     break
             if label is None:
-                # Fallback: strip common prefixes and tidy up
+                # otherwise tidy up the raw name
                 label_clean = f
                 for prefix in ("num__", "cat__", "preprocess__", "clf__"):
                     label_clean = label_clean.replace(prefix, "")
@@ -446,7 +467,7 @@ class APVEngine:
             labels.append(label)
         df["feature_label"] = labels
 
-        # Remove exact zeros to keep explanations concise
+        # drop zeros to keep explanations short
         df = df[df["abs_shap"] > 0].reset_index(drop=True)
 
         if df.empty:
@@ -454,208 +475,232 @@ class APVEngine:
 
         return df
 
-    def _lookup_pattern_stats(
-        self,
-        pattern_features: Dict[str, Any],
-        min_corners: int = 3,
-    ) -> Optional[Dict[str, Any]]:
-        """
-        Try to find an exact match for this setup in the pattern library.
-
-        Matching uses PATTERN_GROUP_COLS, restricted to columns that are
-        actually present in pattern_library. Only patterns with at least
-        min_corners examples are considered.
-
-        Returns a dict with mean APV metrics if a match is found,
-        otherwise None.
-        """
-        self._ensure_pattern_library_loaded()
-
-        if self.pattern_library is None or self.pattern_library.empty:
-            return None
-
-        df = self.pattern_library
-
-        required_cols = {
-            "n_corners",
-            "APV_net_mean",
-            "PV_for_mean",
-            "PV_against_mean",
-        }
-        if not required_cols.issubset(df.columns):
-            return None
-
-        # Build a mask for equality on all grouping columns that exist
-        group_cols = [c for c in PATTERN_GROUP_COLS if c in df.columns]
-        if not group_cols:
-            return None
-
-        mask = pd.Series(True, index=df.index)
-        for col in group_cols:
-            val = pattern_features.get(col)
-            mask &= df[col] == val
-
-        df_match = df[mask]
-
-        if df_match.empty:
-            return None
-
-        # Enforce minimum sample size
-        df_match = df_match[df_match["n_corners"] >= int(min_corners)]
-        if df_match.empty:
-            return None
-
-        # If multiple matches, take the one with highest APV_net_mean
-        row = df_match.sort_values("APV_net_mean", ascending=False).iloc[0]
-
-        out: Dict[str, Any] = {
-            "PV_for": float(row.get("PV_for_mean")),
-            "PV_against": float(row.get("PV_against_mean")),
-            "APV_net": float(row.get("APV_net_mean")),
-            "P_chance_for": float(row.get("P_chance_for_mean", np.nan)),
-            "P_chance_against": float(row.get("P_chance_against_mean", np.nan)),
-            "P_shot_for_any": float(row.get("P_shot_for_any_mean", np.nan)),
-            "P_shot_against_any": float(row.get("P_shot_against_any_mean", np.nan)),
-            "n_corners": int(row.get("n_corners", 0)),
-        }
-        return out
-
-
-    # ============================================================
-    # Feature vector construction and prediction
-    # ============================================================
+    # building inputs and predicting
 
     def _build_feature_row_from_coach_input(
         self,
         coach_input: Dict[str, Any],
     ) -> pd.DataFrame:
         """
-        Build a single feature row from high level coach input.
-
-        Starts from an archetype default row (from SHAP background) and
-        overrides only the features the coach has specified.
+        One input row from the coach's setup: the typical row for the chosen shape, the
+        coach's choices on top, the typical depth and height for the delivery and target,
+        and the matchup features built the same way as in training.
         """
-        archetype = str(coach_input.get("A_name", "Hybrid"))
+        archetype = str(coach_input.get("A_name", SHAPE_ORDER[0]))
+        base: Dict[str, Any] = dict(self.archetype_defaults.get(archetype, {}))
+        base["A_name"] = archetype
 
-        if archetype in self.archetype_defaults:
-            base: Dict[str, Any] = dict(self.archetype_defaults[archetype])
-        elif self.shap_background is not None and not self.shap_background.empty:
-            base = self.shap_background.iloc[0].to_dict()
-            base["A_name"] = archetype
-        else:
-            base = {col: 0 for col in self.feature_columns}
-            if "A_name" in self.feature_columns:
-                base["A_name"] = archetype
-            if "delivery_type" in self.feature_columns:
-                base["delivery_type"] = "inswing"
-            if "end_zone" in self.feature_columns:
-                base["end_zone"] = "central"
-
-        # Override with coach input where the feature is modelled
         for key, value in coach_input.items():
             if key in self.feature_columns:
                 base[key] = value
 
-        # Derive short_corner_flag from delivery_type if needed
-        if (
-            "delivery_type" in self.feature_columns
-            and "short_corner_flag" in self.feature_columns
-            and "short_corner_flag" not in coach_input
-        ):
-            delivery_type = str(base.get("delivery_type", "")).lower()
+        delivery_type = str(base.get("delivery_type", "")).lower()
+        if "short_corner_flag" not in coach_input:
             base["short_corner_flag"] = 1 if delivery_type == "short" else 0
 
-        # Ensure integer counts for attacking distribution
-        count_cols = [
-            "n_att_near",
-            "n_att_central",
-            "n_att_far",
-            "n_blockers",
-            "n_edge_of_box",
-            "n_rest_defence",
-        ]
-        for col in count_cols:
-            if col in self.feature_columns:
-                try:
-                    base[col] = int(base.get(col, 0))
-                except (TypeError, ValueError):
-                    base[col] = 0
+        dd = self.delivery_defaults
+        if dd is not None and not dd.empty:
+            match = dd[(dd["delivery_type"] == delivery_type) & (dd["end_zone"] == base.get("end_zone"))]
+            if not match.empty:
+                base["delivery_depth"] = float(match["delivery_depth"].iloc[0])
+                base["delivery_high"] = int(match["delivery_high"].iloc[0])
 
-        row = {col: base.get(col) for col in self.feature_columns}
-        return pd.DataFrame([row])
+        row = pd.DataFrame([{col: base.get(col) for col in self.feature_columns}])
+        return add_derived_features(row)
+
+    def build_rows(self, coach_input: Dict[str, Any]) -> pd.DataFrame:
+        """
+        The coach's setup placed into real situations against the chosen defence: each
+        real corner's opponents and match state, with the coach's players, delivery and
+        target. Estimates average over these rows, so "against a deep-line defence" means
+        real deep-line situations, not one made-up average opponent.
+        """
+        shape = str(coach_input.get("A_name", ""))
+        situations = self._situations(shape)
+        if situations.empty:
+            return self._build_feature_row_from_coach_input(coach_input)
+
+        rows = situations.copy()
+        for key, value in coach_input.items():
+            if key in rows.columns:
+                rows[key] = value
+        delivery_type = str(coach_input.get("delivery_type", "")).lower()
+        rows["short_corner_flag"] = 1 if delivery_type == "short" else 0
+
+        dd = self.delivery_defaults
+        if dd is not None and not dd.empty:
+            match = dd[(dd["delivery_type"] == delivery_type) & (dd["end_zone"] == coach_input.get("end_zone"))]
+            if not match.empty:
+                rows["delivery_depth"] = float(match["delivery_depth"].iloc[0])
+                rows["delivery_high"] = int(match["delivery_high"].iloc[0])
+        return add_derived_features(rows).reset_index(drop=True)
+
+    def _situations(self, shape: str) -> pd.DataFrame:
+        # real corners against this defence (cached, capped for speed)
+        cache = self.__dict__.setdefault("_situation_cache", {})
+        if shape not in cache:
+            bg = self.shap_background
+            if bg is None or bg.empty or "A_name" not in bg.columns:
+                cache[shape] = pd.DataFrame()
+            else:
+                rows = bg[bg["A_name"] == shape]
+                if len(rows) > MAX_SITUATIONS:
+                    rows = rows.sample(n=MAX_SITUATIONS, random_state=self.random_seed)
+                cache[shape] = rows.reset_index(drop=True)
+        return cache[shape]
 
     def _predict_probs_and_apv(
         self,
         X_row: pd.DataFrame,
     ) -> Tuple[Dict[str, float], Dict[str, float]]:
         """
-        Run all pooled models on a single feature row and compute APV.
+        Run every outcome model on the rows and work out APV in goals, averaged over the
+        rows. Returns (outcome predictions, APV parts).
         """
-        if not self.feature_columns:
-            raise RuntimeError("Feature columns are not available for prediction.")
+        preds = predict_outcomes(X_row, self.models)
+        df_apv = add_apv_columns(preds, alpha=self.alpha, beta=self.beta)
 
-        target_to_proba_col = {
-            "chance_for": "P_chance_for",
-            "chance_against": "P_chance_against",
-            "shot_for_any": "P_shot_for_any",
-            "shot_against_any": "P_shot_against_any",
+        outcomes = {
+            col: float(preds[col].mean())
+            for col in preds.columns
+            if col.startswith("P_") or col.startswith("E_")
         }
+        apv = {k: float(df_apv[k].mean()) for k in ("PV_for", "PV_against", "APV_net")}
+        return outcomes, apv
 
-        probs: Dict[str, float] = {}
-        X_model = X_row[self.feature_columns].copy()
+    def predict_target(self, target: str, X: pd.DataFrame) -> np.ndarray:
+        """The final model's prediction for one target on one or more rows."""
+        model = self.models[target]
+        cols = list(getattr(model, "feature_names_in_", X.columns))
+        if hasattr(model, "predict_proba"):
+            return model.predict_proba(X[cols])[:, 1]
+        return model.predict(X[cols])
 
-        for target_name, proba_col in target_to_proba_col.items():
-            model = self.models.get(target_name)
-            if model is None:
-                probs[proba_col] = float("nan")
-                continue
+    def bootstrap_predict(self, target: str, X: pd.DataFrame) -> np.ndarray:
+        """Predictions from every bootstrap model, shape (n_models, n_rows)."""
+        lin = self._linear_ensemble(target)
+        if lin is None:
+            return np.empty((0, len(X)))
+        design, weights, bias, link = lin
+        z = design(X) @ weights.T + bias  # (rows, models)
+        pred = 1.0 / (1.0 + np.exp(-z)) if link == "logit" else np.exp(z)
+        return pred.T
 
-            try:
-                proba = model.predict_proba(X_model)[:, 1]
-                probs[proba_col] = float(proba[0])
-            except Exception:
-                # Fallback to predict if predict_proba is missing
-                pred = model.predict(X_model)
-                probs[proba_col] = float(pred[0])
+    def _linear_ensemble(self, target: str):
+        """
+        Each bootstrap model is scaling + one-hot encoding + a linear model, so it folds
+        into one weight per raw input. Scoring them all is then one matrix product.
+        """
+        cache = self.__dict__.setdefault("_linear_cache", {})
+        if target in cache:
+            return cache[target]
+        members = [m[target] for m in self.bootstrap if target in m]
+        if not members:
+            cache[target] = None
+            return None
 
-        df_probs = pd.DataFrame([probs])
+        folded = [self._fold_linear(m) for m in members]
+        keys = sorted({k for weights, _ in folded for k in weights}, key=str)
+        index = {k: i for i, k in enumerate(keys)}
+        W = np.zeros((len(folded), len(keys)))
+        for row, (weights, _) in enumerate(folded):
+            for k, w in weights.items():
+                W[row, index[k]] = w
+        b = np.array([bias for _, bias in folded])
+        link = "logit" if hasattr(members[0], "predict_proba") else "log"
 
-        df_apv = add_apv_columns(
-            df_probs,
-            alpha=self.alpha,
-            beta=self.beta,
-            p_chance_for_col="P_chance_for",
-            p_shot_against_col="P_shot_against_any",
-            pv_for_col="PV_for",
-            pv_against_col="PV_against",
-            apv_net_col="APV_net",
-        )
+        bg = self.shap_background if self.shap_background is not None else pd.DataFrame()
+        medians = {k[1]: float(pd.to_numeric(bg[k[1]], errors="coerce").median()) for k in keys if k[0] == "num" and k[1] in bg}
 
-        apv = {
-            "PV_for": float(df_apv["PV_for"].iloc[0]),
-            "PV_against": float(df_apv["PV_against"].iloc[0]),
-            "APV_net": float(df_apv["APV_net"].iloc[0]),
-        }
+        def design(X: pd.DataFrame) -> np.ndarray:
+            cols = []
+            for k in keys:
+                if k[0] == "num":
+                    cols.append(pd.to_numeric(X[k[1]], errors="coerce").fillna(medians.get(k[1], 0.0)).to_numpy(float))
+                else:
+                    cols.append((X[k[1]] == k[2]).to_numpy(float))
+            return np.column_stack(cols)
 
-        return probs, apv
+        cache[target] = (design, W, b, link)
+        return cache[target]
 
-    # ============================================================
-    # Coach facing helpers
-    # ============================================================
+    @staticmethod
+    def _fold_linear(pipe) -> Tuple[Dict[tuple, float], float]:
+        # weights on the raw inputs: numeric w / scale (the bias absorbs the mean),
+        # one weight per known category (unknown ones score 0, as in training)
+        pre = pipe.named_steps["preprocess"]
+        est = pipe.named_steps["clf"]
+        coef = np.ravel(est.coef_)
+        bias = float(np.ravel(est.intercept_)[0])
+        weights: Dict[tuple, float] = {}
+        i = 0
+        for name, trans, cols in pre.transformers_:
+            if name == "num":
+                scaler = trans.named_steps["scaler"]
+                for j, col in enumerate(cols):
+                    w = coef[i + j] / scaler.scale_[j]
+                    weights[("num", col)] = w
+                    bias -= w * scaler.mean_[j]
+                i += len(cols)
+            elif name == "cat":
+                ohe = trans.named_steps["ohe"]
+                for j, col in enumerate(cols):
+                    for level in ohe.categories_[j]:
+                        weights[("cat", col, level)] = coef[i]
+                        i += 1
+        return weights, bias
+
+    def chain_predict(self, X: pd.DataFrame) -> Optional[Dict[str, Any]]:
+        """
+        The chance chain on each row:
+            chance = P(win) * P(chance | won) + (1 - P(win)) * P(chance | lost)
+        Returns each step and the chain per row, plus the same from every bootstrap model.
+        """
+        steps = ["first_contact_attack", *CHAIN_TARGETS]
+        if any(t not in self.models for t in steps):
+            return None
+        win, won, lost = (self.predict_target(t, X) for t in steps)
+        out: Dict[str, Any] = {"win": win, "won": won, "lost": lost, "chance": win * won + (1 - win) * lost}
+        boots = [self.bootstrap_predict(t, X) for t in steps]
+        if all(b.size for b in boots) and len({b.shape for b in boots}) == 1:
+            b_win, b_won, b_lost = boots
+            out["boot"] = {"win": b_win, "won": b_won, "lost": b_lost, "chance": b_win * b_won + (1 - b_win) * b_lost}
+        return out
+
+    def predict_ranges(self, X_row: pd.DataFrame) -> Dict[str, Tuple[float, float]]:
+        """90% ranges for PV_for, PV_against, APV_net and each step of the chain."""
+        ranges: Dict[str, Tuple[float, float]] = {}
+        xg_for = self.bootstrap_predict("xg_for", X_row)
+        xg_against = self.bootstrap_predict("xg_against", X_row)
+        if xg_for.size and xg_against.size:
+            f = self.alpha * xg_for.mean(axis=1)
+            a = self.beta * xg_against.mean(axis=1)
+            for key, vals in (("PV_for", f), ("PV_against", a), ("APV_net", f - a)):
+                ranges[key] = (float(np.percentile(vals, 5)), float(np.percentile(vals, 95)))
+        chain = self.chain_predict(X_row)
+        if chain is not None and "boot" in chain:
+            names = {"win": "first_contact_attack", "won": "chance_if_won", "lost": "chance_if_lost", "chance": "chance_chain"}
+            for step, key in names.items():
+                per_model = chain["boot"][step].mean(axis=1)
+                ranges[key] = (float(np.percentile(per_model, 5)), float(np.percentile(per_model, 95)))
+        else:
+            boot = self.bootstrap_predict("first_contact_attack", X_row)
+            if boot.size:
+                per_model = boot.mean(axis=1)
+                ranges["first_contact_attack"] = (float(np.percentile(per_model, 5)), float(np.percentile(per_model, 95)))
+        return ranges
+
+    # older helpers for the setup library
 
     def get_best_setups_for_shape(
         self,
         archetype: str,
         min_samples: Optional[int] = None,
-        top_n: int = 10,
+        top_n: Optional[int] = 10,
     ) -> pd.DataFrame:
         """
-        Return top patterns for a defensive shape using the pattern library.
-
-        This version filters directly from pattern_library and
-        respects the min_samples filter. If no patterns satisfy
-        the filter it returns an empty DataFrame instead of
-        silently falling back.
+        Top setups against one defensive shape from the setup library, keeping only
+        setups used at least min_samples times (empty if none are).
         """
         self._ensure_pattern_library_loaded()
 
@@ -668,26 +713,25 @@ class APVEngine:
 
         df = self.pattern_library.copy()
 
-        # Filter by defensive shape
+        # this defensive shape only
         if "A_name" in df.columns:
             df = df[df["A_name"] == archetype]
 
         if df.empty:
             return pd.DataFrame()
 
-        # Apply min_samples if possible
+        # setups used at least min_samples times
         ms = int(min_samples) if min_samples is not None else int(self.default_min_samples)
         ms = max(ms, 1)
 
         if "n_corners" in df.columns:
             df = df[df["n_corners"] >= ms]
 
-        # If the filter removes everything, return empty and let the UI
-        # tell the coach that no patterns are available at this threshold.
+        # nothing left: return empty and let the app say so
         if df.empty:
             return pd.DataFrame()
 
-        # Add value / risk tags if needed
+        # add value / risk tags if missing
         apv_col = "APV_net_mean"
         risk_col = "PV_against_mean"
         if apv_col in df.columns and risk_col in df.columns:
@@ -699,7 +743,7 @@ class APVEngine:
                 axis=1,
             )
 
-        # Sort by APV and keep top_n rows
+        # best APV first, keep top_n
         if apv_col in df.columns:
             df = df.sort_values(apv_col, ascending=False)
 
@@ -715,14 +759,8 @@ class APVEngine:
         max_explanation_bullets: int = 3,
     ) -> Dict[str, Any]:
         """
-        Evaluate the same attacking setup against all defensive archetypes.
-
-        Returns:
-            {
-                "per_archetype": [ list of evaluate_for_coach style dicts, one per A_name ],
-                "summary": pd.DataFrame with one row per archetype,
-                "best_index": index into per_archetype of the highest APV_net,
-            }
+        Rate the same setup against every defensive shape. Returns per_archetype (one
+        evaluate_for_coach result each), a summary table and best_index (highest APV_net).
         """
         archetypes = self.get_archetypes()
         results: List[Dict[str, Any]] = []
@@ -734,7 +772,7 @@ class APVEngine:
                 "best_index": None,
             }
 
-        # Take a copy of input and remove any existing A_name
+        # copy the input without A_name
         base_input: Dict[str, Any] = dict(coach_input)
         base_input.pop("A_name", None)
 
@@ -758,7 +796,7 @@ class APVEngine:
                 best_apv = apv_net
                 best_index = idx
 
-        # Build a simple comparison table
+        # simple comparison table
         rows: List[Dict[str, Any]] = []
         for res in results:
             archetype = res.get("A_name")
@@ -794,147 +832,39 @@ class APVEngine:
         max_explanation_bullets: int = 3,
     ) -> Dict[str, Any]:
         """
-        Main entrypoint for the coach tab.
-
-        Takes a high level description of a corner setup and returns:
-        - feature vector used for the model
-        - probabilities of key outcomes
-        - APV components
-        - baseline comparison per archetype
-        - bullet point explanation
-        - simple tweak suggestions
+        Main entry point for the app: rate one corner setup. Returns the input row,
+        outcome predictions, APV in goals with 90% ranges, and a plain-language
+        explanation. Everything comes from the models, so it matches the quick wins.
         """
-        self._ensure_pattern_library_loaded()
-
-        # Build full feature row and pattern descriptor
-        X_row = self._build_feature_row_from_coach_input(coach_input)
+        X_row = self.build_rows(coach_input)
+        # the coach's values are the same on every row, but the spare-attacker counts vary
+        # with the real defenders, so report their average
         pattern_features = X_row.iloc[0].to_dict()
+        for col in [c for c in X_row.columns if c.startswith("free_att_")]:
+            pattern_features[col] = float(X_row[col].mean())
 
         archetype = str(pattern_features.get("A_name", coach_input.get("A_name", "")))
         baseline_apv = self.baseline_by_archetype.get(archetype)
 
-        # ------------------------------------------------------------------
-        # 1) Try to use historical pattern stats if an exact match exists
-        # ------------------------------------------------------------------
-        pattern_stats = self._lookup_pattern_stats(
-            pattern_features=pattern_features,
-            min_corners=3,  # same intuition as the slider default in the UI
-        )
-
-        if pattern_stats is not None:
-            # Use averages from pattern_library
-            probs = {
-                "P_chance_for": pattern_stats.get("P_chance_for", np.nan),
-                "P_chance_against": pattern_stats.get("P_chance_against", np.nan),
-                "P_shot_for_any": pattern_stats.get("P_shot_for_any", np.nan),
-                "P_shot_against_any": pattern_stats.get("P_shot_against_any", np.nan),
-            }
-            apv = {
-                "PV_for": pattern_stats.get("PV_for", np.nan),
-                "PV_against": pattern_stats.get("PV_against", np.nan),
-                "APV_net": pattern_stats.get("APV_net", np.nan),
-            }
-            # Still compute SHAP so we can explain the shape
-            shap_df = self._compute_local_shap(X_row)
-        else:
-            # Fall back to model prediction for unseen or rare patterns
-            probs, apv = self._predict_probs_and_apv(X_row)
-            shap_df = self._compute_local_shap(X_row)
-
+        outcomes, apv = self._predict_probs_and_apv(X_row)
+        chain = self.chain_predict(X_row)
+        if chain is not None:
+            outcomes["P_chance_chain"] = float(chain["chance"].mean())
+        shap_df = self._compute_local_shap(X_row)
 
         explanation = build_coach_explanation(
             pattern_features=pattern_features,
             apv=apv,
-            probs=probs,
+            probs=outcomes,
             baseline_apv=baseline_apv,
             shap_df=shap_df,
             max_bullets=max_explanation_bullets,
         )
 
-        # Simple tweak suggestions from pattern library (your existing logic)
-        tweaks: List[Dict[str, Any]] = []
-        try:
-            if (
-                self.pattern_library is not None
-                and not self.pattern_library.empty
-                and archetype
-            ):
-                df = self.pattern_library.copy()
-                df = df[df.get("A_name") == archetype]
-
-                if not df.empty and "APV_net_mean" in df.columns:
-                    current_apv = float(apv.get("APV_net", np.nan))
-                    current_risk = float(apv.get("PV_against", np.nan))
-
-                    df_p = df.copy()
-                    df_p["delta_apv"] = df_p["APV_net_mean"] - current_apv
-
-                    candidates = pd.DataFrame()
-
-                    # If we have risk info, enforce "similar or lower risk" first
-                    if (
-                        not np.isnan(current_risk)
-                        and "PV_against_mean" in df_p.columns
-                    ):
-                        df_p["delta_risk"] = df_p["PV_against_mean"] - current_risk
-
-                        # Primary rule: higher value, risk not more than +0.02
-                        risk_tol = 0.02
-                        candidates = df_p[
-                            (df_p["delta_apv"] > 0.01)
-                            & (df_p["delta_risk"] <= risk_tol)
-                        ]
-
-                        # Fallback: allow higher value regardless of risk
-                        if candidates.empty:
-                            candidates = df_p[df_p["delta_apv"] > 0.01]
-                    else:
-                        # No risk column, only higher value
-                        candidates = df_p[df_p["delta_apv"] > 0.01]
-
-                    # Final fallback: if still empty, just show the top patterns
-                    if candidates.empty:
-                        candidates = df_p
-
-                    # Prefer big APV gain, then smaller extra risk
-                    sort_cols = ["delta_apv"]
-                    ascending = [False]
-                    if "delta_risk" in candidates.columns:
-                        sort_cols.append("delta_risk")
-                        ascending.append(True)
-
-                    candidates = candidates.sort_values(
-                        sort_cols, ascending=ascending
-                    ).head(3)
-
-                    for _, row in candidates.iterrows():
-                        label_parts = [
-                            str(row.get("delivery_type", "")),
-                            str(row.get("end_zone", "")),
-                            f"N/C/F = {row.get('n_att_near', 0)}/"
-                            f"{row.get('n_att_central', 0)}/"
-                            f"{row.get('n_att_far', 0)}",
-                        ]
-                        change_label = ", ".join(label_parts)
-
-                        tweaks.append(
-                            {
-                                "change_label": change_label,
-                                "new_apv": float(row["APV_net_mean"]),
-                                "delta_apv": float(row["delta_apv"]),
-                                "tag": row.get("tag", ""),
-                            }
-                        )
-        except Exception as exc:  # pragma: no cover
-            print("[APVEngine] Error while computing tweaks:", exc)
-            tweaks = []
-
         return {
             "features": pattern_features,
-            "probabilities": probs,
+            "probabilities": outcomes,
             "apv": apv,
-            "baseline_apv": baseline_apv,
+            "ranges": self.predict_ranges(X_row),
             "explanation": explanation,
-            "tweaks": tweaks,
         }
-

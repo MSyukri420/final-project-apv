@@ -1,0 +1,12 @@
+delivery_type,end_zone,delivery_depth,delivery_high,n
+inswing,central,4.5,1,342
+inswing,far,3.4000000000000057,1,29
+inswing,near,4.0,1,113
+other,central,20.099999999999994,0,7
+other,near,8.149999999999999,0,82
+outswing,central,8.200000000000003,1,151
+outswing,far,11.099999999999994,1,19
+outswing,near,6.799999999999997,1,67
+straight,central,8.0,1,37
+straight,far,9.400000000000006,1,22
+straight,near,5.450000000000003,1,10
