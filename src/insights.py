@@ -7,10 +7,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from src.constants import OUTCOME_FEATURES
+from src.constants import CLASSIFICATION_TARGETS, OUTCOME_FEATURES, all_model_features
 
 
-# shared configuration
+# shared settings
 
 PATTERN_GROUP_COLS: List[str] = [
     "A_name",
@@ -33,6 +33,13 @@ APV_METRIC_COLS: List[str] = [
     "P_chance_against",
     "P_shot_for_any",
     "P_shot_against_any",
+    "P_first_contact_attack",
+    # real outcomes, shown next to the model's
+    "first_contact_attack",
+    "chance_for",
+    "shot_against_any",
+    "xg_for",
+    "xg_against",
 ]
 
 _DEFAULT_VALUE_RISK_THRESHOLDS: Dict[str, float] = {
@@ -41,6 +48,8 @@ _DEFAULT_VALUE_RISK_THRESHOLDS: Dict[str, float] = {
     "VALUE_NEGATIVE": -0.05,
     "RISK_LOW": 0.25,
     "RISK_MEDIUM": 0.50,
+    # within this much APV_net of the typical corner counts as "similar"
+    "SIMILAR_BAND": 0.02,
 }
 
 _VALUE_RISK_THRESHOLDS: Dict[str, float] = dict(_DEFAULT_VALUE_RISK_THRESHOLDS)
@@ -49,7 +58,7 @@ _THRESHOLDS_LOADED: bool = False
 
 
 def build_pattern_library(df_apv: pd.DataFrame) -> pd.DataFrame:
-    # group df_apv into discrete patterns and compute apv summary per pattern
+    # group corners into setups and sum up APV per setup
     df = df_apv.copy()
 
     missing = [c for c in PATTERN_GROUP_COLS if c not in df.columns]
@@ -126,6 +135,12 @@ def build_pattern_library(df_apv: pd.DataFrame) -> pd.DataFrame:
             "P_chance_against_mean",
             "P_shot_for_any_mean",
             "P_shot_against_any_mean",
+            "P_first_contact_attack_mean",
+            "first_contact_attack_mean",
+            "chance_for_mean",
+            "shot_against_any_mean",
+            "xg_for_mean",
+            "xg_against_mean",
         ]
     )
     keep_cols = [c for c in keep_cols if c in df_patterns.columns]
@@ -152,19 +167,11 @@ def build_pattern_library(df_apv: pd.DataFrame) -> pd.DataFrame:
 
 
 def compute_apv_baselines(df_apv: pd.DataFrame) -> pd.DataFrame:
-    # aggregate apv metrics per defensive archetype a_name
+    # average APV per defensive shape
     if "A_name" not in df_apv.columns:
         raise ValueError("df_apv must contain A_name for baseline aggregation")
 
-    metrics = [
-        "PV_for",
-        "PV_against",
-        "APV_net",
-        "P_chance_for",
-        "P_chance_against",
-        "P_shot_for_any",
-        "P_shot_against_any",
-    ]
+    metrics = ["PV_for", "PV_against", "APV_net", *(f"P_{t}" for t in CLASSIFICATION_TARGETS)]
     missing = [m for m in metrics if m not in df_apv.columns]
     if missing:
         raise ValueError(f"Missing APV metrics in df_apv: {missing}")
@@ -187,7 +194,7 @@ def compute_apv_baselines(df_apv: pd.DataFrame) -> pd.DataFrame:
 
 
 def compute_feature_baselines(df_apv: pd.DataFrame) -> pd.DataFrame:
-    # compute mean defensive and attacking features per archetype
+    # average defensive and attacking features per shape
     if "A_name" not in df_apv.columns:
         raise ValueError("df_apv must contain A_name for feature baselines")
 
@@ -209,6 +216,43 @@ def compute_feature_baselines(df_apv: pd.DataFrame) -> pd.DataFrame:
     return grouped
 
 
+def compute_archetype_defaults(df: pd.DataFrame) -> pd.DataFrame:
+    # the typical opponent and match situation per defensive shape (medians, or the
+    # most common value); the app starts from this and applies the coach's choices
+    if "A_name" not in df.columns:
+        raise ValueError("df must contain A_name for archetype defaults")
+    cols = [c for c in all_model_features() if c in df.columns and c != "A_name"]
+    rows = []
+    for name, g in df.groupby("A_name"):
+        rec: Dict[str, Any] = {"A_name": name}
+        for c in cols:
+            s = g[c].dropna()
+            if s.empty:
+                rec[c] = np.nan
+            elif pd.api.types.is_numeric_dtype(s) and c not in ("short_corner_flag",):
+                rec[c] = float(s.median())
+            else:
+                rec[c] = s.mode().iloc[0]
+        rows.append(rec)
+    return pd.DataFrame(rows)
+
+
+def compute_delivery_defaults(df: pd.DataFrame) -> pd.DataFrame:
+    # typical depth and height for each delivery type and zone
+    keys = ["delivery_type", "end_zone"]
+    if any(k not in df.columns for k in keys + ["delivery_depth", "delivery_high"]):
+        return pd.DataFrame(columns=keys + ["delivery_depth", "delivery_high", "n"])
+    return (
+        df.groupby(keys)
+        .agg(
+            delivery_depth=("delivery_depth", "median"),
+            delivery_high=("delivery_high", lambda s: int(s.mean() >= 0.5)),
+            n=("delivery_depth", "size"),
+        )
+        .reset_index()
+    )
+
+
 def compute_value_risk_thresholds(
     df_apv: pd.DataFrame,
     value_q_neg: float = 0.30,
@@ -217,7 +261,7 @@ def compute_value_risk_thresholds(
     risk_q_low: float = 0.30,
     risk_q_med: float = 0.70,
 ) -> Dict[str, float]:
-    # derive value and risk thresholds from apv_net and pv_against quantiles
+    # value and risk thresholds from APV quantiles
     thresholds = dict(_DEFAULT_VALUE_RISK_THRESHOLDS)
 
     if "APV_net" in df_apv.columns:
@@ -226,6 +270,7 @@ def compute_value_risk_thresholds(
             thresholds["VALUE_NEGATIVE"] = float(s_val.quantile(value_q_neg))
             thresholds["VALUE_POSITIVE"] = float(s_val.quantile(value_q_pos))
             thresholds["VALUE_HIGH"] = float(s_val.quantile(value_q_high))
+            thresholds["SIMILAR_BAND"] = float(0.25 * s_val.std(ddof=0))
 
     if "PV_against" in df_apv.columns:
         s_risk = df_apv["PV_against"].astype(float).replace([np.inf, -np.inf], np.nan).dropna()
@@ -239,15 +284,11 @@ def compute_value_risk_thresholds(
 
 def build_shap_background(
     df_target: pd.DataFrame,
-    outcome_key: str,
     sample_size: int,
     random_state: int,
 ) -> pd.DataFrame:
-    # select a background sample of feature rows for shap
-    cfg = OUTCOME_FEATURES.get(outcome_key, {}) or {}
-    num_cols = cfg.get("numeric") or []
-    cat_cols = cfg.get("categorical") or []
-    feature_cols = list(dict.fromkeys(list(num_cols) + list(cat_cols)))
+    # sample of real corners: SHAP background and the app's list of model inputs
+    feature_cols = all_model_features()
 
     missing = [c for c in feature_cols if c not in df_target.columns]
     if missing:
@@ -267,7 +308,7 @@ def build_shap_background(
 
 
 def build_runtime_artefacts(cfg: Dict[str, Any]) -> Dict[str, Path]:
-    # stage 8 helper to build pattern, baseline, shap and threshold artefacts
+    # stage 8: build the files the app loads
     paths_cfg = cfg.get("paths", {}) or {}
     outputs_root = Path(paths_cfg.get("outputs", "outputs")).expanduser()
     artefacts_root = Path(paths_cfg.get("artefacts", "artefacts")).expanduser()
@@ -303,6 +344,24 @@ def build_runtime_artefacts(cfg: Dict[str, Any]) -> Dict[str, Path]:
     feature_baselines_path = baselines_dir / "feature_baselines.csv"
     df_feature_baselines.to_csv(feature_baselines_path, index=False)
 
+    archetype_defaults_path = baselines_dir / "archetype_defaults.csv"
+    compute_archetype_defaults(df_apv).to_csv(archetype_defaults_path, index=False)
+
+    delivery_defaults_path = baselines_dir / "delivery_defaults.csv"
+    compute_delivery_defaults(df_apv).to_csv(delivery_defaults_path, index=False)
+
+    # one row per real corner (setup and outcome), for the app's evidence and charts
+    outcome_cols = [
+        "match_id", "competition_id", "season_id", "A_name", "delivery_type", "end_zone",
+        "short_corner_flag", "delivery_route",
+        "n_att_near", "n_att_central", "n_att_far", "n_blockers", "n_edge_of_box", "n_rest_defence",
+        "def_spot", "free_att_near", "free_att_central", "free_att_far", "free_att_spot",
+        "first_contact_attack", "first_contact_type", "chance_for", "shot_against_any",
+        "goal_for", "xg_for", "xg_against",
+    ]
+    corner_outcomes_path = patterns_dir / "corner_outcomes.csv"
+    df_apv[[c for c in outcome_cols if c in df_apv.columns]].to_csv(corner_outcomes_path, index=False)
+
     thresholds = compute_value_risk_thresholds(df_apv)
     thresholds_path = baselines_dir / "value_risk_thresholds.csv"
     pd.DataFrame([thresholds]).to_csv(thresholds_path, index=False)
@@ -315,25 +374,27 @@ def build_runtime_artefacts(cfg: Dict[str, Any]) -> Dict[str, Path]:
 
     shap_bg = build_shap_background(
         df_target=df_target,
-        outcome_key="outcome_chance_for",
         sample_size=shap_sample_size,
         random_state=random_seed,
     )
-    shap_bg_path = explain_dir / "shap_background_chance_for.csv"
+    shap_bg_path = explain_dir / "shap_background.csv"
     shap_bg.to_csv(shap_bg_path, index=False)
 
     return {
         "pattern_library": pattern_path,
+        "corner_outcomes": corner_outcomes_path,
         "apv_baselines": apv_baselines_path,
         "feature_baselines": feature_baselines_path,
+        "archetype_defaults": archetype_defaults_path,
+        "delivery_defaults": delivery_defaults_path,
         "value_risk_thresholds": thresholds_path,
-        "shap_background_chance_for": shap_bg_path,
+        "shap_background": shap_bg_path,
     }
 
 
 
 def _load_value_risk_thresholds_from_disk() -> None:
-    # load thresholds from csv if available, else keep defaults
+    # read the thresholds from csv, else use the defaults
     global _VALUE_RISK_THRESHOLDS, _THRESHOLDS_LOADED
 
     if _THRESHOLDS_LOADED:
@@ -349,7 +410,7 @@ def _load_value_risk_thresholds_from_disk() -> None:
                     if key in row and pd.notna(row[key]):
                         _VALUE_RISK_THRESHOLDS[key] = float(row[key])
         except Exception:
-            # fallback to defaults on any read or parse error
+            # use the defaults if reading fails
             pass
 
     _THRESHOLDS_LOADED = True
@@ -361,7 +422,7 @@ def _get_value_risk_thresholds() -> Dict[str, float]:
 
 
 def _value_label(apv_net: float) -> str:
-    # map apv_net to a simple value label
+    # APV_net as a simple value label
     if pd.isna(apv_net):
         return "Unknown value"
 
@@ -380,7 +441,7 @@ def _value_label(apv_net: float) -> str:
 
 
 def _risk_label(pv_against: float) -> str:
-    # map pv_against to a simple risk label
+    # PV_against as a simple risk label
     if pd.isna(pv_against):
         return "Unknown risk"
 
@@ -396,7 +457,7 @@ def _risk_label(pv_against: float) -> str:
 
 
 def _value_risk_tag(apv_net: float, pv_against: float) -> str:
-    # merge value and risk into a small tag
+    # value and risk as one short tag
     v = _value_label(apv_net)
     r = _risk_label(pv_against)
     if "Unknown" in v or "Unknown" in r:
@@ -411,7 +472,7 @@ def select_best_setups(
     min_samples: int = 10,
     top_n: int = 10,
 ) -> pd.DataFrame:
-    # filter pattern library for a defensive shape and rank by net apv
+    # setups against one defensive shape, ranked by APV
     if pattern_df.empty:
         return pattern_df.copy()
 
@@ -446,7 +507,8 @@ def select_best_setups(
 
 
 
-# coach controllable tactical features
+# features the coach controls; explanations only mention these (the opponent's
+# come with the chosen defensive shape)
 TACTICAL_FEATURE_KEYS: List[str] = [
     "n_att_near",
     "n_att_central",
@@ -454,13 +516,9 @@ TACTICAL_FEATURE_KEYS: List[str] = [
     "n_blockers",
     "n_edge_of_box",
     "n_rest_defence",
+    "free_att_",
     "delivery_type",
     "end_zone",
-    "short_corner_flag",
-    "def_line_height",
-    "def_in_6yd",
-    "players_on_posts",
-    "gk_start_line",
 ]
 
 
@@ -513,7 +571,7 @@ def build_coach_explanation(
     shap_df: Optional[pd.DataFrame] = None,
     max_bullets: int = 3,
 ) -> Dict[str, Any]:
-    # turn raw apv numbers and shap output into coach friendly text
+    # turn the APV numbers and SHAP values into plain text
     if shap_df is not None and not shap_df.empty:
         if pattern_features.get("delivery_type", "").lower() != "short":
             shap_df = shap_df[shap_df["feature_label"] != "Short corner flag"]
@@ -528,19 +586,20 @@ def build_coach_explanation(
     if baseline_apv is None or pd.isna(baseline_apv):
         baseline_text = "No baseline available for this defensive shape."
     else:
-        thr = _get_value_risk_thresholds()
-        v_pos = thr["VALUE_POSITIVE"]
-        v_neg = thr["VALUE_NEGATIVE"]
+        band = _get_value_risk_thresholds()["SIMILAR_BAND"]
         delta = apv_net - float(baseline_apv)
-        if delta > v_pos:
+        if delta > band:
             baseline_text = f"Better than typical {archetype} corners."
-        elif delta < v_neg:
+        elif delta < -band:
             baseline_text = f"Worse than typical {archetype} corners."
         else:
             baseline_text = f"Similar to typical {archetype} corners."
 
     bullets_help: List[str] = []
     bullets_risk: List[str] = []
+    # the feature labels behind each bullet, so the app can word them itself
+    help_labels: List[str] = []
+    risk_labels: List[str] = []
 
     if shap_df is not None and not shap_df.empty:
         df = shap_df.copy()
@@ -560,22 +619,28 @@ def build_coach_explanation(
             grouped["direction"] = np.where(
                 grouped["net"] >= 0, "positive", "negative"
             )
+            # rank by the net effect: one-hot parts of a factor can cancel out, so adding up
+            # their sizes would overstate it
+            grouped["net_abs"] = grouped["net"].abs()
 
             df_pos = (
                 grouped[grouped["direction"] == "positive"]
-                .sort_values("total_abs", ascending=False)
+                .sort_values("net_abs", ascending=False)
                 .head(max_bullets)
             )
             df_neg = (
                 grouped[grouped["direction"] == "negative"]
-                .sort_values("total_abs", ascending=False)
+                .sort_values("net_abs", ascending=False)
                 .head(max_bullets)
             )
 
-            for label in df_pos["feature_label"].tolist():
+            help_labels = [str(label) for label in df_pos["feature_label"].tolist()]
+            risk_labels = [str(label) for label in df_neg["feature_label"].tolist()]
+
+            for label in help_labels:
                 bullets_help.append(_positive_sentence(label))
 
-            for label in df_neg["feature_label"].tolist():
+            for label in risk_labels:
                 bullets_risk.append(_risk_sentence(label))
 
     if not bullets_help and not bullets_risk:
@@ -613,6 +678,8 @@ def build_coach_explanation(
         "probabilities": probs,
         "bullets_help": bullets_help,
         "bullets_risk": bullets_risk,
+        "help_labels": help_labels,
+        "risk_labels": risk_labels,
     }
 
     return result
@@ -620,7 +687,7 @@ def build_coach_explanation(
 
 
 def _describe_pattern_row(row: pd.Series) -> str:
-    # build a short text description of one pattern row
+    # short text describing one setup
     parts: List[str] = []
 
     parts.append(str(row.get("A_name", "Unknown")))
@@ -648,7 +715,7 @@ def suggest_tweaks_simple(
     max_suggestions: int = 3,
     improvement_threshold: float = 0.02,
 ) -> List[Dict[str, Any]]:
-    # suggest simple alternative setups from pattern library
+    # suggest simple alternative setups
     if pattern_df.empty:
         return []
 
