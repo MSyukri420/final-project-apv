@@ -91,7 +91,7 @@
   }, {
     "player_id" : 10165,
     "player_name" : "Irene Paredes Hernandez",
-    "player_nickname" : "Irene Hernandez",
+    "player_nickname" : "Irene Paredes",
     "jersey_number" : 4,
     "country" : {
       "id" : 214,
@@ -455,7 +455,7 @@
   } ]
 }, {
   "team_id" : 6045,
-  "team_name" : "Zambia Women's",
+  "team_name" : "Zambia W",
   "lineup" : [ {
     "player_id" : 32854,
     "player_name" : "Racheal Kundananji",
@@ -663,7 +663,7 @@
     } ]
   }, {
     "player_id" : 131628,
-    "player_name" : "Hellen Nga''ndwe Chanda",
+    "player_name" : "Hellen Nga'ndwe Chanda",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {

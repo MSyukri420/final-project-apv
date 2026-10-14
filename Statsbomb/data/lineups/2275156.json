@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4648,
     "player_name" : "Abbie McManus",
@@ -650,8 +650,8 @@
     "player_nickname" : null,
     "jersey_number" : 27,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 109,
+      "name" : "Ireland"
     },
     "cards" : [ ],
     "positions" : [ ]

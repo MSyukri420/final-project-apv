@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4636,
     "player_name" : "Maria Thorisdottir",
@@ -437,7 +437,7 @@
   "lineup" : [ {
     "player_id" : 5076,
     "player_name" : "Emily Louise van Egmond",
-    "player_nickname" : null,
+    "player_nickname" : "Emily van Egmond",
     "jersey_number" : 25,
     "country" : {
       "id" : 14,
@@ -676,11 +676,11 @@
       "position_id" : 5,
       "position" : "Left Center Back",
       "from" : "00:00",
-      "to" : "79:15",
+      "to" : "75:53",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 18,
       "position" : "Right Attacking Midfield",

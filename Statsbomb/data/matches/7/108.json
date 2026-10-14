@@ -851,7 +851,7 @@
 }, {
   "match_id" : 3802983,
   "match_date" : "2022-04-17",
-  "kick_off" : "20:45:00.000",
+  "kick_off" : "18:45:00.000",
   "competition" : {
     "competition_id" : 7,
     "country_name" : "France",
@@ -883,7 +883,7 @@
   },
   "away_team" : {
     "away_team_id" : 147,
-    "away_team_name" : "Marseille",
+    "away_team_name" : "Olympique de Marseille",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -905,8 +905,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2022-12-01T15:44:00.172729",
-  "last_updated_360" : "2023-04-26T20:23:58.501744",
+  "last_updated" : "2026-04-08T09:28:32.431342",
+  "last_updated_360" : "2026-04-08T09:34:39.814100",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1021,7 +1021,7 @@
 }, {
   "match_id" : 3802902,
   "match_date" : "2021-10-24",
-  "kick_off" : "20:45:00.000",
+  "kick_off" : "18:45:00.000",
   "competition" : {
     "competition_id" : 7,
     "country_name" : "France",
@@ -1033,7 +1033,7 @@
   },
   "home_team" : {
     "home_team_id" : 147,
-    "home_team_name" : "Marseille",
+    "home_team_name" : "Olympique de Marseille",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -1075,8 +1075,8 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2021-12-15T21:04:21.982539",
-  "last_updated_360" : "2022-08-04T12:00",
+  "last_updated" : "2026-04-06T18:01:14.389327",
+  "last_updated_360" : "2026-04-06T18:05:34.078113",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1344,7 +1344,7 @@
   },
   "stadium" : {
     "id" : 204,
-    "name" : "Stade Yves Allainmat - Le Moustoir",
+    "name" : "Stade Yves Allainmat - du Moustoir",
     "country" : {
       "id" : 78,
       "name" : "France"

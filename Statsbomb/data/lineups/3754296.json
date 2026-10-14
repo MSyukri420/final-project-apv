@@ -3,7 +3,7 @@
   "team_name" : "Manchester City",
   "lineup" : [ {
     "player_id" : 3054,
-    "player_name" : "Fernando Luiz Rosa",
+    "player_name" : "Fernando Luiz Roza",
     "player_nickname" : "Fernandinho",
     "jersey_number" : 25,
     "country" : {
@@ -44,7 +44,7 @@
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Substitution - Off (Off Camera)"
+      "end_reason" : "Substitution - Off (Tactical)"
     } ]
   }, {
     "player_id" : 3087,
@@ -158,7 +158,7 @@
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Substitution - Off (Off Camera)"
+      "end_reason" : "Substitution - Off (Tactical)"
     } ]
   }, {
     "player_id" : 3291,
@@ -217,7 +217,7 @@
       "to" : null,
       "from_period" : 2,
       "to_period" : null,
-      "start_reason" : "Substitution - On (Off Camera)",
+      "start_reason" : "Substitution - On (Tactical)",
       "end_reason" : "Final Whistle"
     } ]
   }, {
@@ -299,7 +299,7 @@
       "to" : "73:31",
       "from_period" : 2,
       "to_period" : 2,
-      "start_reason" : "Substitution - On (Off Camera)",
+      "start_reason" : "Substitution - On (Tactical)",
       "end_reason" : "Tactical Shift"
     }, {
       "position_id" : 12,

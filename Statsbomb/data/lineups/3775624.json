@@ -95,7 +95,7 @@
   }, {
     "player_id" : 4949,
     "player_name" : "Rosemary Kathleen Lavelle",
-    "player_nickname" : null,
+    "player_nickname" : "Rose Lavelle",
     "jersey_number" : 21,
     "country" : {
       "id" : 241,
@@ -105,7 +105,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 4992,
-    "player_name" : "Janine Elizabeth Beckie",
+    "player_name" : "Janine Elizabeth Sonis",
     "player_nickname" : null,
     "jersey_number" : 11,
     "country" : {
@@ -344,7 +344,7 @@
   } ]
 }, {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4653,
     "player_name" : "Jane Ross",

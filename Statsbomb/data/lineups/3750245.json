@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1076,
-  "team_name" : "Juventus",
+  "team_name" : "Juventus W",
   "lineup" : [ {
     "player_id" : 15008,
     "player_name" : "Michael Laudrup",
@@ -545,7 +545,7 @@
     "player_id" : 39949,
     "player_name" : "Ciro Muro",
     "player_nickname" : null,
-    "jersey_number" : 16,
+    "jersey_number" : 99,
     "country" : {
       "id" : 112,
       "name" : "Italy"

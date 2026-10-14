@@ -400,7 +400,7 @@
     } ]
   }, {
     "player_id" : 50494,
-    "player_name" : "Yeremi Jesús Pino Santos",
+    "player_name" : "Yeremy Jesús Pino Santos",
     "player_nickname" : "Yeremi Pino",
     "jersey_number" : 17,
     "country" : {
@@ -762,7 +762,7 @@
   }, {
     "player_id" : 108340,
     "player_name" : "Brandon Aguilera Zamora",
-    "player_nickname" : null,
+    "player_nickname" : "Brandon Aguilera",
     "jersey_number" : 20,
     "country" : {
       "id" : 54,

@@ -1,4 +1,344 @@
 [ {
+  "match_id" : 3998853,
+  "match_date" : "2025-07-10",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 53,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Women's Euro"
+  },
+  "season" : {
+    "season_id" : 315,
+    "season_name" : "2025"
+  },
+  "home_team" : {
+    "home_team_id" : 852,
+    "home_team_name" : "Norway Women's",
+    "home_team_gender" : "female",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 171,
+      "name" : "Norway"
+    },
+    "managers" : [ {
+      "id" : 1007074,
+      "name" : "Gemma Grainger",
+      "nickname" : "G.Grainger",
+      "dob" : "1982-07-17",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 862,
+    "away_team_name" : "Iceland Women's",
+    "away_team_gender" : "female",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 104,
+      "name" : "Iceland"
+    },
+    "managers" : [ {
+      "id" : 3642,
+      "name" : "Thorsteinn Halldórsson",
+      "nickname" : null,
+      "dob" : "1968-01-07",
+      "country" : {
+        "id" : 104,
+        "name" : "Iceland"
+      }
+    } ]
+  },
+  "home_score" : 4,
+  "away_score" : 3,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2026-04-27T09:46:51.951152",
+  "last_updated_360" : "2026-04-27T09:47:54.653259",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4756,
+    "name" : "Stockhorn Arena",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    }
+  },
+  "referee" : {
+    "id" : 1606,
+    "name" : "Ionela Alina Peşu",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  }
+}, {
+  "match_id" : 3998838,
+  "match_date" : "2025-07-03",
+  "kick_off" : "16:00:00.000",
+  "competition" : {
+    "competition_id" : 53,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Women's Euro"
+  },
+  "season" : {
+    "season_id" : 315,
+    "season_name" : "2025"
+  },
+  "home_team" : {
+    "home_team_id" : 854,
+    "home_team_name" : "Belgium Women's",
+    "home_team_gender" : "female",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "managers" : [ {
+      "id" : 1001044,
+      "name" : "Elisabet Gunnarsdottir",
+      "nickname" : null,
+      "dob" : "1976-10-02",
+      "country" : {
+        "id" : 104,
+        "name" : "Iceland"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 855,
+    "away_team_name" : "Italy Women's",
+    "away_team_gender" : "female",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 1001415,
+      "name" : "Andrea Soncin",
+      "nickname" : null,
+      "dob" : "1978-09-05",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2026-04-27T09:44:42.821327",
+  "last_updated_360" : "2026-04-27T09:47:34.353275",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4757,
+    "name" : "Stade de Tourbillon",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    }
+  },
+  "referee" : {
+    "id" : 964,
+    "name" : "Désirée Grundbacher",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    }
+  }
+}, {
+  "match_id" : 3998841,
+  "match_date" : "2025-07-04",
+  "kick_off" : "16:00:00.000",
+  "competition" : {
+    "competition_id" : 53,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Women's Euro"
+  },
+  "season" : {
+    "season_id" : 315,
+    "season_name" : "2025"
+  },
+  "home_team" : {
+    "home_team_id" : 853,
+    "home_team_name" : "Denmark Women's",
+    "home_team_gender" : "female",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "managers" : [ {
+      "id" : 179,
+      "name" : "Andree Jeglertz",
+      "nickname" : null,
+      "dob" : "1972-02-14",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 858,
+    "away_team_name" : "Sweden Women's",
+    "away_team_gender" : "female",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "managers" : [ {
+      "id" : 3016,
+      "name" : "Peter Gerhardsson",
+      "nickname" : null,
+      "dob" : "1959-08-22",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2026-04-27T09:45:43.888095",
+  "last_updated_360" : "2026-04-27T09:49:30.875029",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 524,
+    "name" : "Stade de Genève",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    }
+  },
+  "referee" : {
+    "id" : 2426,
+    "name" : "Edina Alves Batista",
+    "country" : {
+      "id" : 31,
+      "name" : "Brazil"
+    }
+  }
+}, {
+  "match_id" : 3998837,
+  "match_date" : "2025-07-02",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 53,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Women's Euro"
+  },
+  "season" : {
+    "season_id" : 315,
+    "season_name" : "2025"
+  },
+  "home_team" : {
+    "home_team_id" : 860,
+    "home_team_name" : "Switzerland Women's",
+    "home_team_gender" : "female",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "managers" : [ {
+      "id" : 177,
+      "name" : "Pia Mariane Sundhage",
+      "nickname" : "Pia Sundhage",
+      "dob" : "1960-02-13",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 852,
+    "away_team_name" : "Norway Women's",
+    "away_team_gender" : "female",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 171,
+      "name" : "Norway"
+    },
+    "managers" : [ {
+      "id" : 1007074,
+      "name" : "Gemma Grainger",
+      "nickname" : "G.Grainger",
+      "dob" : "1982-07-17",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2025-08-02T03:42:27.077538",
+  "last_updated_360" : "2025-11-17T16:42:16.156274",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 523,
+    "name" : "St. Jakob-Park",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    }
+  },
+  "referee" : {
+    "id" : 1606,
+    "name" : "Ionela Alina Peşu",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  }
+}, {
   "match_id" : 4020846,
   "match_date" : "2025-07-27",
   "kick_off" : "16:00:00.000",
@@ -55,8 +395,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-28T14:19:20.467348",
-  "last_updated_360" : "2025-07-29T16:03:07.355174",
+  "last_updated" : "2026-04-27T11:37:00.427234",
+  "last_updated_360" : "2026-04-27T11:38:28.570776",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -140,8 +480,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-24T19:44:48.774783",
-  "last_updated_360" : "2025-07-25T15:22:27.432293",
+  "last_updated" : "2026-04-27T22:02:42.690507",
+  "last_updated_360" : "2026-04-27T22:03:28.087062",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -225,8 +565,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-23T10:57:55.146512",
-  "last_updated_360" : "2025-07-24T13:46:36.152311",
+  "last_updated" : "2026-04-27T11:44:05.670023",
+  "last_updated_360" : "2026-04-27T11:46:34.949735",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -310,8 +650,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-20T07:27:22.868984",
-  "last_updated_360" : "2025-07-20T21:36:08.622324",
+  "last_updated" : "2026-04-27T11:43:01.894527",
+  "last_updated_360" : "2026-04-27T11:44:28.337054",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -395,8 +735,8 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-19T03:55:48.118274",
-  "last_updated_360" : "2025-07-19T21:26:11.543565",
+  "last_updated" : "2026-04-27T11:41:52.033839",
+  "last_updated_360" : "2026-04-27T11:42:31.425560",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -480,8 +820,8 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-19T01:14:41.130575",
-  "last_updated_360" : "2025-07-19T15:59:55.422757",
+  "last_updated" : "2026-04-27T11:40:50.712285",
+  "last_updated_360" : "2026-04-27T11:42:57.366830",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -565,8 +905,8 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-17T05:36:01.404547",
-  "last_updated_360" : "2025-07-18T19:27:39.873810",
+  "last_updated" : "2026-04-27T11:39:48.518532",
+  "last_updated_360" : "2026-04-27T11:40:31.980958",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -614,25 +954,49 @@
     "country" : {
       "id" : 68,
       "name" : "England"
-    }
+    },
+    "managers" : [ {
+      "id" : 45,
+      "name" : "Sarina Glotzbach-Wiegman",
+      "nickname" : "Sarina Wiegman",
+      "dob" : "1969-10-26",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
   },
   "away_team" : {
     "away_team_id" : 2456,
-    "away_team_name" : "Wales",
+    "away_team_name" : "Wales W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
       "id" : 249,
       "name" : "Wales"
-    }
+    },
+    "managers" : [ {
+      "id" : 1001228,
+      "name" : "Rhian Wilkinson",
+      "nickname" : null,
+      "dob" : "1982-05-12",
+      "country" : {
+        "id" : 40,
+        "name" : "Canada"
+      }
+    } ]
   },
   "home_score" : 6,
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-14T07:32:47.869145",
-  "last_updated_360" : "2025-07-14T16:47:58.593247",
-  "metadata" : { },
+  "last_updated" : "2026-04-27T09:42:32.051183",
+  "last_updated_360" : "2026-04-27T09:45:08.576665",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
   "match_week" : 3,
   "competition_stage" : {
     "id" : 10,
@@ -711,8 +1075,8 @@
   "away_score" : 5,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-23T12:00:28.004582",
-  "last_updated_360" : "2025-07-23T12:01:53.312196",
+  "last_updated" : "2026-04-27T09:41:29.621678",
+  "last_updated_360" : "2026-04-27T09:44:46.015760",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -796,8 +1160,8 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-22T21:06:39.929635",
-  "last_updated_360" : "2025-07-22T21:07:17.274717",
+  "last_updated" : "2026-04-27T09:50:04.593527",
+  "last_updated_360" : "2026-04-27T09:51:48.882914",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -881,8 +1245,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-26T16:27:17.159378",
-  "last_updated_360" : "2025-07-26T16:30:38.592460",
+  "last_updated" : "2026-04-27T09:40:40.716244",
+  "last_updated_360" : "2026-04-27T09:41:59.122280",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -966,9 +1330,13 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-14T10:16:12.076447",
-  "last_updated_360" : "2025-07-14T10:19:31.981150",
-  "metadata" : { },
+  "last_updated" : "2026-04-27T09:47:59.239665",
+  "last_updated_360" : "2026-04-27T09:52:31.910685",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
   "match_week" : 3,
   "competition_stage" : {
     "id" : 10,
@@ -1047,8 +1415,8 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-16T11:43:57.602985",
-  "last_updated_360" : "2025-07-16T11:45:15.145396",
+  "last_updated" : "2026-04-27T09:48:56.597794",
+  "last_updated_360" : "2026-04-27T09:53:11.442090",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1132,8 +1500,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-14T12:16:39.974980",
-  "last_updated_360" : "2025-07-14T12:17:28.270103",
+  "last_updated" : "2025-08-27T08:24:05.291833",
+  "last_updated_360" : "2025-08-27T08:27:36.150759",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1158,91 +1526,6 @@
     "country" : {
       "id" : 78,
       "name" : "France"
-    }
-  }
-}, {
-  "match_id" : 3998853,
-  "match_date" : "2025-07-10",
-  "kick_off" : "19:00:00.000",
-  "competition" : {
-    "competition_id" : 53,
-    "country_name" : "Europe",
-    "competition_name" : "UEFA Women's Euro"
-  },
-  "season" : {
-    "season_id" : 315,
-    "season_name" : "2025"
-  },
-  "home_team" : {
-    "home_team_id" : 852,
-    "home_team_name" : "Norway Women's",
-    "home_team_gender" : "female",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 171,
-      "name" : "Norway"
-    },
-    "managers" : [ {
-      "id" : 1007074,
-      "name" : "Gemma Grainger",
-      "nickname" : "G.Grainger",
-      "dob" : "1982-07-17",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 862,
-    "away_team_name" : "Iceland Women's",
-    "away_team_gender" : "female",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 104,
-      "name" : "Iceland"
-    },
-    "managers" : [ {
-      "id" : 3642,
-      "name" : "Thorsteinn Halldórsson",
-      "nickname" : null,
-      "dob" : "1968-01-07",
-      "country" : {
-        "id" : 104,
-        "name" : "Iceland"
-      }
-    } ]
-  },
-  "home_score" : 4,
-  "away_score" : 3,
-  "match_status" : "available",
-  "match_status_360" : "available",
-  "last_updated" : "2025-07-16T00:51:40.263397",
-  "last_updated_360" : "2025-07-16T00:52:37.929415",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 3,
-  "competition_stage" : {
-    "id" : 10,
-    "name" : "Group Stage"
-  },
-  "stadium" : {
-    "id" : 4756,
-    "name" : "Stockhorn Arena",
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
-    }
-  },
-  "referee" : {
-    "id" : 1606,
-    "name" : "Ionela Alina Peşu",
-    "country" : {
-      "id" : 187,
-      "name" : "Romania"
     }
   }
 }, {
@@ -1302,8 +1585,8 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-10T12:31:07.247988",
-  "last_updated_360" : "2025-07-10T14:29:47.046613",
+  "last_updated" : "2026-04-27T09:45:51.615275",
+  "last_updated_360" : "2026-04-27T09:48:51.764347",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1365,7 +1648,7 @@
   },
   "away_team" : {
     "away_team_id" : 2456,
-    "away_team_name" : "Wales",
+    "away_team_name" : "Wales W",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -1387,8 +1670,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-23T19:57:36.200461",
-  "last_updated_360" : "2025-07-23T19:58:27.539438",
+  "last_updated" : "2026-04-27T09:44:54.321282",
+  "last_updated_360" : "2026-04-27T09:48:24.670419",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1472,8 +1755,8 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-15T14:55:13.193932",
-  "last_updated_360" : "2025-07-15T14:57:57.348056",
+  "last_updated" : "2026-04-27T09:43:49.502944",
+  "last_updated_360" : "2026-04-27T09:45:49.290162",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1557,8 +1840,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-15T05:46:46.897601",
-  "last_updated_360" : "2025-07-15T05:47:37.906117",
+  "last_updated" : "2026-04-27T09:42:48.981943",
+  "last_updated_360" : "2026-04-27T09:45:33.815151",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1642,8 +1925,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-08T08:38:04.135549",
-  "last_updated_360" : "2025-07-09T08:48:37.275176",
+  "last_updated" : "2026-04-27T09:41:48.612007",
+  "last_updated_360" : "2026-04-27T09:46:03.918567",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1812,8 +2095,8 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-09T03:36:13.128601",
-  "last_updated_360" : "2025-07-09T03:38:15.424379",
+  "last_updated" : "2025-08-14T12:11:43.357403",
+  "last_updated_360" : "2025-08-14T12:12:44.476521",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1897,8 +2180,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-09T00:39:58.874806",
-  "last_updated_360" : "2025-07-09T00:43:18.302020",
+  "last_updated" : "2026-04-27T09:40:53.122088",
+  "last_updated_360" : "2026-04-27T09:42:39.857478",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -1926,91 +2209,6 @@
     }
   }
 }, {
-  "match_id" : 3998837,
-  "match_date" : "2025-07-02",
-  "kick_off" : "19:00:00.000",
-  "competition" : {
-    "competition_id" : 53,
-    "country_name" : "Europe",
-    "competition_name" : "UEFA Women's Euro"
-  },
-  "season" : {
-    "season_id" : 315,
-    "season_name" : "2025"
-  },
-  "home_team" : {
-    "home_team_id" : 860,
-    "home_team_name" : "Switzerland Women's",
-    "home_team_gender" : "female",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
-    },
-    "managers" : [ {
-      "id" : 177,
-      "name" : "Pia Mariane Sundhage",
-      "nickname" : "Pia Sundhage",
-      "dob" : "1960-02-13",
-      "country" : {
-        "id" : 220,
-        "name" : "Sweden"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 852,
-    "away_team_name" : "Norway Women's",
-    "away_team_gender" : "female",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 171,
-      "name" : "Norway"
-    },
-    "managers" : [ {
-      "id" : 1007074,
-      "name" : "Gemma Grainger",
-      "nickname" : "G.Grainger",
-      "dob" : "1982-07-17",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "available",
-  "last_updated" : "2025-07-07T05:57:33.415786",
-  "last_updated_360" : "2025-07-07T06:00:37.449382",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 10,
-    "name" : "Group Stage"
-  },
-  "stadium" : {
-    "id" : 523,
-    "name" : "St. Jakob-Park",
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
-    }
-  },
-  "referee" : {
-    "id" : 1606,
-    "name" : "Ionela Alina Peşu",
-    "country" : {
-      "id" : 187,
-      "name" : "Romania"
-    }
-  }
-}, {
   "match_id" : 3998842,
   "match_date" : "2025-07-05",
   "kick_off" : "16:00:00.000",
@@ -2025,7 +2223,7 @@
   },
   "home_team" : {
     "home_team_id" : 2456,
-    "home_team_name" : "Wales",
+    "home_team_name" : "Wales W",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -2067,8 +2265,8 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-08T13:30:27.688879",
-  "last_updated_360" : "2025-07-08T13:32:52.350991",
+  "last_updated" : "2026-04-27T09:47:43.055068",
+  "last_updated_360" : "2026-04-27T09:51:21.187852",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -2152,8 +2350,8 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-06T12:56:23.808783",
-  "last_updated_360" : "2025-07-06T17:25:37.441574",
+  "last_updated" : "2026-04-27T09:48:44.729022",
+  "last_updated_360" : "2026-04-27T09:53:36.913296",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -2237,8 +2435,8 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-23T18:10:34.573370",
-  "last_updated_360" : "2025-07-23T18:13:46.519078",
+  "last_updated" : "2026-04-27T09:46:45.846012",
+  "last_updated_360" : "2026-04-27T09:49:11.293554",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -2322,8 +2520,8 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "available",
-  "last_updated" : "2025-07-06T17:14:46.939215",
-  "last_updated_360" : "2025-07-06T17:18:31.177943",
+  "last_updated" : "2026-04-27T09:43:47.404624",
+  "last_updated_360" : "2026-04-27T09:44:31.391607",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
@@ -2348,91 +2546,6 @@
     "country" : {
       "id" : 187,
       "name" : "Romania"
-    }
-  }
-}, {
-  "match_id" : 3998838,
-  "match_date" : "2025-07-03",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 53,
-    "country_name" : "Europe",
-    "competition_name" : "UEFA Women's Euro"
-  },
-  "season" : {
-    "season_id" : 315,
-    "season_name" : "2025"
-  },
-  "home_team" : {
-    "home_team_id" : 854,
-    "home_team_name" : "Belgium Women's",
-    "home_team_gender" : "female",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 22,
-      "name" : "Belgium"
-    },
-    "managers" : [ {
-      "id" : 1001044,
-      "name" : "Elisabet Gunnarsdottir",
-      "nickname" : null,
-      "dob" : "1976-10-02",
-      "country" : {
-        "id" : 104,
-        "name" : "Iceland"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 855,
-    "away_team_name" : "Italy Women's",
-    "away_team_gender" : "female",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 112,
-      "name" : "Italy"
-    },
-    "managers" : [ {
-      "id" : 1001415,
-      "name" : "Andrea Soncin",
-      "nickname" : null,
-      "dob" : "1978-09-05",
-      "country" : {
-        "id" : 112,
-        "name" : "Italy"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "available",
-  "last_updated" : "2025-07-20T12:54:06.081376",
-  "last_updated_360" : "2025-07-20T12:56:59.481689",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 10,
-    "name" : "Group Stage"
-  },
-  "stadium" : {
-    "id" : 4757,
-    "name" : "Stade de Tourbillon",
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
-    }
-  },
-  "referee" : {
-    "id" : 964,
-    "name" : "Désirée Grundbacher",
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
     }
   }
 }, {
@@ -2518,91 +2631,6 @@
     "country" : {
       "id" : 103,
       "name" : "Hungary"
-    }
-  }
-}, {
-  "match_id" : 3998841,
-  "match_date" : "2025-07-04",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 53,
-    "country_name" : "Europe",
-    "competition_name" : "UEFA Women's Euro"
-  },
-  "season" : {
-    "season_id" : 315,
-    "season_name" : "2025"
-  },
-  "home_team" : {
-    "home_team_id" : 853,
-    "home_team_name" : "Denmark Women's",
-    "home_team_gender" : "female",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 61,
-      "name" : "Denmark"
-    },
-    "managers" : [ {
-      "id" : 179,
-      "name" : "Andree Jeglertz",
-      "nickname" : null,
-      "dob" : "1972-02-14",
-      "country" : {
-        "id" : 220,
-        "name" : "Sweden"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 858,
-    "away_team_name" : "Sweden Women's",
-    "away_team_gender" : "female",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 220,
-      "name" : "Sweden"
-    },
-    "managers" : [ {
-      "id" : 3016,
-      "name" : "Peter Gerhardsson",
-      "nickname" : null,
-      "dob" : "1959-08-22",
-      "country" : {
-        "id" : 220,
-        "name" : "Sweden"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "available",
-  "last_updated" : "2025-07-07T14:52:44.704701",
-  "last_updated_360" : "2025-07-07T14:55:21.103574",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 10,
-    "name" : "Group Stage"
-  },
-  "stadium" : {
-    "id" : 524,
-    "name" : "Stade de Genève",
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
-    }
-  },
-  "referee" : {
-    "id" : 2426,
-    "name" : "Edina Alves Batista",
-    "country" : {
-      "id" : 31,
-      "name" : "Brazil"
     }
   }
 } ]

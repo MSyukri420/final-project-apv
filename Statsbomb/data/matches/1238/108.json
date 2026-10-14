@@ -1,4 +1,259 @@
 [ {
+  "match_id" : 3827336,
+  "match_date" : "2022-03-16",
+  "kick_off" : "14:00:00.000",
+  "competition" : {
+    "competition_id" : 1238,
+    "country_name" : "India",
+    "competition_name" : "Indian Super league"
+  },
+  "season" : {
+    "season_id" : 108,
+    "season_name" : "2021/2022"
+  },
+  "home_team" : {
+    "home_team_id" : 7282,
+    "home_team_name" : "Mohun Bagan Super Giant",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    },
+    "managers" : [ {
+      "id" : 2815,
+      "name" : "Juan Ferrando Fenol",
+      "nickname" : "Juan Ferrando",
+      "dob" : "1981-01-02",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 7289,
+    "away_team_name" : "SC Delhi",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    },
+    "managers" : [ {
+      "id" : 503,
+      "name" : "Manuel Márquez Roca",
+      "nickname" : "Manolo Márquez",
+      "dob" : "1968-09-07",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2026-04-06T18:30:07.700525",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 24,
+  "competition_stage" : {
+    "id" : 158,
+    "name" : "Play-offs - Semi-Finals"
+  },
+  "stadium" : {
+    "id" : 5810,
+    "name" : "GMC Athletic Stadium",
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    }
+  },
+  "referee" : {
+    "id" : 1004922,
+    "name" : "Ramachandran Venkatesh",
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    }
+  }
+}, {
+  "match_id" : 3813314,
+  "match_date" : "2021-11-19",
+  "kick_off" : "14:00:00.000",
+  "competition" : {
+    "competition_id" : 1238,
+    "country_name" : "India",
+    "competition_name" : "Indian Super league"
+  },
+  "season" : {
+    "season_id" : 108,
+    "season_name" : "2021/2022"
+  },
+  "home_team" : {
+    "home_team_id" : 7282,
+    "home_team_name" : "Mohun Bagan Super Giant",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    },
+    "managers" : [ {
+      "id" : 1000613,
+      "name" : "Antonio López Habas",
+      "nickname" : "Antonio López",
+      "dob" : "1957-05-28",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 7283,
+    "away_team_name" : "Kerala Blasters",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    },
+    "managers" : [ {
+      "id" : 1000614,
+      "name" : "Ivan Vukomanović",
+      "nickname" : null,
+      "dob" : "1977-06-19",
+      "country" : {
+        "id" : 203,
+        "name" : "Serbia"
+      }
+    } ]
+  },
+  "home_score" : 4,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2026-04-06T17:11:17.178112",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1000400,
+    "name" : "Pandit Jawaharlal Nehru Stadium",
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    }
+  },
+  "referee" : {
+    "id" : 1004863,
+    "name" : "Harish Kundu",
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    }
+  }
+}, {
+  "match_id" : 3817877,
+  "match_date" : "2022-02-18",
+  "kick_off" : "16:00:00.000",
+  "competition" : {
+    "competition_id" : 1238,
+    "country_name" : "India",
+    "competition_name" : "Indian Super league"
+  },
+  "season" : {
+    "season_id" : 108,
+    "season_name" : "2021/2022"
+  },
+  "home_team" : {
+    "home_team_id" : 7285,
+    "home_team_name" : "NorthEast United",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    },
+    "managers" : [ {
+      "id" : 1000616,
+      "name" : "Khalid Ahmed Jamil",
+      "nickname" : null,
+      "dob" : "1977-04-21",
+      "country" : {
+        "id" : 105,
+        "name" : "India"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 7284,
+    "away_team_name" : "Bengaluru",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    },
+    "managers" : [ {
+      "id" : 1000615,
+      "name" : "Marco Pezzaiuoli",
+      "nickname" : null,
+      "dob" : "1968-11-16",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2024-09-28T17:57:15.057404",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 18,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1000400,
+    "name" : "Pandit Jawaharlal Nehru Stadium",
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    }
+  },
+  "referee" : {
+    "id" : 1004922,
+    "name" : "Ramachandran Venkatesh",
+    "country" : {
+      "id" : 105,
+      "name" : "India"
+    }
+  }
+}, {
   "match_id" : 3827767,
   "match_date" : "2022-03-20",
   "kick_off" : "16:00:00.000",
@@ -13,7 +268,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -55,7 +310,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-04-14T17:33:06.627987",
+  "last_updated" : "2024-02-12T17:41:31.729787",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -169,91 +424,6 @@
     }
   }
 }, {
-  "match_id" : 3827336,
-  "match_date" : "2022-03-16",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 1238,
-    "country_name" : "India",
-    "competition_name" : "Indian Super league"
-  },
-  "season" : {
-    "season_id" : 108,
-    "season_name" : "2021/2022"
-  },
-  "home_team" : {
-    "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    },
-    "managers" : [ {
-      "id" : 2815,
-      "name" : "Juan Ferrando Fenol",
-      "nickname" : "Juan Ferrando",
-      "dob" : "1981-01-02",
-      "country" : {
-        "id" : 214,
-        "name" : "Spain"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    },
-    "managers" : [ {
-      "id" : 503,
-      "name" : "Manuel Márquez Roca",
-      "nickname" : "Manolo Márquez",
-      "dob" : "1968-09-07",
-      "country" : {
-        "id" : 214,
-        "name" : "Spain"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2022-04-14T17:24:50.569810",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 24,
-  "competition_stage" : {
-    "id" : 158,
-    "name" : "Play-offs - Semi-Finals"
-  },
-  "stadium" : {
-    "id" : 5810,
-    "name" : "GMC Athletic Stadium",
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    }
-  },
-  "referee" : {
-    "id" : 1004922,
-    "name" : "Ramachandran Venkatesh",
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    }
-  }
-}, {
   "match_id" : 3827338,
   "match_date" : "2022-03-12",
   "kick_off" : "16:00:00.000",
@@ -268,7 +438,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -288,7 +458,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -332,7 +502,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -426,7 +596,7 @@
 }, {
   "match_id" : 3817856,
   "match_date" : "2022-03-07",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -438,7 +608,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -480,7 +650,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-04-14T17:08:29.868459",
+  "last_updated" : "2026-04-06T18:29:16.142832",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -565,7 +735,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-04-03T19:32:15.537192",
+  "last_updated" : "2024-09-28T17:58:04.808537",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -842,7 +1012,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -883,7 +1053,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -948,7 +1118,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -1223,7 +1393,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -1267,7 +1437,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -1288,7 +1458,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -1353,91 +1523,6 @@
   "referee" : {
     "id" : 2459,
     "name" : "Arumughan Rowan",
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    }
-  }
-}, {
-  "match_id" : 3817877,
-  "match_date" : "2022-02-18",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 1238,
-    "country_name" : "India",
-    "competition_name" : "Indian Super league"
-  },
-  "season" : {
-    "season_id" : 108,
-    "season_name" : "2021/2022"
-  },
-  "home_team" : {
-    "home_team_id" : 7285,
-    "home_team_name" : "NorthEast United",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    },
-    "managers" : [ {
-      "id" : 1000616,
-      "name" : "Khalid Ahmed Jamil",
-      "nickname" : null,
-      "dob" : "1977-04-21",
-      "country" : {
-        "id" : 105,
-        "name" : "India"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 7284,
-    "away_team_name" : "Bengaluru",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    },
-    "managers" : [ {
-      "id" : 1000615,
-      "name" : "Marco Pezzaiuoli",
-      "nickname" : null,
-      "dob" : "1968-11-16",
-      "country" : {
-        "id" : 85,
-        "name" : "Germany"
-      }
-    } ]
-  },
-  "home_score" : 2,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2022-03-03T18:47:39.353532",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 18,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1000400,
-    "name" : "Pandit Jawaharlal Nehru Stadium",
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    }
-  },
-  "referee" : {
-    "id" : 1004922,
-    "name" : "Ramachandran Venkatesh",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -1786,7 +1871,7 @@
 }, {
   "match_id" : 3817873,
   "match_date" : "2022-02-12",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -1798,7 +1883,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -1840,7 +1925,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-03-03T18:18:17.863862",
+  "last_updated" : "2026-04-06T17:13:29.231265",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1903,7 +1988,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -2138,7 +2223,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -2158,7 +2243,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -2265,7 +2350,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-03-03T17:49:12.742614",
+  "last_updated" : "2024-09-29T17:46:01.175308",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -2583,7 +2668,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -2627,7 +2712,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -2838,7 +2923,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -2976,7 +3061,7 @@
 }, {
   "match_id" : 3817888,
   "match_date" : "2022-01-29",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -2988,7 +3073,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -3030,7 +3115,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-04-03T17:55:40.935153",
+  "last_updated" : "2026-04-06T18:27:36.670369",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3316,7 +3401,7 @@
 }, {
   "match_id" : 3813313,
   "match_date" : "2022-01-23",
-  "kick_off" : "18:00:00.000",
+  "kick_off" : "16:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -3328,7 +3413,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -3370,7 +3455,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-12-01T19:53:06.025959",
+  "last_updated" : "2026-04-06T18:33:57.872951",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3583,7 +3668,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -3732,7 +3817,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -3826,7 +3911,7 @@
 }, {
   "match_id" : 3817854,
   "match_date" : "2022-02-27",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -3838,7 +3923,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -3880,7 +3965,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-04-03T18:55:16.963161",
+  "last_updated" : "2026-04-06T18:28:26.806528",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -3943,7 +4028,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -4178,7 +4263,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -4368,7 +4453,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -4412,7 +4497,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -4538,7 +4623,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -4582,7 +4667,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -4837,7 +4922,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -4846,7 +4931,7 @@
 }, {
   "match_id" : 3813303,
   "match_date" : "2021-12-29",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -4858,7 +4943,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -4900,7 +4985,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-01-05T20:47:30.125122",
+  "last_updated" : "2026-04-06T18:32:04.458525",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -4943,7 +5028,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -5048,7 +5133,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -5177,7 +5262,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -5368,7 +5453,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -5594,7 +5679,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -5720,7 +5805,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -5764,7 +5849,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -5849,7 +5934,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -5975,7 +6060,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -6167,7 +6252,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-02-19T22:27:48.516824",
+  "last_updated" : "2024-08-05T11:25:08.835790",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -6400,7 +6485,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -6570,7 +6655,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -6878,7 +6963,7 @@
 }, {
   "match_id" : 3813281,
   "match_date" : "2021-12-11",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -6890,7 +6975,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -6932,7 +7017,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2021-12-18T23:29:19.934166",
+  "last_updated" : "2026-04-06T18:30:56.438680",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -6954,7 +7039,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -7039,7 +7124,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -7124,7 +7209,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -7294,7 +7379,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -7386,94 +7471,9 @@
     }
   }
 }, {
-  "match_id" : 3813314,
-  "match_date" : "2021-11-19",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 1238,
-    "country_name" : "India",
-    "competition_name" : "Indian Super league"
-  },
-  "season" : {
-    "season_id" : 108,
-    "season_name" : "2021/2022"
-  },
-  "home_team" : {
-    "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    },
-    "managers" : [ {
-      "id" : 1000613,
-      "name" : "Antonio López Habas",
-      "nickname" : "Antonio López",
-      "dob" : "1957-05-28",
-      "country" : {
-        "id" : 214,
-        "name" : "Spain"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 7283,
-    "away_team_name" : "Kerala Blasters",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    },
-    "managers" : [ {
-      "id" : 1000614,
-      "name" : "Ivan Vukomanović",
-      "nickname" : null,
-      "dob" : "1977-06-19",
-      "country" : {
-        "id" : 203,
-        "name" : "Serbia"
-      }
-    } ]
-  },
-  "home_score" : 4,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2022-12-01T19:44:23.232260",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1000400,
-    "name" : "Pandit Jawaharlal Nehru Stadium",
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    }
-  },
-  "referee" : {
-    "id" : 1004863,
-    "name" : "Harish Kundu",
-    "country" : {
-      "id" : 105,
-      "name" : "India"
-    }
-  }
-}, {
   "match_id" : 3813312,
   "match_date" : "2021-12-01",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -7485,7 +7485,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -7527,7 +7527,7 @@
   "away_score" : 5,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2021-12-21T21:26:32.164120",
+  "last_updated" : "2026-04-06T17:12:28.223488",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -7655,7 +7655,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -7719,7 +7719,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -7995,7 +7995,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -8229,7 +8229,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -8484,7 +8484,7 @@
   },
   "referee" : {
     "id" : 2479,
-    "name" : "Pranjal Banerji",
+    "name" : "Pranjal Banerjee",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -8525,7 +8525,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -8569,7 +8569,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -8590,7 +8590,7 @@
   },
   "home_team" : {
     "home_team_id" : 7289,
-    "home_team_name" : "Hyderabad",
+    "home_team_name" : "SC Delhi",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -8780,7 +8780,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -9120,7 +9120,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -9249,7 +9249,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"
@@ -9375,7 +9375,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -9460,7 +9460,7 @@
   },
   "away_team" : {
     "away_team_id" : 7282,
-    "away_team_name" : "ATK Mohun Bagan",
+    "away_team_name" : "Mohun Bagan Super Giant",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -9683,7 +9683,7 @@
 }, {
   "match_id" : 3813264,
   "match_date" : "2022-01-05",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 1238,
     "country_name" : "India",
@@ -9695,7 +9695,7 @@
   },
   "home_team" : {
     "home_team_id" : 7282,
-    "home_team_name" : "ATK Mohun Bagan",
+    "home_team_name" : "Mohun Bagan Super Giant",
     "home_team_gender" : "male",
     "home_team_group" : null,
     "country" : {
@@ -9715,7 +9715,7 @@
   },
   "away_team" : {
     "away_team_id" : 7289,
-    "away_team_name" : "Hyderabad",
+    "away_team_name" : "SC Delhi",
     "away_team_gender" : "male",
     "away_team_group" : null,
     "country" : {
@@ -9737,7 +9737,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2022-02-19T21:49:39.448322",
+  "last_updated" : "2026-04-06T18:33:00.333142",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -9759,7 +9759,7 @@
   },
   "referee" : {
     "id" : 1004912,
-    "name" : "Raul Gupta",
+    "name" : "Rahul Kumar Gupta",
     "country" : {
       "id" : 105,
       "name" : "India"

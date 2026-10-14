@@ -208,7 +208,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 10603,
-    "player_name" : "Mamadou Loum N''Diaye",
+    "player_name" : "Mamadou Loum N'Diaye",
     "player_nickname" : "Mamadou N'Diaye",
     "jersey_number" : 25,
     "country" : {
@@ -916,8 +916,8 @@
     } ]
   }, {
     "player_id" : 41593,
-    "player_name" : "William Joel Pacho Tenorio",
-    "player_nickname" : "William Pacho",
+    "player_name" : "Willian Joel Pacho Tenorio",
+    "player_nickname" : "Willian Pacho",
     "jersey_number" : 6,
     "country" : {
       "id" : 65,
@@ -968,7 +968,7 @@
   }, {
     "player_id" : 348757,
     "player_name" : "Kevin José Rodríguez Cortez",
-    "player_nickname" : null,
+    "player_nickname" : "Kevin Rodríguez",
     "jersey_number" : 26,
     "country" : {
       "id" : 65,

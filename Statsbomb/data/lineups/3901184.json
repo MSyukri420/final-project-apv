@@ -157,7 +157,7 @@
     } ]
   }, {
     "player_id" : 3424,
-    "player_name" : "Cheikh M''Bengue",
+    "player_name" : "Cheikh M'Bengue",
     "player_nickname" : "Cheikh M'Bengue",
     "jersey_number" : 3,
     "country" : {
@@ -423,7 +423,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3075,
     "player_name" : "Javier Manquillo Gaitán",

@@ -1,6 +1,6 @@
 [ {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2955,
     "player_name" : "Ronny Rodelin",
@@ -564,7 +564,7 @@
     } ]
   }, {
     "player_id" : 3424,
-    "player_name" : "Cheikh M''Bengue",
+    "player_name" : "Cheikh M'Bengue",
     "player_nickname" : "Cheikh M'Bengue",
     "jersey_number" : 3,
     "country" : {

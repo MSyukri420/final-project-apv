@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1208,
-  "team_name" : "Cameroon Women's",
+  "team_name" : "Cameroon W",
   "lineup" : [ {
     "player_id" : 4943,
     "player_name" : "Estelle Johnson",
@@ -301,7 +301,7 @@
   }, {
     "player_id" : 25630,
     "player_name" : "Claudine Falonne Meffometou Tcheno",
-    "player_nickname" : null,
+    "player_nickname" : "Claudine Meffometou",
     "jersey_number" : 12,
     "country" : {
       "id" : 39,
@@ -464,7 +464,7 @@
   }, {
     "player_id" : 4981,
     "player_name" : "Kailen Mary Iacovoni Sheridan",
-    "player_nickname" : null,
+    "player_nickname" : "Kailen Sheridan",
     "jersey_number" : 18,
     "country" : {
       "id" : 40,
@@ -474,7 +474,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 4992,
-    "player_name" : "Janine Elizabeth Beckie",
+    "player_name" : "Janine Elizabeth Sonis",
     "player_nickname" : null,
     "jersey_number" : 16,
     "country" : {
@@ -495,7 +495,7 @@
   }, {
     "player_id" : 5020,
     "player_name" : "Christine Margaret Sinclair",
-    "player_nickname" : null,
+    "player_nickname" : "Christine Sinclair",
     "jersey_number" : 12,
     "country" : {
       "id" : 40,
@@ -515,7 +515,7 @@
   }, {
     "player_id" : 5038,
     "player_name" : "Allysha Lyn Chapman",
-    "player_nickname" : null,
+    "player_nickname" : "Allysha Chapman",
     "jersey_number" : 2,
     "country" : {
       "id" : 40,
@@ -535,7 +535,7 @@
   }, {
     "player_id" : 5043,
     "player_name" : "Nichelle Patrice Prince",
-    "player_nickname" : null,
+    "player_nickname" : "Nichelle Prince",
     "jersey_number" : 15,
     "country" : {
       "id" : 40,
@@ -555,7 +555,7 @@
   }, {
     "player_id" : 5074,
     "player_name" : "Shelina Laura Zadorsky",
-    "player_nickname" : null,
+    "player_nickname" : "Shelina Zadorsky",
     "jersey_number" : 4,
     "country" : {
       "id" : 40,
@@ -586,7 +586,7 @@
   }, {
     "player_id" : 8297,
     "player_name" : "Adriana Kristina Leon",
-    "player_nickname" : null,
+    "player_nickname" : "Adriana Leon",
     "jersey_number" : 19,
     "country" : {
       "id" : 40,
@@ -668,7 +668,7 @@
   }, {
     "player_id" : 25601,
     "player_name" : "Deanne Cynthia Rose",
-    "player_nickname" : null,
+    "player_nickname" : "Deanne Rose",
     "jersey_number" : 6,
     "country" : {
       "id" : 40,
@@ -708,7 +708,7 @@
   }, {
     "player_id" : 25612,
     "player_name" : "Jessie Alexandra Fleming",
-    "player_nickname" : null,
+    "player_nickname" : "Jessie Fleming",
     "jersey_number" : 17,
     "country" : {
       "id" : 40,
@@ -772,7 +772,7 @@
   }, {
     "player_id" : 131645,
     "player_name" : "Julia Angela Grosso",
-    "player_nickname" : null,
+    "player_nickname" : "Julia Grosso",
     "jersey_number" : 7,
     "country" : {
       "id" : 40,

@@ -36,8 +36,8 @@
     "player_nickname" : null,
     "jersey_number" : 40,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 55,
+      "name" : "Côte d'Ivoire"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -141,8 +141,8 @@
     "player_nickname" : null,
     "jersey_number" : 5,
     "country" : {
-      "id" : 78,
-      "name" : "France"
+      "id" : 154,
+      "name" : "Morocco"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -351,7 +351,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3075,
     "player_name" : "Javier Manquillo Gaitán",

@@ -66,8 +66,8 @@
     } ]
   }, {
     "player_id" : 4999,
-    "player_name" : "Lindsey Michelle Horan",
-    "player_nickname" : "Lindsey Horan",
+    "player_name" : "Lindsey Michelle Heaps",
+    "player_nickname" : "Lindsey Heaps",
     "jersey_number" : 10,
     "country" : {
       "id" : 241,
@@ -146,8 +146,8 @@
     "positions" : [ ]
   }, {
     "player_id" : 5055,
-    "player_name" : "Lynn Raenie Williams",
-    "player_nickname" : null,
+    "player_name" : "Lynn Williams Biyendolo",
+    "player_nickname" : "Lynn Biyendolo",
     "jersey_number" : 6,
     "country" : {
       "id" : 241,
@@ -339,8 +339,8 @@
     "positions" : [ ]
   }, {
     "player_id" : 49172,
-    "player_name" : "Sophia Olivia Smith",
-    "player_nickname" : null,
+    "player_name" : "Sophia Olivia Wilson",
+    "player_nickname" : "Sophia Wilson",
     "jersey_number" : 11,
     "country" : {
       "id" : 241,
@@ -811,7 +811,7 @@
   }, {
     "player_id" : 62913,
     "player_name" : "Francisca Ramos Ribeiro Nazareth Sousa",
-    "player_nickname" : "Francisca Nazareth",
+    "player_nickname" : "Kika Nazareth",
     "jersey_number" : 20,
     "country" : {
       "id" : 183,

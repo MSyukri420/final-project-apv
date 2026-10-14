@@ -94,7 +94,7 @@
     } ]
   }, {
     "player_id" : 25546,
-    "player_name" : "Cheyna Matthews",
+    "player_name" : "Cheyna Lee Matthews",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {
@@ -193,7 +193,7 @@
   }, {
     "player_id" : 25554,
     "player_name" : "Khadija Monifa Shaw",
-    "player_nickname" : null,
+    "player_nickname" : "Khadija Shaw",
     "jersey_number" : 11,
     "country" : {
       "id" : 113,

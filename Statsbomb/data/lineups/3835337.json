@@ -105,7 +105,7 @@
   }, {
     "player_id" : 10108,
     "player_name" : "Pernille Mosegaard Harder",
-    "player_nickname" : null,
+    "player_nickname" : "Pernille Harder",
     "jersey_number" : 10,
     "country" : {
       "id" : 61,
@@ -432,7 +432,7 @@
   }, {
     "player_id" : 224830,
     "player_name" : "Sofie Bruun Bredgaard",
-    "player_nickname" : null,
+    "player_nickname" : "Sofie Bredgaard",
     "jersey_number" : 14,
     "country" : {
       "id" : 61,
@@ -463,7 +463,7 @@
   }, {
     "player_id" : 276443,
     "player_name" : "Kathrine Møller Kühl",
-    "player_nickname" : null,
+    "player_nickname" : "Kathrine Kühl",
     "jersey_number" : 15,
     "country" : {
       "id" : 61,
@@ -483,7 +483,7 @@
   }, {
     "player_id" : 276444,
     "player_name" : "Laura Frederikke Worsøe Nielsen",
-    "player_nickname" : null,
+    "player_nickname" : "Laura Worsøe",
     "jersey_number" : 22,
     "country" : {
       "id" : 61,
@@ -614,7 +614,7 @@
   }, {
     "player_id" : 10165,
     "player_name" : "Irene Paredes Hernandez",
-    "player_nickname" : "Irene Hernandez",
+    "player_nickname" : "Irene Paredes",
     "jersey_number" : 4,
     "country" : {
       "id" : 214,
@@ -794,7 +794,7 @@
   }, {
     "player_id" : 49831,
     "player_name" : "Ivana Andrés Sanz",
-    "player_nickname" : null,
+    "player_nickname" : "Ivana Andrés",
     "jersey_number" : 5,
     "country" : {
       "id" : 214,

@@ -1,7 +1,372 @@
 [ {
+  "match_id" : 3749493,
+  "match_date" : "2003-08-16",
+  "kick_off" : "13:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 44,
+    "season_name" : "2003/2004"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 29,
+    "away_team_name" : "Everton",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 86,
+      "name" : "David Moyes",
+      "nickname" : null,
+      "dob" : "1963-04-25",
+      "country" : {
+        "id" : 201,
+        "name" : "Scotland"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T13:51:11.128121",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1000243,
+    "name" : "Arsenal Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3749448,
+  "match_date" : "2004-04-09",
+  "kick_off" : "11:30:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 44,
+    "season_name" : "2003/2004"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "away_team" : {
+    "away_team_id" : 24,
+    "away_team_name" : "Liverpool",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "home_score" : 4,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T13:50:14.170144",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 31,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1000243,
+    "name" : "Arsenal Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3749196,
+  "match_date" : "2003-11-08",
+  "kick_off" : "14:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 44,
+    "season_name" : "2003/2004"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 38,
+    "away_team_name" : "Tottenham Hotspur",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 3533,
+      "name" : "David Pleat",
+      "nickname" : null,
+      "dob" : "1945-01-15",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T13:48:21.086533",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 12,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1000243,
+    "name" : "Arsenal Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3749454,
+  "match_date" : "2003-08-31",
+  "kick_off" : "14:05:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 44,
+    "season_name" : "2003/2004"
+  },
+  "home_team" : {
+    "home_team_id" : 36,
+    "home_team_name" : "Manchester City",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 4202,
+      "name" : "Kevin Joseph Keegan",
+      "nickname" : "Kevin Keegan",
+      "dob" : "1951-02-14",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1,
+    "away_team_name" : "Arsenal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T13:42:03.275764",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4715,
+    "name" : "Etihad Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3749603,
+  "match_date" : "2004-05-09",
+  "kick_off" : "14:05:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 44,
+    "season_name" : "2003/2004"
+  },
+  "home_team" : {
+    "home_team_id" : 55,
+    "home_team_name" : "Fulham",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 403,
+      "name" : "Chris Coleman",
+      "nickname" : "Óscar Pareja",
+      "dob" : "1970-06-10",
+      "country" : {
+        "id" : 249,
+        "name" : "Wales"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1,
+    "away_team_name" : "Arsenal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T09:42:29.802608",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4844,
+    "name" : "MATRADE Loftus Road",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
   "match_id" : 3749052,
   "match_date" : "2004-02-07",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -55,7 +420,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:45:12.217499",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -76,9 +441,86 @@
     }
   }
 }, {
+  "match_id" : 3749296,
+  "match_date" : "2003-09-13",
+  "kick_off" : "13:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 44,
+    "season_name" : "2003/2004"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 105,
+    "away_team_name" : "Portsmouth",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 749,
+      "name" : "Harry Redknapp",
+      "nickname" : null,
+      "dob" : "1947-03-02",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-23T12:40:23.553815",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 1000243,
+    "name" : "Arsenal Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
   "match_id" : 3749522,
   "match_date" : "2003-12-26",
-  "kick_off" : "13:00:00.000",
+  "kick_off" : "11:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -132,7 +574,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-23T12:33:24.978819",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -146,7 +588,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -223,7 +665,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -300,7 +742,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -377,7 +819,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -386,7 +828,7 @@
 }, {
   "match_id" : 3749358,
   "match_date" : "2003-08-24",
-  "kick_off" : "17:05:00.000",
+  "kick_off" : "14:05:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -440,7 +882,7 @@
   "away_score" : 4,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:40:09.497866",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -665,7 +1107,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -674,7 +1116,7 @@
 }, {
   "match_id" : 3749465,
   "match_date" : "2004-03-13",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -728,7 +1170,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-23T12:32:13.182768",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -751,7 +1193,7 @@
 }, {
   "match_id" : 3749133,
   "match_date" : "2004-01-18",
-  "kick_off" : "15:00:00.000",
+  "kick_off" : "13:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -805,7 +1247,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:53:07.585114",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -882,7 +1324,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2023-11-14T11:20:59.843499",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -896,7 +1338,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -905,7 +1347,7 @@
 }, {
   "match_id" : 3749233,
   "match_date" : "2004-02-01",
-  "kick_off" : "17:05:00.000",
+  "kick_off" : "15:05:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -959,7 +1401,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:49:24.316205",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -973,7 +1415,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -1050,7 +1492,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -1134,160 +1576,6 @@
     }
   }
 }, {
-  "match_id" : 3749296,
-  "match_date" : "2003-09-13",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 44,
-    "season_name" : "2003/2004"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 105,
-    "away_team_name" : "Portsmouth",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 749,
-      "name" : "Harry Redknapp",
-      "nickname" : null,
-      "dob" : "1947-03-02",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 5,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1000243,
-    "name" : "Highbury Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3749454,
-  "match_date" : "2003-08-31",
-  "kick_off" : "17:05:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 44,
-    "season_name" : "2003/2004"
-  },
-  "home_team" : {
-    "home_team_id" : 36,
-    "home_team_name" : "Manchester City",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 4202,
-      "name" : "Kevin Joseph Keegan",
-      "nickname" : "Kevin Keegan",
-      "dob" : "1951-02-14",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1,
-    "away_team_name" : "Arsenal",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4715,
-    "name" : "Etihad Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
   "match_id" : 3749276,
   "match_date" : "2004-02-21",
   "kick_off" : "13:30:00.000",
@@ -1344,7 +1632,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2023-11-14T11:19:10.837984",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1512,84 +1800,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3749493,
-  "match_date" : "2003-08-16",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 44,
-    "season_name" : "2003/2004"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 29,
-    "away_team_name" : "Everton",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 86,
-      "name" : "David Moyes",
-      "nickname" : null,
-      "dob" : "1963-04-25",
-      "country" : {
-        "id" : 201,
-        "name" : "Scotland"
-      }
-    } ]
-  },
-  "home_score" : 2,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 1,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -1598,7 +1809,7 @@
 }, {
   "match_id" : 3749434,
   "match_date" : "2003-11-22",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -1652,7 +1863,7 @@
   "away_score" : 3,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:41:07.211114",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1666,7 +1877,7 @@
   },
   "stadium" : {
     "id" : 4500,
-    "name" : "St. Andrews Stadium",
+    "name" : "St Andrew's @ Knighthead Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -1743,141 +1954,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3749196,
-  "match_date" : "2003-11-08",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 44,
-    "season_name" : "2003/2004"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 38,
-    "away_team_name" : "Tottenham Hotspur",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 3533,
-      "name" : "David Pleat",
-      "nickname" : null,
-      "dob" : "1945-01-15",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "home_score" : 2,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 12,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1000243,
-    "name" : "Highbury Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3749448,
-  "match_date" : "2004-04-09",
-  "kick_off" : "13:30:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 44,
-    "season_name" : "2003/2004"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "away_team" : {
-    "away_team_id" : 24,
-    "away_team_name" : "Liverpool",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "home_score" : 4,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 31,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -1954,7 +2031,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2031,7 +2108,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2094,7 +2171,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-08-30T07:13:01.092744",
+  "last_updated" : "2024-03-08T14:49:13.195793",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -2108,84 +2185,7 @@
   },
   "stadium" : {
     "id" : 4843,
-    "name" : "University of Bolton Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3749603,
-  "match_date" : "2004-05-09",
-  "kick_off" : "17:05:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 44,
-    "season_name" : "2003/2004"
-  },
-  "home_team" : {
-    "home_team_id" : 55,
-    "home_team_name" : "Fulham",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 403,
-      "name" : "Chris Coleman",
-      "nickname" : "Óscar Pareja",
-      "dob" : "1970-06-10",
-      "country" : {
-        "id" : 249,
-        "name" : "Wales"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1,
-    "away_team_name" : "Arsenal",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 2,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4844,
-    "name" : "Loftus Road",
+    "name" : "Toughsheet Community Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2639,7 +2639,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2702,7 +2702,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2023-11-14T11:20:05.522660",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -2716,7 +2716,7 @@
   },
   "stadium" : {
     "id" : 1000243,
-    "name" : "Highbury Stadium",
+    "name" : "Arsenal Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2725,7 +2725,7 @@
 }, {
   "match_id" : 3749526,
   "match_date" : "2003-10-26",
-  "kick_off" : "15:00:00.000",
+  "kick_off" : "13:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -2779,7 +2779,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:43:09.480373",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -2870,7 +2870,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"

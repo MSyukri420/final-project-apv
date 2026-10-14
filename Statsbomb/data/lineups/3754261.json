@@ -25,11 +25,11 @@
       "position_id" : 2,
       "position" : "Right Back",
       "from" : "00:00",
-      "to" : "59:21",
+      "to" : "53:24",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 22,
       "position" : "Right Center Forward",
@@ -66,8 +66,8 @@
     "player_nickname" : null,
     "jersey_number" : 22,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 113,
+      "name" : "Jamaica"
     },
     "cards" : [ ],
     "positions" : [ {
@@ -269,7 +269,7 @@
     } ]
   }, {
     "player_id" : 3961,
-    "player_name" : "N''Golo Kanté",
+    "player_name" : "N'Golo Kanté",
     "player_nickname" : "N'Golo Kanté",
     "jersey_number" : 14,
     "country" : {

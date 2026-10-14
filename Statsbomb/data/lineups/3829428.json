@@ -1,6 +1,6 @@
 [ {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2959,
     "player_name" : "Julien Féret",
@@ -572,11 +572,11 @@
       "position_id" : 5,
       "position" : "Left Center Back",
       "from" : "00:00",
-      "to" : null,
+      "to" : "88:56",
       "from_period" : 1,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Red Card)"
     } ]
   }, {
     "player_id" : 16522,

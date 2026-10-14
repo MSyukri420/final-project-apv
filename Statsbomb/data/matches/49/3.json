@@ -614,7 +614,7 @@
   },
   "away_team" : {
     "away_team_id" : 760,
-    "away_team_name" : "OL Reign",
+    "away_team_name" : "Seattle Reign",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -814,7 +814,7 @@
   },
   "stadium" : {
     "id" : 4725,
-    "name" : "Exploria Stadium",
+    "name" : "Inter&Co Stadium",
     "country" : {
       "id" : 241,
       "name" : "United States of America"
@@ -1009,7 +1009,7 @@
   },
   "home_team" : {
     "home_team_id" : 760,
-    "home_team_name" : "OL Reign",
+    "home_team_name" : "Seattle Reign",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -1175,7 +1175,7 @@
   },
   "home_team" : {
     "home_team_id" : 760,
-    "home_team_name" : "OL Reign",
+    "home_team_name" : "Seattle Reign",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -1312,7 +1312,7 @@
   },
   "stadium" : {
     "id" : 4725,
-    "name" : "Exploria Stadium",
+    "name" : "Inter&Co Stadium",
     "country" : {
       "id" : 241,
       "name" : "United States of America"
@@ -1810,7 +1810,7 @@
   },
   "stadium" : {
     "id" : 4725,
-    "name" : "Exploria Stadium",
+    "name" : "Inter&Co Stadium",
     "country" : {
       "id" : 241,
       "name" : "United States of America"
@@ -2059,7 +2059,7 @@
   },
   "stadium" : {
     "id" : 4725,
-    "name" : "Exploria Stadium",
+    "name" : "Inter&Co Stadium",
     "country" : {
       "id" : 241,
       "name" : "United States of America"
@@ -2088,7 +2088,7 @@
   },
   "home_team" : {
     "home_team_id" : 760,
-    "home_team_name" : "OL Reign",
+    "home_team_name" : "Seattle Reign",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -2213,7 +2213,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2021-11-06T05:53:29.435016",
+  "last_updated" : "2024-12-15T12:31:48.035735",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.0.2"
@@ -2308,7 +2308,7 @@
   },
   "stadium" : {
     "id" : 4725,
-    "name" : "Exploria Stadium",
+    "name" : "Inter&Co Stadium",
     "country" : {
       "id" : 241,
       "name" : "United States of America"
@@ -2420,7 +2420,7 @@
   },
   "home_team" : {
     "home_team_id" : 760,
-    "home_team_name" : "OL Reign",
+    "home_team_name" : "Seattle Reign",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {
@@ -2689,7 +2689,7 @@
   },
   "away_team" : {
     "away_team_id" : 760,
-    "away_team_name" : "OL Reign",
+    "away_team_name" : "Seattle Reign",
     "away_team_gender" : "female",
     "away_team_group" : null,
     "country" : {
@@ -2918,7 +2918,7 @@
   },
   "home_team" : {
     "home_team_id" : 760,
-    "home_team_name" : "OL Reign",
+    "home_team_name" : "Seattle Reign",
     "home_team_gender" : "female",
     "home_team_group" : null,
     "country" : {

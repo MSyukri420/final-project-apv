@@ -340,7 +340,7 @@
   }, {
     "player_id" : 28266,
     "player_name" : "Rafael Santos Borré Amaury",
-    "player_nickname" : null,
+    "player_nickname" : "Rafael Borré",
     "jersey_number" : 19,
     "country" : {
       "id" : 49,
@@ -545,7 +545,7 @@
     } ]
   }, {
     "player_id" : 16637,
-    "player_name" : "Christian Jesús Martinez",
+    "player_name" : "Cristian Jesús Martínez",
     "player_nickname" : "Christian Martínez",
     "jersey_number" : 6,
     "country" : {

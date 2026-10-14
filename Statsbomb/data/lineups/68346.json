@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1208,
-  "team_name" : "Cameroon Women's",
+  "team_name" : "Cameroon W",
   "lineup" : [ {
     "player_id" : 4943,
     "player_name" : "Estelle Johnson",
@@ -399,7 +399,7 @@
   }, {
     "player_id" : 4989,
     "player_name" : "Rebekah Ashley Stott",
-    "player_nickname" : null,
+    "player_nickname" : "Rebekah Stott",
     "jersey_number" : 6,
     "country" : {
       "id" : 163,

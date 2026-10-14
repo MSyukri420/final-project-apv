@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4648,
     "player_name" : "Abbie McManus",
@@ -368,8 +368,8 @@
     "positions" : [ ]
   }, {
     "player_id" : 61029,
-    "player_name" : "Ivana Fuso",
-    "player_nickname" : null,
+    "player_name" : "Ivana Ferreira Fuso",
+    "player_nickname" : "Ivana Fuso",
     "jersey_number" : 13,
     "country" : {
       "id" : 31,
@@ -587,7 +587,7 @@
   }, {
     "player_id" : 24239,
     "player_name" : "Jemma Elizabeth Purfield",
-    "player_nickname" : null,
+    "player_nickname" : "Jemma Purfield",
     "jersey_number" : 23,
     "country" : {
       "id" : 68,
@@ -752,8 +752,8 @@
     "player_nickname" : null,
     "jersey_number" : 28,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 249,
+      "name" : "Wales"
     },
     "cards" : [ ],
     "positions" : [ ]

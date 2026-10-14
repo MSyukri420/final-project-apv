@@ -390,7 +390,7 @@
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
-      "end_reason" : "Player Off (Permanent)"
+      "end_reason" : "Player Off"
     }, {
       "position_id" : 23,
       "position" : "Center Forward",
@@ -923,7 +923,7 @@
     } ]
   }, {
     "player_id" : 389319,
-    "player_name" : "Bethuel Muzeu",
+    "player_name" : "Muzeu Bethuel",
     "player_nickname" : null,
     "jersey_number" : 9,
     "country" : {

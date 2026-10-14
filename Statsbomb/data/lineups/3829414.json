@@ -1,6 +1,6 @@
 [ {
   "team_id" : 140,
-  "team_name" : "Caen",
+  "team_name" : "Stade Malherbe Caen",
   "lineup" : [ {
     "player_id" : 2959,
     "player_name" : "Julien Féret",
@@ -346,7 +346,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3254,
     "player_name" : "Florian Thauvin",

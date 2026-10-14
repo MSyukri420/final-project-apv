@@ -166,7 +166,7 @@
     } ]
   }, {
     "player_id" : 34485,
-    "player_name" : "Gabriela Guillén Alvarez",
+    "player_name" : "Gabriela Guillén Álvarez",
     "player_nickname" : null,
     "jersey_number" : 2,
     "country" : {
@@ -740,7 +740,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 401928,
-    "player_name" : "Takako Seike",
+    "player_name" : "Kiko Seike",
     "player_nickname" : null,
     "jersey_number" : 17,
     "country" : {

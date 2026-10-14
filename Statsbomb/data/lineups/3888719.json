@@ -506,7 +506,7 @@
   }, {
     "player_id" : 397632,
     "player_name" : "Marco Antônio Feliciano",
-    "player_nickname" : "Marco Antônio",
+    "player_nickname" : "Marco Feliciano",
     "jersey_number" : 16,
     "country" : {
       "id" : 31,
@@ -563,11 +563,11 @@
       "position_id" : 3,
       "position" : "Right Center Back",
       "from" : "00:00",
-      "to" : null,
+      "to" : "83:53",
       "from_period" : 1,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Red Card)"
     } ]
   }, {
     "player_id" : 397867,

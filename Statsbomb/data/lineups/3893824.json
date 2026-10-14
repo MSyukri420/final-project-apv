@@ -186,7 +186,7 @@
   }, {
     "player_id" : 26156,
     "player_name" : "Rasheedat Busayo Ajibade",
-    "player_nickname" : null,
+    "player_nickname" : "Rasheedat Ajibade",
     "jersey_number" : 15,
     "country" : {
       "id" : 166,
@@ -215,7 +215,7 @@
   }, {
     "player_id" : 50020,
     "player_name" : "Antionette Oyedupe Payne",
-    "player_nickname" : null,
+    "player_nickname" : "Toni Payne",
     "jersey_number" : 7,
     "country" : {
       "id" : 166,
@@ -755,8 +755,8 @@
     "positions" : [ ]
   }, {
     "player_id" : 401633,
-    "player_name" : "Aine O\"Gorman",
-    "player_nickname" : null,
+    "player_name" : "Áine Marie O'Gorman",
+    "player_nickname" : "Áine O'Gorman",
     "jersey_number" : 13,
     "country" : {
       "id" : 109,

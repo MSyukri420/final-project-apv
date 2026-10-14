@@ -110,7 +110,7 @@
       "name" : "Belgium"
     },
     "cards" : [ {
-      "time" : "13:07",
+      "time" : "13:08",
       "card_type" : "Yellow Card",
       "reason" : "Foul Committed",
       "period" : 1
@@ -445,7 +445,7 @@
       "position_id" : 21,
       "position" : "Left Wing",
       "from" : "00:00",
-      "to" : "13:48",
+      "to" : "13:49",
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
@@ -510,7 +510,7 @@
       "name" : "Panama"
     },
     "cards" : [ {
-      "time" : "17:27",
+      "time" : "17:28",
       "card_type" : "Yellow Card",
       "reason" : "Foul Committed",
       "period" : 1
@@ -575,7 +575,7 @@
       "name" : "Panama"
     },
     "cards" : [ {
-      "time" : "45:56",
+      "time" : "45:57",
       "card_type" : "Yellow Card",
       "reason" : "Foul Committed",
       "period" : 1
@@ -723,7 +723,7 @@
       "position_id" : 13,
       "position" : "Right Center Midfield",
       "from" : "00:00",
-      "to" : "28:54",
+      "to" : "28:55",
       "from_period" : 1,
       "to_period" : 1,
       "start_reason" : "Starting XI",
@@ -731,7 +731,7 @@
     }, {
       "position_id" : 13,
       "position" : "Right Center Midfield",
-      "from" : "29:25",
+      "from" : "29:26",
       "to" : null,
       "from_period" : 1,
       "to_period" : null,

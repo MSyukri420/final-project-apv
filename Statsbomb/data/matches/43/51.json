@@ -1,4 +1,89 @@
 [ {
+  "match_id" : 3888718,
+  "match_date" : "1974-06-30",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 43,
+    "country_name" : "International",
+    "competition_name" : "FIFA World Cup"
+  },
+  "season" : {
+    "season_id" : 51,
+    "season_name" : "1974"
+  },
+  "home_team" : {
+    "home_team_id" : 2721,
+    "home_team_name" : "German DR",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 255,
+      "name" : "International"
+    },
+    "managers" : [ {
+      "id" : 4623,
+      "name" : "Georg Buschner",
+      "nickname" : null,
+      "dob" : "1925-12-26",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 941,
+    "away_team_name" : "Netherlands",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "managers" : [ {
+      "id" : 1003270,
+      "name" : "Rinus Michels",
+      "nickname" : null,
+      "dob" : "1928-02-09",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "unscheduled",
+  "last_updated" : "2026-05-04T01:27:30.815702",
+  "last_updated_360" : null,
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 99,
+    "name" : "1st Group Stage"
+  },
+  "stadium" : {
+    "id" : 115972,
+    "name" : "Parkstadion Obenende",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  },
+  "referee" : {
+    "id" : 1009041,
+    "name" : "Rudolf Scheurer",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    }
+  }
+}, {
   "match_id" : 3888720,
   "match_date" : "1974-07-07",
   "kick_off" : "18:00:00.000",
@@ -55,7 +140,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-07T10:19:27.136158",
+  "last_updated" : "2024-02-13T02:52:29.582599",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -86,7 +171,7 @@
 }, {
   "match_id" : 3888719,
   "match_date" : "1974-07-03",
-  "kick_off" : "21:30:00.000",
+  "kick_off" : "18:30:00.000",
   "competition" : {
     "competition_id" : 43,
     "country_name" : "International",
@@ -140,7 +225,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-07-17T23:19:58.853207",
+  "last_updated" : "2026-05-04T01:28:25.136220",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -169,94 +254,9 @@
     }
   }
 }, {
-  "match_id" : 3888718,
-  "match_date" : "1974-06-30",
-  "kick_off" : "18:00:00.000",
-  "competition" : {
-    "competition_id" : 43,
-    "country_name" : "International",
-    "competition_name" : "FIFA World Cup"
-  },
-  "season" : {
-    "season_id" : 51,
-    "season_name" : "1974"
-  },
-  "home_team" : {
-    "home_team_id" : 2721,
-    "home_team_name" : "German DR",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 255,
-      "name" : "International"
-    },
-    "managers" : [ {
-      "id" : 4623,
-      "name" : "Georg Buschner",
-      "nickname" : null,
-      "dob" : "1925-12-26",
-      "country" : {
-        "id" : 85,
-        "name" : "Germany"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 941,
-    "away_team_name" : "Netherlands",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 160,
-      "name" : "Netherlands"
-    },
-    "managers" : [ {
-      "id" : 1003270,
-      "name" : "Rinus Michels",
-      "nickname" : null,
-      "dob" : "1928-02-09",
-      "country" : {
-        "id" : 160,
-        "name" : "Netherlands"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-07T15:29:44.679215",
-  "last_updated_360" : null,
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 5,
-  "competition_stage" : {
-    "id" : 99,
-    "name" : "1st Group Stage"
-  },
-  "stadium" : {
-    "id" : 115972,
-    "name" : "Parkstadion Obenende",
-    "country" : {
-      "id" : 85,
-      "name" : "Germany"
-    }
-  },
-  "referee" : {
-    "id" : 1009041,
-    "name" : "Rudolf Scheurer",
-    "country" : {
-      "id" : 221,
-      "name" : "Switzerland"
-    }
-  }
-}, {
   "match_id" : 3888717,
   "match_date" : "1974-06-26",
-  "kick_off" : "21:30:00.000",
+  "kick_off" : "18:30:00.000",
   "competition" : {
     "competition_id" : 43,
     "country_name" : "International",
@@ -310,7 +310,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-11T14:59:59.514793",
+  "last_updated" : "2026-05-04T01:26:34.087950",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",
@@ -416,7 +416,7 @@
 }, {
   "match_id" : 3750180,
   "match_date" : "1974-06-22",
-  "kick_off" : "19:30:00.000",
+  "kick_off" : "16:30:00.000",
   "competition" : {
     "competition_id" : 43,
     "country_name" : "International",
@@ -470,7 +470,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2022-11-24T21:12:47.649028",
+  "last_updated" : "2026-05-15T02:20:43.439689",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",

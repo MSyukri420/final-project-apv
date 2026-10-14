@@ -219,11 +219,11 @@
       "position_id" : 6,
       "position" : "Left Back",
       "from" : "27:11",
-      "to" : null,
+      "to" : "78:56",
       "from_period" : 1,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Player On",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Second Yellow)"
     } ]
   }, {
     "player_id" : 25518,
@@ -627,7 +627,7 @@
   }, {
     "player_id" : 10165,
     "player_name" : "Irene Paredes Hernandez",
-    "player_nickname" : "Irene Hernandez",
+    "player_nickname" : "Irene Paredes",
     "jersey_number" : 4,
     "country" : {
       "id" : 214,

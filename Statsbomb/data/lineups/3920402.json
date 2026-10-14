@@ -458,7 +458,7 @@
   }, {
     "player_id" : 225437,
     "player_name" : "Stephane Aziz Ki",
-    "player_nickname" : null,
+    "player_nickname" : "Stephane Ki",
     "jersey_number" : 17,
     "country" : {
       "id" : 36,
@@ -577,7 +577,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 4472,
-    "player_name" : "Raïs M''Bolhi Ouhab",
+    "player_name" : "Raïs M'Bolhi Ouhab",
     "player_nickname" : "Raïs M'Bolhi",
     "jersey_number" : 23,
     "country" : {

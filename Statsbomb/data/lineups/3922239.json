@@ -475,7 +475,7 @@
   }, {
     "player_id" : 23559,
     "player_name" : "José Ndong Machín Dicombo",
-    "player_nickname" : "José Machín",
+    "player_nickname" : "Pepín Machín",
     "jersey_number" : 7,
     "country" : {
       "id" : 69,
@@ -626,26 +626,6 @@
     "positions" : [ {
       "position_id" : 5,
       "position" : "Left Center Back",
-      "from" : "00:00",
-      "to" : null,
-      "from_period" : 1,
-      "to_period" : null,
-      "start_reason" : "Starting XI",
-      "end_reason" : "Final Whistle"
-    } ]
-  }, {
-    "player_id" : 105760,
-    "player_name" : "Esteban Obiang Obono",
-    "player_nickname" : "Esteban Obiang",
-    "jersey_number" : 21,
-    "country" : {
-      "id" : 69,
-      "name" : "Equatorial Guinea"
-    },
-    "cards" : [ ],
-    "positions" : [ {
-      "position_id" : 3,
-      "position" : "Right Center Back",
       "from" : "00:00",
       "to" : null,
       "from_period" : 1,
@@ -861,5 +841,25 @@
     },
     "cards" : [ ],
     "positions" : [ ]
+  }, {
+    "player_id" : 482851,
+    "player_name" : "Esteban Orozco Fernández",
+    "player_nickname" : "Esteban Fernández",
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
   } ]
 } ]

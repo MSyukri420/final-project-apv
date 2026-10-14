@@ -73,7 +73,7 @@
   }, {
     "player_id" : 10271,
     "player_name" : "Griedge Mbock Bathy Nka",
-    "player_nickname" : "Griedge Mbock Bathy",
+    "player_nickname" : "Griedge Mbock",
     "jersey_number" : 19,
     "country" : {
       "id" : 78,
@@ -1025,7 +1025,7 @@
   }, {
     "player_id" : 221888,
     "player_name" : "Kerstin Yasmijn Casparij",
-    "player_nickname" : null,
+    "player_nickname" : "Kerstin Casparij",
     "jersey_number" : 18,
     "country" : {
       "id" : 160,

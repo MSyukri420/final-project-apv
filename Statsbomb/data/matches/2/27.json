@@ -1,4 +1,684 @@
 [ {
+  "match_id" : 3754217,
+  "match_date" : "2015-09-19",
+  "kick_off" : "11:45:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 33,
+    "home_team_name" : "Chelsea",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 383,
+      "name" : "José Mario Felix dos Santos Mourinho",
+      "nickname" : "José Mourinho",
+      "dob" : "1963-01-26",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1,
+    "away_team_name" : "Arsenal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-16T17:01:18.696515",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 6,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 10,
+    "name" : "Stamford Bridge",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 6,
+    "name" : "Mike Dean",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3754117,
+  "match_date" : "2015-12-13",
+  "kick_off" : "12:30:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 59,
+    "home_team_name" : "Aston Villa",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 92,
+      "name" : "Rémi Garde",
+      "nickname" : null,
+      "dob" : "1966-04-03",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1,
+    "away_team_name" : "Arsenal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-16T17:04:24.176407",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 16,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 211,
+    "name" : "Villa Park",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 12,
+    "name" : "Kevin Friend",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3754296,
+  "match_date" : "2015-12-21",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 36,
+    "away_team_name" : "Manchester City",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 733,
+      "name" : "Manuel Luis Pellegrini Ripamonti",
+      "nickname" : "Manuel Pellegrini",
+      "dob" : "1953-09-16",
+      "country" : {
+        "id" : 45,
+        "name" : "Chile"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-17T11:59:35.059270",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 17,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 3,
+    "name" : "Emirates Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 5,
+    "name" : "Andre Marriner",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3753983,
+  "match_date" : "2015-10-31",
+  "kick_off" : "14:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 26,
+    "home_team_name" : "Swansea City",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    },
+    "managers" : [ {
+      "id" : 270,
+      "name" : "Garry Monk",
+      "nickname" : null,
+      "dob" : "1979-03-06",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1,
+    "away_team_name" : "Arsenal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 3,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-16T17:02:24.849544",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 11,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 45,
+    "name" : "Swansea.com Stadium",
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    }
+  },
+  "referee" : {
+    "id" : 12,
+    "name" : "Kevin Friend",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3754160,
+  "match_date" : "2015-12-05",
+  "kick_off" : "14:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 41,
+    "away_team_name" : "Sunderland",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 561,
+      "name" : "Sam Allardyce",
+      "nickname" : null,
+      "dob" : "1954-10-19",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-16T17:03:25.661537",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 15,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 3,
+    "name" : "Emirates Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 9,
+    "name" : "Robert Madley",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3754129,
+  "match_date" : "2015-08-24",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 1,
+    "home_team_name" : "Arsenal",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 24,
+    "away_team_name" : "Liverpool",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 6,
+      "name" : "Brendan Rodgers",
+      "nickname" : null,
+      "dob" : "1973-01-26",
+      "country" : {
+        "id" : 169,
+        "name" : "Northern Ireland"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-16T17:00:10.572124",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 3,
+    "name" : "Emirates Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 1,
+    "name" : "Michael Oliver",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3754309,
+  "match_date" : "2015-12-26",
+  "kick_off" : "18:45:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 25,
+    "home_team_name" : "Southampton",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 676,
+      "name" : "Ronald Koeman",
+      "nickname" : null,
+      "dob" : "1963-03-21",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1,
+    "away_team_name" : "Arsenal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 577,
+      "name" : "Arsène Wenger",
+      "nickname" : null,
+      "dob" : "1949-10-22",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 4,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-12-17T12:00:24.932322",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 18,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 4591,
+    "name" : "St. Mary's Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 3,
+    "name" : "Jonathan Moss",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3754047,
+  "match_date" : "2015-11-29",
+  "kick_off" : "15:15:00.000",
+  "competition" : {
+    "competition_id" : 2,
+    "country_name" : "England",
+    "competition_name" : "Premier League"
+  },
+  "season" : {
+    "season_id" : 27,
+    "season_name" : "2015/2016"
+  },
+  "home_team" : {
+    "home_team_id" : 24,
+    "home_team_name" : "Liverpool",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 94,
+      "name" : "Jürgen Klopp",
+      "nickname" : null,
+      "dob" : "1967-06-16",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 26,
+    "away_team_name" : "Swansea City",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    },
+    "managers" : [ {
+      "id" : 270,
+      "name" : "Garry Monk",
+      "nickname" : null,
+      "dob" : "1979-03-06",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-04-23T14:36:29.347042",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 14,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 6,
+    "name" : "Anfield ",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 8,
+    "name" : "Anthony Taylor",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
   "match_id" : 3754058,
   "match_date" : "2016-01-02",
   "kick_off" : "16:00:00.000",
@@ -239,7 +919,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2364,7 +3044,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2449,7 +3129,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -2538,91 +3218,6 @@
     "country" : {
       "id" : 68,
       "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 12,
-    "name" : "Kevin Friend",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3753983,
-  "match_date" : "2015-10-31",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 26,
-    "home_team_name" : "Swansea City",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 249,
-      "name" : "Wales"
-    },
-    "managers" : [ {
-      "id" : 270,
-      "name" : "Garry Monk",
-      "nickname" : null,
-      "dob" : "1979-03-06",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1,
-    "away_team_name" : "Arsenal",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 3,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2022-12-01T13:16:30.336800",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 11,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 45,
-    "name" : "Swansea.com Stadium",
-    "country" : {
-      "id" : 249,
-      "name" : "Wales"
     }
   },
   "referee" : {
@@ -2874,7 +3469,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -3724,7 +4319,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -3809,7 +4404,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -4744,7 +5339,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -5178,91 +5773,6 @@
   "referee" : {
     "id" : 1,
     "name" : "Michael Oliver",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3754047,
-  "match_date" : "2015-11-29",
-  "kick_off" : "17:15:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 24,
-    "home_team_name" : "Liverpool",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 94,
-      "name" : "Jürgen Klopp",
-      "nickname" : null,
-      "dob" : "1967-06-16",
-      "country" : {
-        "id" : 85,
-        "name" : "Germany"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 26,
-    "away_team_name" : "Swansea City",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 249,
-      "name" : "Wales"
-    },
-    "managers" : [ {
-      "id" : 270,
-      "name" : "Garry Monk",
-      "nickname" : null,
-      "dob" : "1979-03-06",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "home_score" : 1,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-10-17T11:10:45.917926",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 14,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 6,
-    "name" : "Anfield ",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 8,
-    "name" : "Anthony Taylor",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -6104,7 +6614,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -6113,91 +6623,6 @@
   "referee" : {
     "id" : 2,
     "name" : "Craig Pawson",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
-  "match_id" : 3754117,
-  "match_date" : "2015-12-13",
-  "kick_off" : "14:30:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 59,
-    "home_team_name" : "Aston Villa",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 92,
-      "name" : "Rémi Garde",
-      "nickname" : null,
-      "dob" : "1966-04-03",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1,
-    "away_team_name" : "Arsenal",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 2,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-10-13T19:10:54.458149",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 16,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 211,
-    "name" : "Villa Park",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 12,
-    "name" : "Kevin Friend",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -6444,7 +6869,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -6784,7 +7209,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -8059,7 +8484,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -8314,7 +8739,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -8654,7 +9079,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -8754,91 +9179,6 @@
     }
   }
 }, {
-  "match_id" : 3754160,
-  "match_date" : "2015-12-05",
-  "kick_off" : "16:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 41,
-    "away_team_name" : "Sunderland",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 561,
-      "name" : "Sam Allardyce",
-      "nickname" : null,
-      "dob" : "1954-10-19",
-      "country" : {
-        "id" : 68,
-        "name" : "England"
-      }
-    } ]
-  },
-  "home_score" : 3,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-10-13T14:16:54.852458",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 15,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 3,
-    "name" : "Emirates Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 9,
-    "name" : "Robert Madley",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
   "match_id" : 3754218,
   "match_date" : "2015-12-12",
   "kick_off" : "16:00:00.000",
@@ -8924,91 +9264,6 @@
     }
   }
 }, {
-  "match_id" : 3754217,
-  "match_date" : "2015-09-19",
-  "kick_off" : "13:45:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 33,
-    "home_team_name" : "Chelsea",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 383,
-      "name" : "José Mario Felix dos Santos Mourinho",
-      "nickname" : "José Mourinho",
-      "dob" : "1963-01-26",
-      "country" : {
-        "id" : 183,
-        "name" : "Portugal"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1,
-    "away_team_name" : "Arsenal",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 2,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2022-12-01T12:54:07.025078",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 6,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 10,
-    "name" : "Stamford Bridge",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 6,
-    "name" : "Mike Dean",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
   "match_id" : 3754205,
   "match_date" : "2015-08-29",
   "kick_off" : "13:45:00.000",
@@ -9079,7 +9334,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -11304,91 +11559,6 @@
     }
   }
 }, {
-  "match_id" : 3754296,
-  "match_date" : "2015-12-21",
-  "kick_off" : "21:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 36,
-    "away_team_name" : "Manchester City",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 733,
-      "name" : "Manuel Luis Pellegrini Ripamonti",
-      "nickname" : "Manuel Pellegrini",
-      "dob" : "1953-09-16",
-      "country" : {
-        "id" : 45,
-        "name" : "Chile"
-      }
-    } ]
-  },
-  "home_score" : 2,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2021-07-17T13:35:33.149",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 17,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 3,
-    "name" : "Emirates Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 5,
-    "name" : "Andre Marriner",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
   "match_id" : 3754273,
   "match_date" : "2015-10-31",
   "kick_off" : "16:00:00.000",
@@ -11870,7 +12040,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-11-03T08:06:52.744806",
+  "last_updated" : "2023-11-14T11:25:33.476498",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -12734,7 +12904,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -13259,91 +13429,6 @@
     }
   }
 }, {
-  "match_id" : 3754309,
-  "match_date" : "2015-12-26",
-  "kick_off" : "20:45:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 25,
-    "home_team_name" : "Southampton",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 676,
-      "name" : "Ronald Koeman",
-      "nickname" : null,
-      "dob" : "1963-03-21",
-      "country" : {
-        "id" : 160,
-        "name" : "Netherlands"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 1,
-    "away_team_name" : "Arsenal",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "home_score" : 4,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-12-09T20:47:26.732958",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 18,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4591,
-    "name" : "St. Mary''s Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 3,
-    "name" : "Jonathan Moss",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
   "match_id" : 3754325,
   "match_date" : "2015-09-12",
   "kick_off" : "16:00:00.000",
@@ -13584,7 +13669,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -14349,7 +14434,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -15454,7 +15539,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -15724,91 +15809,6 @@
     }
   }
 }, {
-  "match_id" : 3754129,
-  "match_date" : "2015-08-24",
-  "kick_off" : "21:00:00.000",
-  "competition" : {
-    "competition_id" : 2,
-    "country_name" : "England",
-    "competition_name" : "Premier League"
-  },
-  "season" : {
-    "season_id" : 27,
-    "season_name" : "2015/2016"
-  },
-  "home_team" : {
-    "home_team_id" : 1,
-    "home_team_name" : "Arsenal",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 577,
-      "name" : "Arsène Wenger",
-      "nickname" : null,
-      "dob" : "1949-10-22",
-      "country" : {
-        "id" : 78,
-        "name" : "France"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 24,
-    "away_team_name" : "Liverpool",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    },
-    "managers" : [ {
-      "id" : 6,
-      "name" : "Brendan Rodgers",
-      "nickname" : null,
-      "dob" : "1973-01-26",
-      "country" : {
-        "id" : 169,
-        "name" : "Northern Ireland"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 0,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 3,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 3,
-    "name" : "Emirates Stadium",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  },
-  "referee" : {
-    "id" : 1,
-    "name" : "Michael Oliver",
-    "country" : {
-      "id" : 68,
-      "name" : "England"
-    }
-  }
-}, {
   "match_id" : 3754180,
   "match_date" : "2015-08-22",
   "kick_off" : "16:00:00.000",
@@ -16049,7 +16049,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -16151,7 +16151,7 @@
 }, {
   "match_id" : 3754173,
   "match_date" : "2015-12-28",
-  "kick_off" : "18:30:00.000",
+  "kick_off" : "16:30:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -16205,7 +16205,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2021-10-29T23:23:14.134378",
+  "last_updated" : "2025-12-16T17:01:18.621799",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -16661,7 +16661,7 @@
 }, {
   "match_id" : 3753980,
   "match_date" : "2016-03-19",
-  "kick_off" : "13:45:00.000",
+  "kick_off" : "11:45:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -16715,7 +16715,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2022-12-01T14:16:06.265253",
+  "last_updated" : "2025-12-17T12:02:11.462356",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -17503,7 +17503,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -18098,7 +18098,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -18183,7 +18183,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -18608,7 +18608,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -19104,7 +19104,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2022-12-01T14:38:23.266537",
+  "last_updated" : "2024-01-25T11:45:53.333860",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -19560,7 +19560,7 @@
 }, {
   "match_id" : 3754069,
   "match_date" : "2016-01-02",
-  "kick_off" : "16:00:00.000",
+  "kick_off" : "14:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -19614,7 +19614,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2022-12-01T13:49:13.209754",
+  "last_updated" : "2025-12-17T12:01:17.901147",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -20393,7 +20393,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -20818,7 +20818,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -21583,7 +21583,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -23632,7 +23632,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -23802,7 +23802,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -23887,7 +23887,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -24142,7 +24142,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -24397,7 +24397,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -24652,7 +24652,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -25179,7 +25179,7 @@
 }, {
   "match_id" : 3754202,
   "match_date" : "2016-01-17",
-  "kick_off" : "17:15:00.000",
+  "kick_off" : "15:15:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -25233,7 +25233,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2021-10-30T00:56:42.687591",
+  "last_updated" : "2025-12-17T14:38:00.447595",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -25332,7 +25332,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -27103,7 +27103,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2021-07-06T17:16:19.798",
+  "last_updated" : "2024-06-12T07:43:56.243851",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -27559,7 +27559,7 @@
 }, {
   "match_id" : 3754261,
   "match_date" : "2016-02-14",
-  "kick_off" : "13:00:00.000",
+  "kick_off" : "11:00:00.000",
   "competition" : {
     "competition_id" : 2,
     "country_name" : "England",
@@ -27613,7 +27613,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2022-12-01T14:02:28.605414",
+  "last_updated" : "2025-12-16T17:25:34.946968",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -28902,7 +28902,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -30262,7 +30262,7 @@
   },
   "stadium" : {
     "id" : 4591,
-    "name" : "St. Mary''s Stadium",
+    "name" : "St. Mary's Stadium",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -30503,7 +30503,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "processing",
-  "last_updated" : "2022-12-01T14:06:11.923351",
+  "last_updated" : "2024-08-08T16:04:16.566376",
   "last_updated_360" : "2021-06-12T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -30942,7 +30942,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"
@@ -31112,7 +31112,7 @@
   },
   "stadium" : {
     "id" : 4674,
-    "name" : "St. James'' Park",
+    "name" : "St. James' Park",
     "country" : {
       "id" : 68,
       "name" : "England"

@@ -19,7 +19,17 @@
     "country" : {
       "id" : 241,
       "name" : "United States of America"
-    }
+    },
+    "managers" : [ {
+      "id" : 1001769,
+      "name" : "Edwin Ronald Firmani",
+      "nickname" : null,
+      "dob" : "1933-08-07",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
   },
   "away_team" : {
     "away_team_id" : 488,
@@ -29,13 +39,23 @@
     "country" : {
       "id" : 241,
       "name" : "United States of America"
-    }
+    },
+    "managers" : [ {
+      "id" : 1001770,
+      "name" : "Jimmy Gabriel",
+      "nickname" : null,
+      "dob" : "1940-10-10",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
   },
   "home_score" : 2,
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2023-07-24T09:06:54.144896",
+  "last_updated" : "2025-02-20T11:41:45.243252",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",

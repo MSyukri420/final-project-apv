@@ -1,7 +1,7 @@
 [ {
   "match_id" : 68314,
   "match_date" : "2004-12-04",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -55,7 +55,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:47:42.695522",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -84,9 +84,9 @@
     }
   }
 }, {
-  "match_id" : 68313,
-  "match_date" : "2004-10-24",
-  "kick_off" : "21:00:00.000",
+  "match_id" : 68353,
+  "match_date" : "2004-10-16",
+  "kick_off" : "20:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -97,10 +97,30 @@
     "season_name" : "2004/2005"
   },
   "home_team" : {
-    "home_team_id" : 217,
-    "home_team_name" : "Barcelona",
+    "home_team_id" : 214,
+    "home_team_name" : "Espanyol",
     "home_team_gender" : "male",
     "home_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 4519,
+      "name" : "Miguel Ángel Lotina Oruecheberría",
+      "nickname" : "Miguel Ángel Lotina",
+      "dob" : "1957-06-18",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 217,
+    "away_team_name" : "Barcelona",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -116,53 +136,33 @@
       }
     } ]
   },
-  "away_team" : {
-    "away_team_id" : 422,
-    "away_team_name" : "Osasuna",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 3196,
-      "name" : "Javier Aguirre Onaindía",
-      "nickname" : "Javier Aguirre",
-      "dob" : "1958-12-01",
-      "country" : {
-        "id" : 147,
-        "name" : "Mexico"
-      }
-    } ]
-  },
-  "home_score" : 3,
-  "away_score" : 0,
+  "home_score" : 0,
+  "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-23T12:37:06.353769",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
     "shot_fidelity_version" : "2",
     "xy_fidelity_version" : "2"
   },
-  "match_week" : 8,
+  "match_week" : 7,
   "competition_stage" : {
     "id" : 1,
     "name" : "Regular Season"
   },
   "stadium" : {
-    "id" : 342,
-    "name" : "Spotify Camp Nou",
+    "id" : 4635,
+    "name" : "Estadi Olímpic Lluís Companys",
     "country" : {
       "id" : 214,
       "name" : "Spain"
     }
   },
   "referee" : {
-    "id" : 994,
-    "name" : "Vicente José Lizondo Cortés",
+    "id" : 996,
+    "name" : "Carlos Megía Dávila",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -225,7 +225,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2023-11-29T10:56:10.031508",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -254,9 +254,94 @@
     }
   }
 }, {
+  "match_id" : 68313,
+  "match_date" : "2004-10-24",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 11,
+    "country_name" : "Spain",
+    "competition_name" : "La Liga"
+  },
+  "season" : {
+    "season_id" : 37,
+    "season_name" : "2004/2005"
+  },
+  "home_team" : {
+    "home_team_id" : 217,
+    "home_team_name" : "Barcelona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 4953,
+      "name" : "Frank Rijkaard",
+      "nickname" : null,
+      "dob" : "1962-09-30",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 422,
+    "away_team_name" : "Osasuna",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 3196,
+      "name" : "Javier Aguirre Onaindía",
+      "nickname" : "Javier Aguirre",
+      "dob" : "1958-12-01",
+      "country" : {
+        "id" : 147,
+        "name" : "Mexico"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T13:46:47.167625",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 8,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 342,
+    "name" : "Spotify Camp Nou",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 994,
+    "name" : "Vicente José Lizondo Cortés",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
   "match_id" : 68315,
   "match_date" : "2004-12-21",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -310,7 +395,7 @@
   "away_score" : 1,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:48:43.998096",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -341,7 +426,7 @@
 }, {
   "match_id" : 69153,
   "match_date" : "2004-12-11",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -395,7 +480,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T13:34:29.999262",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -480,7 +565,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2023-11-29T10:55:19.219954",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -503,91 +588,6 @@
   "referee" : {
     "id" : 995,
     "name" : "Puentes Leira",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  }
-}, {
-  "match_id" : 68353,
-  "match_date" : "2004-10-16",
-  "kick_off" : "22:00:00.000",
-  "competition" : {
-    "competition_id" : 11,
-    "country_name" : "Spain",
-    "competition_name" : "La Liga"
-  },
-  "season" : {
-    "season_id" : 37,
-    "season_name" : "2004/2005"
-  },
-  "home_team" : {
-    "home_team_id" : 214,
-    "home_team_name" : "Espanyol",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 4519,
-      "name" : "Miguel Ángel Lotina Oruecheberría",
-      "nickname" : "Miguel Ángel Lotina",
-      "dob" : "1957-06-18",
-      "country" : {
-        "id" : 214,
-        "name" : "Spain"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 217,
-    "away_team_name" : "Barcelona",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 4953,
-      "name" : "Frank Rijkaard",
-      "nickname" : null,
-      "dob" : "1962-09-30",
-      "country" : {
-        "id" : 160,
-        "name" : "Netherlands"
-      }
-    } ]
-  },
-  "home_score" : 0,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 7,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 4635,
-    "name" : "Estadi Olímpic Lluís Companys",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  },
-  "referee" : {
-    "id" : 996,
-    "name" : "Carlos Megía Dávila",
     "country" : {
       "id" : 214,
       "name" : "Spain"

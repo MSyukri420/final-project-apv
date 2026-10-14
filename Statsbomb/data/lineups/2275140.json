@@ -1,6 +1,6 @@
 [ {
   "team_id" : 1475,
-  "team_name" : "Manchester United",
+  "team_name" : "Manchester United W",
   "lineup" : [ {
     "player_id" : 4648,
     "player_name" : "Abbie McManus",
@@ -665,7 +665,7 @@
   }, {
     "player_id" : 31528,
     "player_name" : "Matilde Lundorf Skovsen",
-    "player_nickname" : null,
+    "player_nickname" : "Matilde Lundorf",
     "jersey_number" : 12,
     "country" : {
       "id" : 61,

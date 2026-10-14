@@ -306,7 +306,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 23785,
-    "player_name" : "Théo Bongonda Mbul''Ofeko Batombo",
+    "player_name" : "Théo Bongonda Mbul'Ofeko Batombo",
     "player_nickname" : "Théo Bongonda Mbul'Ofeko Batombo",
     "jersey_number" : 10,
     "country" : {
@@ -561,8 +561,8 @@
     "player_nickname" : "Mohammed Sagaf",
     "jersey_number" : 27,
     "country" : {
-      "id" : 68,
-      "name" : "England"
+      "id" : 225,
+      "name" : "Tanzania, United Republic of"
     },
     "cards" : [ ],
     "positions" : [ ]
@@ -601,8 +601,8 @@
     "player_nickname" : null,
     "jersey_number" : 21,
     "country" : {
-      "id" : 14,
-      "name" : "Australia"
+      "id" : 225,
+      "name" : "Tanzania, United Republic of"
     },
     "cards" : [ ],
     "positions" : [ {

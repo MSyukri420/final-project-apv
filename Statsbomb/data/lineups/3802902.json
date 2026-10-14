@@ -243,11 +243,11 @@
       "position_id" : 2,
       "position" : "Right Back",
       "from" : "00:00",
-      "to" : "60:16",
+      "to" : "53:54",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",
@@ -419,7 +419,7 @@
   } ]
 }, {
   "team_id" : 147,
-  "team_name" : "Marseille",
+  "team_name" : "Olympique de Marseille",
   "lineup" : [ {
     "player_id" : 3365,
     "player_name" : "Valentin Rongier",

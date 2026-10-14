@@ -73,7 +73,7 @@
   }, {
     "player_id" : 10165,
     "player_name" : "Irene Paredes Hernandez",
-    "player_nickname" : "Irene Hernandez",
+    "player_nickname" : "Irene Paredes",
     "jersey_number" : 4,
     "country" : {
       "id" : 214,
@@ -799,7 +799,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 401928,
-    "player_name" : "Takako Seike",
+    "player_name" : "Kiko Seike",
     "player_nickname" : null,
     "jersey_number" : 17,
     "country" : {

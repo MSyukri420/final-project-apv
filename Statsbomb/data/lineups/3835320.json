@@ -155,7 +155,7 @@
   }, {
     "player_id" : 24374,
     "player_name" : "Ingrid Syrstad Engen",
-    "player_nickname" : null,
+    "player_nickname" : "Ingrid Engen",
     "jersey_number" : 7,
     "country" : {
       "id" : 171,
@@ -401,7 +401,7 @@
   } ]
 }, {
   "team_id" : 2457,
-  "team_name" : "Northern Ireland",
+  "team_name" : "Northern Ireland W",
   "lineup" : [ {
     "player_id" : 15559,
     "player_name" : "Simone Magill",

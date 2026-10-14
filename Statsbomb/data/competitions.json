@@ -8,8 +8,8 @@
   "competition_international" : false,
   "season_name" : "2023/2024",
   "match_updated" : "2024-09-28T20:46:38.893391",
-  "match_updated_360" : "2025-07-06T04:26:07.636270",
-  "match_available_360" : "2025-07-06T04:26:07.636270",
+  "match_updated_360" : "2025-11-15T23:17:41.827093",
+  "match_available_360" : "2025-11-15T23:17:41.827093",
   "match_available" : "2024-09-28T20:46:38.893391"
 }, {
   "competition_id" : 9,
@@ -33,10 +33,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2023",
-  "match_updated" : "2024-09-28T01:57:35.846538",
-  "match_updated_360" : null,
-  "match_available_360" : null,
-  "match_available" : "2024-09-28T01:57:35.846538"
+  "match_updated" : "2026-05-12T21:18:08.827431",
+  "match_updated_360" : "2026-05-02T02:07:18.902396",
+  "match_available_360" : "2026-05-02T02:07:18.902396",
+  "match_available" : "2026-05-12T21:18:08.827431"
 }, {
   "competition_id" : 16,
   "season_id" : 4,
@@ -46,10 +46,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2018/2019",
-  "match_updated" : "2025-05-08T15:10:50.835274",
+  "match_updated" : "2026-05-15T15:54:04.598614",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2025-05-08T15:10:50.835274"
+  "match_available" : "2026-05-15T15:54:04.598614"
 }, {
   "competition_id" : 16,
   "season_id" : 1,
@@ -280,10 +280,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2024",
-  "match_updated" : "2024-11-04T16:15:34.886972",
+  "match_updated" : "2026-05-13T12:24:48.807600",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2024-11-04T16:15:34.886972"
+  "match_available" : "2026-05-13T12:24:48.807600"
 }, {
   "competition_id" : 87,
   "season_id" : 84,
@@ -325,6 +325,19 @@
   "match_available" : "2024-02-13T14:26:19.978418"
 }, {
   "competition_id" : 37,
+  "season_id" : 281,
+  "country_name" : "England",
+  "competition_name" : "FA Women's Super League",
+  "competition_gender" : "female",
+  "competition_youth" : false,
+  "competition_international" : false,
+  "season_name" : "2023/2024",
+  "match_updated" : "2026-04-11T13:05:10.794831",
+  "match_updated_360" : null,
+  "match_available_360" : null,
+  "match_available" : "2026-04-11T13:05:10.794831"
+}, {
+  "competition_id" : 37,
   "season_id" : 90,
   "country_name" : "England",
   "competition_name" : "FA Women's Super League",
@@ -332,10 +345,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2020/2021",
-  "match_updated" : "2025-04-23T14:16:46.924831",
+  "match_updated" : "2026-04-12T16:33:48.145602",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2025-04-23T14:16:46.924831"
+  "match_available" : "2026-04-12T16:33:48.145602"
 }, {
   "competition_id" : 37,
   "season_id" : 42,
@@ -345,10 +358,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2019/2020",
-  "match_updated" : "2024-02-12T15:05:34.211400",
+  "match_updated" : "2026-04-12T16:07:56.102610",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2024-02-12T15:05:34.211400"
+  "match_available" : "2026-04-12T16:07:56.102610"
 }, {
   "competition_id" : 37,
   "season_id" : 4,
@@ -358,10 +371,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2018/2019",
-  "match_updated" : "2024-08-07T17:22:40.334287",
+  "match_updated" : "2026-03-28T18:13:53.368475",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2024-08-07T17:22:40.334287"
+  "match_available" : "2026-03-28T18:13:53.368475"
 }, {
   "competition_id" : 1470,
   "season_id" : 274,
@@ -384,10 +397,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2022",
-  "match_updated" : "2024-12-16T10:15:11.055845",
-  "match_updated_360" : "2024-12-16T10:21:13.710934",
-  "match_available_360" : "2024-12-16T10:21:13.710934",
-  "match_available" : "2024-12-16T10:15:11.055845"
+  "match_updated" : "2026-05-04T01:48:57.914346",
+  "match_updated_360" : "2026-05-04T01:53:40.309717",
+  "match_available_360" : "2026-05-04T01:53:40.309717",
+  "match_available" : "2026-05-04T01:48:57.914346"
 }, {
   "competition_id" : 43,
   "season_id" : 3,
@@ -397,10 +410,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2018",
-  "match_updated" : "2024-06-12T07:38:19.345758",
+  "match_updated" : "2026-05-15T15:48:12.789440",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2024-06-12T07:38:19.345758"
+  "match_available" : "2026-05-15T15:48:12.789440"
 }, {
   "competition_id" : 43,
   "season_id" : 55,
@@ -423,10 +436,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "1986",
-  "match_updated" : "2023-12-26T22:34:04.263530",
+  "match_updated" : "2026-05-04T01:30:23.212111",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2023-12-26T22:34:04.263530"
+  "match_available" : "2026-05-04T01:30:23.212111"
 }, {
   "competition_id" : 43,
   "season_id" : 51,
@@ -436,10 +449,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "1974",
-  "match_updated" : "2024-02-13T02:52:29.582599",
+  "match_updated" : "2026-05-15T02:20:43.439689",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2024-02-13T02:52:29.582599"
+  "match_available" : "2026-05-15T02:20:43.439689"
 }, {
   "competition_id" : 43,
   "season_id" : 272,
@@ -449,10 +462,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "1970",
-  "match_updated" : "2024-02-13T14:23:06.735299",
+  "match_updated" : "2026-05-04T02:09:10.916859",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2024-02-13T14:23:06.735299"
+  "match_available" : "2026-05-04T02:09:10.916859"
 }, {
   "competition_id" : 43,
   "season_id" : 270,
@@ -462,10 +475,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "1962",
-  "match_updated" : "2023-06-26T10:38:00.323984",
+  "match_updated" : "2026-05-04T02:05:35.653887",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2023-06-26T10:38:00.323984"
+  "match_available" : "2026-05-04T02:05:35.653887"
 }, {
   "competition_id" : 43,
   "season_id" : 269,
@@ -475,10 +488,23 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "1958",
-  "match_updated" : "2024-02-13T14:22:08.222297",
+  "match_updated" : "2026-05-04T02:02:41.853159",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2024-02-13T14:22:08.222297"
+  "match_available" : "2026-05-04T02:02:41.853159"
+}, {
+  "competition_id" : 135,
+  "season_id" : 281,
+  "country_name" : "Germany",
+  "competition_name" : "Frauen Bundesliga",
+  "competition_gender" : "female",
+  "competition_youth" : false,
+  "competition_international" : false,
+  "season_name" : "2023/2024",
+  "match_updated" : "2026-04-11T13:05:50.947635",
+  "match_updated_360" : null,
+  "match_available_360" : null,
+  "match_available" : "2026-04-11T13:05:50.947635"
 }, {
   "competition_id" : 1238,
   "season_id" : 108,
@@ -488,10 +514,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2021/2022",
-  "match_updated" : "2024-09-29T17:46:01.175308",
+  "match_updated" : "2026-04-06T18:33:57.872951",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2024-09-29T17:46:01.175308"
+  "match_available" : "2026-04-06T18:33:57.872951"
 }, {
   "competition_id" : 11,
   "season_id" : 90,
@@ -501,10 +527,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2020/2021",
-  "match_updated" : "2025-01-29T17:39:28.924386",
-  "match_updated_360" : "2025-01-29T18:09:18.620699",
-  "match_available_360" : "2025-01-29T18:09:18.620699",
-  "match_available" : "2025-01-29T17:39:28.924386"
+  "match_updated" : "2025-11-02T03:55:19.577958",
+  "match_updated_360" : "2025-11-02T03:55:53.923193",
+  "match_available_360" : "2025-11-02T03:55:53.923193",
+  "match_available" : "2025-11-02T03:55:19.577958"
 }, {
   "competition_id" : 11,
   "season_id" : 42,
@@ -527,10 +553,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2018/2019",
-  "match_updated" : "2024-09-22T18:50:23.364757",
+  "match_updated" : "2026-04-06T04:49:09.959011",
   "match_updated_360" : "2021-07-09T14:53:22.103024",
   "match_available_360" : null,
-  "match_available" : "2024-09-22T18:50:23.364757"
+  "match_available" : "2026-04-06T04:49:09.959011"
 }, {
   "competition_id" : 11,
   "season_id" : 1,
@@ -657,10 +683,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2008/2009",
-  "match_updated" : "2025-06-24T13:52:04.679206",
+  "match_updated" : "2025-09-08T13:42:24.627088",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2025-06-24T13:52:04.679206"
+  "match_available" : "2025-09-08T13:42:24.627088"
 }, {
   "competition_id" : 11,
   "season_id" : 40,
@@ -670,10 +696,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2007/2008",
-  "match_updated" : "2025-06-24T13:47:07.137835",
+  "match_updated" : "2026-05-26T13:35:19.781918",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2025-06-24T13:47:07.137835"
+  "match_available" : "2025-08-15T14:05:12.751913"
 }, {
   "competition_id" : 11,
   "season_id" : 39,
@@ -727,6 +753,19 @@
   "match_available_360" : null,
   "match_available" : "2023-07-06T12:50:48.807820"
 }, {
+  "competition_id" : 182,
+  "season_id" : 281,
+  "country_name" : "Spain",
+  "competition_name" : "Liga F",
+  "competition_gender" : "female",
+  "competition_youth" : false,
+  "competition_international" : false,
+  "season_name" : "2023/2024",
+  "match_updated" : "2026-04-11T15:32:55.463202",
+  "match_updated_360" : null,
+  "match_available_360" : null,
+  "match_available" : "2026-04-11T15:32:55.463202"
+}, {
   "competition_id" : 81,
   "season_id" : 48,
   "country_name" : "Argentina",
@@ -761,10 +800,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2022/2023",
-  "match_updated" : "2024-12-19T13:56:45.683863",
-  "match_updated_360" : "2025-06-30T02:31:32.046070",
-  "match_available_360" : "2025-06-30T02:31:32.046070",
-  "match_available" : "2024-12-19T13:56:45.683863"
+  "match_updated" : "2026-04-06T18:51:07.770289",
+  "match_updated_360" : "2026-04-06T18:59:05.942748",
+  "match_available_360" : "2026-04-06T18:59:05.942748",
+  "match_available" : "2026-04-06T18:51:07.770289"
 }, {
   "competition_id" : 7,
   "season_id" : 108,
@@ -774,10 +813,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2021/2022",
-  "match_updated" : "2025-06-15T12:56:15.594872",
-  "match_updated_360" : "2025-06-15T13:02:45.341609",
-  "match_available_360" : "2025-06-15T13:02:45.341609",
-  "match_available" : "2025-06-15T12:56:15.594872"
+  "match_updated" : "2026-04-25T22:22:46.370056",
+  "match_updated_360" : "2026-04-25T22:24:04.840827",
+  "match_available_360" : "2026-04-25T22:24:04.840827",
+  "match_available" : "2026-04-25T22:22:46.370056"
 }, {
   "competition_id" : 7,
   "season_id" : 27,
@@ -787,10 +826,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2015/2016",
-  "match_updated" : "2024-12-16T08:48:23.066123",
+  "match_updated" : "2026-05-12T22:46:54.722768",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2024-12-16T08:48:23.066123"
+  "match_available" : "2026-05-12T22:46:54.722768"
 }, {
   "competition_id" : 44,
   "season_id" : 107,
@@ -800,10 +839,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2023",
-  "match_updated" : "2025-06-15T12:48:12.599307",
-  "match_updated_360" : "2025-07-01T11:17:29.514495",
-  "match_available_360" : "2025-07-01T11:17:29.514495",
-  "match_available" : "2025-06-15T12:48:12.599307"
+  "match_updated" : "2026-02-05T12:10:54.420133",
+  "match_updated_360" : "2026-02-05T12:11:58.293463",
+  "match_available_360" : "2026-02-05T12:11:58.293463",
+  "match_available" : "2026-02-05T12:10:54.420133"
 }, {
   "competition_id" : 116,
   "season_id" : 68,
@@ -817,6 +856,19 @@
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
   "match_available" : "2025-02-20T11:41:45.243252"
+}, {
+  "competition_id" : 49,
+  "season_id" : 107,
+  "country_name" : "United States of America",
+  "competition_name" : "NWSL",
+  "competition_gender" : "female",
+  "competition_youth" : false,
+  "competition_international" : false,
+  "season_name" : "2023",
+  "match_updated" : "2026-04-08T09:41:46.347347",
+  "match_updated_360" : null,
+  "match_available_360" : null,
+  "match_available" : "2026-04-08T09:41:46.347347"
 }, {
   "competition_id" : 49,
   "season_id" : 3,
@@ -839,10 +891,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2015/2016",
-  "match_updated" : "2025-04-23T14:36:29.347042",
+  "match_updated" : "2025-12-17T14:38:00.447595",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2025-04-23T14:36:29.347042"
+  "match_available" : "2025-12-17T14:38:00.447595"
 }, {
   "competition_id" : 2,
   "season_id" : 44,
@@ -865,10 +917,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "2015/2016",
-  "match_updated" : "2025-07-21T05:01:00.434081",
+  "match_updated" : "2025-08-15T14:28:50.169562",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2025-07-21T05:01:00.434081"
+  "match_available" : "2025-08-15T14:28:50.169562"
 }, {
   "competition_id" : 12,
   "season_id" : 86,
@@ -878,10 +930,23 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "1986/1987",
-  "match_updated" : "2023-06-18T01:55:53.343752",
+  "match_updated" : "2025-11-23T11:00:00.442491",
   "match_updated_360" : null,
   "match_available_360" : null,
-  "match_available" : "2023-06-18T01:55:53.343752"
+  "match_available" : "2025-11-23T11:00:00.442491"
+}, {
+  "competition_id" : 131,
+  "season_id" : 281,
+  "country_name" : "Italy",
+  "competition_name" : "Serie A Women",
+  "competition_gender" : "female",
+  "competition_youth" : false,
+  "competition_international" : false,
+  "season_name" : "2023/2024",
+  "match_updated" : "2026-04-11T13:29:49.465639",
+  "match_updated_360" : null,
+  "match_available_360" : null,
+  "match_available" : "2026-04-11T13:29:49.465639"
 }, {
   "competition_id" : 55,
   "season_id" : 282,
@@ -891,10 +956,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2024",
-  "match_updated" : "2024-09-28T16:51:20.698794",
-  "match_updated_360" : "2025-03-24T14:12:30.785094",
-  "match_available_360" : "2025-03-24T14:12:30.785094",
-  "match_available" : "2024-09-28T16:51:20.698794"
+  "match_updated" : "2026-05-01T19:54:25.846072",
+  "match_updated_360" : "2026-05-01T19:58:06.077979",
+  "match_available_360" : "2026-05-01T19:58:06.077979",
+  "match_available" : "2026-05-01T19:54:25.846072"
 }, {
   "competition_id" : 55,
   "season_id" : 43,
@@ -904,10 +969,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2020",
-  "match_updated" : "2024-07-31T12:29:15.702309",
-  "match_updated_360" : "2024-07-31T12:30:57.587087",
-  "match_available_360" : "2024-07-31T12:30:57.587087",
-  "match_available" : "2024-07-31T12:29:15.702309"
+  "match_updated" : "2026-05-10T12:59:26.302088",
+  "match_updated_360" : "2026-05-10T13:00:25.564993",
+  "match_available_360" : "2026-05-10T13:00:25.564993",
+  "match_available" : "2026-05-10T12:59:26.302088"
 }, {
   "competition_id" : 35,
   "season_id" : 75,
@@ -917,10 +982,10 @@
   "competition_youth" : false,
   "competition_international" : false,
   "season_name" : "1988/1989",
-  "match_updated" : "2024-02-12T14:45:05.702250",
+  "match_updated" : "2026-04-11T12:48:10.012987",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2024-02-12T14:45:05.702250"
+  "match_available" : "2026-04-11T12:48:10.012987"
 }, {
   "competition_id" : 53,
   "season_id" : 315,
@@ -930,10 +995,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2025",
-  "match_updated" : "2025-07-28T14:19:20.467348",
-  "match_updated_360" : "2025-07-29T16:03:07.355174",
-  "match_available_360" : "2025-07-29T16:03:07.355174",
-  "match_available" : "2025-07-28T14:19:20.467348"
+  "match_updated" : "2026-04-27T22:02:42.690507",
+  "match_updated_360" : "2026-04-27T22:03:28.087062",
+  "match_available_360" : "2026-04-27T22:03:28.087062",
+  "match_available" : "2026-04-27T22:02:42.690507"
 }, {
   "competition_id" : 53,
   "season_id" : 106,
@@ -943,10 +1008,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2022",
-  "match_updated" : "2024-02-13T13:27:17.178263",
-  "match_updated_360" : "2024-02-13T13:30:52.820588",
-  "match_available_360" : "2024-02-13T13:30:52.820588",
-  "match_available" : "2024-02-13T13:27:17.178263"
+  "match_updated" : "2026-05-05T03:03:04.199896",
+  "match_updated_360" : "2026-05-05T03:05:32.480837",
+  "match_available_360" : "2026-05-05T03:05:32.480837",
+  "match_available" : "2026-05-05T03:03:04.199896"
 }, {
   "competition_id" : 72,
   "season_id" : 107,
@@ -956,10 +1021,10 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2023",
-  "match_updated" : "2025-07-14T10:07:06.620906",
-  "match_updated_360" : "2025-07-14T10:10:27.224586",
-  "match_available_360" : "2025-07-14T10:10:27.224586",
-  "match_available" : "2025-07-14T10:07:06.620906"
+  "match_updated" : "2026-05-03T13:51:31.021141",
+  "match_updated_360" : "2026-05-03T13:55:52.303219",
+  "match_available_360" : "2026-05-03T13:55:52.303219",
+  "match_available" : "2026-05-03T13:51:31.021141"
 }, {
   "competition_id" : 72,
   "season_id" : 30,
@@ -969,8 +1034,8 @@
   "competition_youth" : false,
   "competition_international" : true,
   "season_name" : "2019",
-  "match_updated" : "2024-08-08T15:57:56.748740",
+  "match_updated" : "2026-05-15T15:31:40.299642",
   "match_updated_360" : "2021-06-13T16:17:31.694",
   "match_available_360" : null,
-  "match_available" : "2024-08-08T15:57:56.748740"
+  "match_available" : "2026-05-15T15:31:40.299642"
 } ]

@@ -54,11 +54,11 @@
       "position_id" : 5,
       "position" : "Left Center Back",
       "from" : "00:00",
-      "to" : null,
+      "to" : "85:27",
       "from_period" : 1,
-      "to_period" : null,
+      "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Final Whistle"
+      "end_reason" : "Foul Committed (Second Yellow)"
     } ]
   }, {
     "player_id" : 4643,
@@ -434,8 +434,8 @@
     } ]
   }, {
     "player_id" : 4999,
-    "player_name" : "Lindsey Michelle Horan",
-    "player_nickname" : "Lindsey Horan",
+    "player_name" : "Lindsey Michelle Heaps",
+    "player_nickname" : "Lindsey Heaps",
     "jersey_number" : 9,
     "country" : {
       "id" : 241,
@@ -539,8 +539,8 @@
     } ]
   }, {
     "player_id" : 5023,
-    "player_name" : "Mallory Pugh",
-    "player_nickname" : null,
+    "player_name" : "Mallory Diane Swanson",
+    "player_nickname" : "Mallory Swanson",
     "jersey_number" : 2,
     "country" : {
       "id" : 241,

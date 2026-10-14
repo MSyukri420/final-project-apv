@@ -1,7 +1,7 @@
 [ {
   "match_id" : 3888854,
   "match_date" : "1962-05-30",
-  "kick_off" : "21:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 43,
     "country_name" : "International",
@@ -55,7 +55,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "unscheduled",
-  "last_updated" : "2023-06-26T10:38:00.323984",
+  "last_updated" : "2026-05-04T02:05:35.653887",
   "last_updated_360" : null,
   "metadata" : {
     "data_version" : "1.1.0",

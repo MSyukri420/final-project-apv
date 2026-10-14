@@ -505,11 +505,11 @@
       "position_id" : 6,
       "position" : "Left Back",
       "from" : "56:56",
-      "to" : "68:39",
+      "to" : "62:48",
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Tactical Shift",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Red Card)"
     }, {
       "position_id" : 19,
       "position" : "Center Attacking Midfield",

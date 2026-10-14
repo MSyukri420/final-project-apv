@@ -1,6 +1,6 @@
 [ {
   "team_id" : 7282,
-  "team_name" : "ATK Mohun Bagan",
+  "team_name" : "Mohun Bagan Super Giant",
   "lineup" : [ {
     "player_id" : 9989,
     "player_name" : "Carl Gerard McHugh",
@@ -66,7 +66,7 @@
       "from_period" : 2,
       "to_period" : 2,
       "start_reason" : "Tactical Shift",
-      "end_reason" : "Substitution - Off (Off Camera)"
+      "end_reason" : "Substitution - Off (Tactical)"
     } ]
   }, {
     "player_id" : 124741,
@@ -379,7 +379,7 @@
       "to" : null,
       "from_period" : 2,
       "to_period" : null,
-      "start_reason" : "Substitution - On (Off Camera)",
+      "start_reason" : "Substitution - On (Tactical)",
       "end_reason" : "Final Whistle"
     } ]
   }, {

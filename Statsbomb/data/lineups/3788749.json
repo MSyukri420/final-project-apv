@@ -56,11 +56,11 @@
       "position_id" : 10,
       "position" : "Center Defensive Midfield",
       "from" : "00:00",
-      "to" : "73:44",
+      "to" : "61:32",
       "from_period" : 1,
       "to_period" : 2,
       "start_reason" : "Starting XI",
-      "end_reason" : "Tactical Shift"
+      "end_reason" : "Foul Committed (Second Yellow)"
     }, {
       "position_id" : 24,
       "position" : "Left Center Forward",
@@ -314,7 +314,7 @@
   }, {
     "player_id" : 9622,
     "player_name" : "Mateusz Andrzej Klich",
-    "player_nickname" : null,
+    "player_nickname" : "Mateusz Klich",
     "jersey_number" : 14,
     "country" : {
       "id" : 182,

@@ -424,7 +424,7 @@
   }, {
     "player_id" : 389641,
     "player_name" : "Domingos João Macandza",
-    "player_nickname" : null,
+    "player_nickname" : "Domingos Macandza",
     "jersey_number" : 14,
     "country" : {
       "id" : 155,
@@ -463,7 +463,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 417067,
-    "player_name" : "Infren Da Conceição David Matola",
+    "player_name" : "Infren David da Conceição Matola",
     "player_nickname" : "Nanani",
     "jersey_number" : 2,
     "country" : {
@@ -883,8 +883,8 @@
     "positions" : [ ]
   }, {
     "player_id" : 69563,
-    "player_name" : "Mohamed Abdel Monem",
-    "player_nickname" : null,
+    "player_name" : "Mohamed Abdelmonem",
+    "player_nickname" : "Mohamed Abdel Monem",
     "jersey_number" : 24,
     "country" : {
       "id" : 66,

@@ -143,7 +143,7 @@
   }, {
     "player_id" : 10222,
     "player_name" : "Jonna Ann-Charlotte Andersson",
-    "player_nickname" : null,
+    "player_nickname" : "Jonna Andersson",
     "jersey_number" : 2,
     "country" : {
       "id" : 220,
@@ -154,7 +154,7 @@
   }, {
     "player_id" : 10224,
     "player_name" : "Sara Caroline Seger",
-    "player_nickname" : null,
+    "player_nickname" : "Caroline Seger",
     "jersey_number" : 17,
     "country" : {
       "id" : 220,
@@ -233,7 +233,7 @@
     } ]
   }, {
     "player_id" : 10665,
-    "player_name" : "Mimmi Larsson",
+    "player_name" : "Mimmi Wahlström",
     "player_nickname" : null,
     "jersey_number" : 20,
     "country" : {
@@ -432,7 +432,7 @@
   "team_name" : "Canada Women's",
   "lineup" : [ {
     "player_id" : 4951,
-    "player_name" : "Rebecca Quinn",
+    "player_name" : "Quinn Quinn",
     "player_nickname" : null,
     "jersey_number" : 5,
     "country" : {
@@ -482,7 +482,7 @@
   }, {
     "player_id" : 4981,
     "player_name" : "Kailen Mary Iacovoni Sheridan",
-    "player_nickname" : null,
+    "player_nickname" : "Kailen Sheridan",
     "jersey_number" : 18,
     "country" : {
       "id" : 40,
@@ -492,7 +492,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 4992,
-    "player_name" : "Janine Elizabeth Beckie",
+    "player_name" : "Janine Elizabeth Sonis",
     "player_nickname" : null,
     "jersey_number" : 16,
     "country" : {
@@ -531,7 +531,7 @@
   }, {
     "player_id" : 5020,
     "player_name" : "Christine Margaret Sinclair",
-    "player_nickname" : null,
+    "player_nickname" : "Christine Sinclair",
     "jersey_number" : 12,
     "country" : {
       "id" : 40,
@@ -551,7 +551,7 @@
   }, {
     "player_id" : 5038,
     "player_name" : "Allysha Lyn Chapman",
-    "player_nickname" : null,
+    "player_nickname" : "Allysha Chapman",
     "jersey_number" : 2,
     "country" : {
       "id" : 40,
@@ -571,7 +571,7 @@
   }, {
     "player_id" : 5043,
     "player_name" : "Nichelle Patrice Prince",
-    "player_nickname" : null,
+    "player_nickname" : "Nichelle Prince",
     "jersey_number" : 15,
     "country" : {
       "id" : 40,
@@ -591,7 +591,7 @@
   }, {
     "player_id" : 5074,
     "player_name" : "Shelina Laura Zadorsky",
-    "player_nickname" : null,
+    "player_nickname" : "Shelina Zadorsky",
     "jersey_number" : 4,
     "country" : {
       "id" : 40,
@@ -622,7 +622,7 @@
   }, {
     "player_id" : 8297,
     "player_name" : "Adriana Kristina Leon",
-    "player_nickname" : null,
+    "player_nickname" : "Adriana Leon",
     "jersey_number" : 19,
     "country" : {
       "id" : 40,
@@ -754,7 +754,7 @@
   }, {
     "player_id" : 25601,
     "player_name" : "Deanne Cynthia Rose",
-    "player_nickname" : null,
+    "player_nickname" : "Deanne Rose",
     "jersey_number" : 6,
     "country" : {
       "id" : 40,

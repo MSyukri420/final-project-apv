@@ -1,4 +1,81 @@
 [ {
+  "match_id" : 266066,
+  "match_date" : "2014-03-02",
+  "kick_off" : "19:00:00.000",
+  "competition" : {
+    "competition_id" : 11,
+    "country_name" : "Spain",
+    "competition_name" : "La Liga"
+  },
+  "season" : {
+    "season_id" : 25,
+    "season_name" : "2013/2014"
+  },
+  "home_team" : {
+    "home_team_id" : 217,
+    "home_team_name" : "Barcelona",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 163,
+      "name" : "Gerardo Daniel Martino",
+      "nickname" : "Gerardo Martino",
+      "dob" : "1962-11-20",
+      "country" : {
+        "id" : 11,
+        "name" : "Argentina"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 403,
+    "away_team_name" : "Almería",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 673,
+      "name" : "Francisco Javier Rodríguez Vílchez",
+      "nickname" : "Francisco ",
+      "dob" : "1978-06-17",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 4,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "scheduled",
+  "last_updated" : "2025-06-24T09:52:44.048585",
+  "last_updated_360" : "2021-06-13T16:17:31.694",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 26,
+  "competition_stage" : {
+    "id" : 1,
+    "name" : "Regular Season"
+  },
+  "stadium" : {
+    "id" : 342,
+    "name" : "Spotify Camp Nou",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
   "match_id" : 267368,
   "match_date" : "2014-04-05",
   "kick_off" : "18:00:00.000",
@@ -406,7 +483,7 @@
 }, {
   "match_id" : 267138,
   "match_date" : "2014-04-12",
-  "kick_off" : "20:00:00.000",
+  "kick_off" : "18:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -460,7 +537,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:41:19.604248",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -653,83 +730,6 @@
   "referee" : {
     "id" : 222,
     "name" : "David Fernández Borbalan",
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    }
-  }
-}, {
-  "match_id" : 266066,
-  "match_date" : "2014-03-02",
-  "kick_off" : "21:00:00.000",
-  "competition" : {
-    "competition_id" : 11,
-    "country_name" : "Spain",
-    "competition_name" : "La Liga"
-  },
-  "season" : {
-    "season_id" : 25,
-    "season_name" : "2013/2014"
-  },
-  "home_team" : {
-    "home_team_id" : 217,
-    "home_team_name" : "Barcelona",
-    "home_team_gender" : "male",
-    "home_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 163,
-      "name" : "Gerardo Daniel Martino",
-      "nickname" : "Gerardo Martino",
-      "dob" : "1962-11-20",
-      "country" : {
-        "id" : 11,
-        "name" : "Argentina"
-      }
-    } ]
-  },
-  "away_team" : {
-    "away_team_id" : 403,
-    "away_team_name" : "Almería",
-    "away_team_gender" : "male",
-    "away_team_group" : null,
-    "country" : {
-      "id" : 214,
-      "name" : "Spain"
-    },
-    "managers" : [ {
-      "id" : 673,
-      "name" : "Francisco Javier Rodríguez Vílchez",
-      "nickname" : "Francisco ",
-      "dob" : "1978-06-17",
-      "country" : {
-        "id" : 214,
-        "name" : "Spain"
-      }
-    } ]
-  },
-  "home_score" : 4,
-  "away_score" : 1,
-  "match_status" : "available",
-  "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
-  "last_updated_360" : "2021-06-13T16:17:31.694",
-  "metadata" : {
-    "data_version" : "1.1.0",
-    "shot_fidelity_version" : "2",
-    "xy_fidelity_version" : "2"
-  },
-  "match_week" : 26,
-  "competition_stage" : {
-    "id" : 1,
-    "name" : "Regular Season"
-  },
-  "stadium" : {
-    "id" : 342,
-    "name" : "Spotify Camp Nou",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -1062,7 +1062,7 @@
 }, {
   "match_id" : 266201,
   "match_date" : "2014-05-11",
-  "kick_off" : "19:00:00.000",
+  "kick_off" : "17:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -1116,7 +1116,7 @@
   "away_score" : 0,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:40:09.402472",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",
@@ -1624,7 +1624,7 @@
   },
   "stadium" : {
     "id" : 351,
-    "name" : "RCDE Stadium",
+    "name" : "Stage Front Stadium",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -2049,7 +2049,7 @@
   },
   "stadium" : {
     "id" : 353,
-    "name" : "Estadio Santiago Bernabéu",
+    "name" : "Bernabéu",
     "country" : {
       "id" : 214,
       "name" : "Spain"
@@ -2483,7 +2483,7 @@
 }, {
   "match_id" : 266420,
   "match_date" : "2013-09-28",
-  "kick_off" : "18:00:00.000",
+  "kick_off" : "16:00:00.000",
   "competition" : {
     "competition_id" : 11,
     "country_name" : "Spain",
@@ -2537,7 +2537,7 @@
   "away_score" : 2,
   "match_status" : "available",
   "match_status_360" : "scheduled",
-  "last_updated" : "2020-07-29T05:00",
+  "last_updated" : "2025-06-24T09:42:54.400920",
   "last_updated_360" : "2021-06-13T16:17:31.694",
   "metadata" : {
     "data_version" : "1.1.0",

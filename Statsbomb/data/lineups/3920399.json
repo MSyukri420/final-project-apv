@@ -384,7 +384,7 @@
   }, {
     "player_id" : 389641,
     "player_name" : "Domingos João Macandza",
-    "player_nickname" : null,
+    "player_nickname" : "Domingos Macandza",
     "jersey_number" : 14,
     "country" : {
       "id" : 155,
@@ -414,7 +414,7 @@
     "positions" : [ ]
   }, {
     "player_id" : 417067,
-    "player_name" : "Infren Da Conceição David Matola",
+    "player_name" : "Infren David da Conceição Matola",
     "player_nickname" : "Nanani",
     "jersey_number" : 2,
     "country" : {
@@ -681,7 +681,7 @@
     } ]
   }, {
     "player_id" : 32868,
-    "player_name" : "Bryan Silva Teixera",
+    "player_name" : "Bryan Alberto Silva Teixeira Jr.",
     "player_nickname" : null,
     "jersey_number" : 19,
     "country" : {
@@ -693,7 +693,7 @@
   }, {
     "player_id" : 36271,
     "player_name" : "Roberto Lopes",
-    "player_nickname" : "Pico",
+    "player_nickname" : "R.Lopes",
     "jersey_number" : 4,
     "country" : {
       "id" : 41,
