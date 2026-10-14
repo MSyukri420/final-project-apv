@@ -1,0 +1,12 @@
+# Python caches, recreated on every run
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter autosaves
+.ipynb_checkpoints/
+
+# editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

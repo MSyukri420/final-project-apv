@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corner Chance Planner</title>
+  <meta name="description" content="Plan an attacking corner and see how often setups like it win the first ball and create a good chance.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c7a49'/%3E%3Cpath d='M11 25V7' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M11 8l11 4-11 4z' fill='%23fbbf24'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script>
+    try {
+      var savedTheme = JSON.parse(localStorage.getItem("apv-theme"));
+      if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 21V3" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M7 4l10 3.5L7 11z" fill="#fbbf24"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Corner Chance Planner</span>
+          <span class="brand-tag">Plan a corner. See how often it creates a good chance.</span>
+        </span>
+      </a>
+      <nav class="nav" role="tablist" aria-label="Views">
+        <button class="nav-tab" role="tab" id="tab-planner" aria-controls="view-planner" aria-selected="true" data-view="planner">Planner</button>
+        <button class="nav-tab" role="tab" id="tab-insights" aria-controls="view-insights" aria-selected="false" data-view="insights" tabindex="-1">Insights</button>
+        <button class="nav-tab" role="tab" id="tab-playbook" aria-controls="view-playbook" aria-selected="false" data-view="playbook" tabindex="-1">Playbook</button>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="help-btn" type="button" aria-label="How it works" title="How it works">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="10" r="7.5"/><path d="M7.9 7.8a2.2 2.2 0 1 1 3 2c-.6.3-.9.7-.9 1.3v.4"/><path d="M10 14.2v.1"/></svg>
+        </button>
+        <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch between light and dark theme" title="Switch theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="view-planner" role="tabpanel" aria-labelledby="tab-planner">
+      <div class="intro" id="intro" hidden>
+        <span class="intro-title">New here?</span>
+        <ol class="intro-steps">
+          <li><b>1</b>Pick how they defend</li>
+          <li><b>2</b>Choose the delivery</li>
+          <li><b>3</b>Place your 10 players. The rating updates as you go.</li>
+        </ol>
+        <button class="btn btn-secondary btn-small" id="intro-dismiss" type="button">Got it</button>
+      </div>
+
+      <div class="planner">
+        <div class="card controls" id="controls"></div>
+
+        <div class="card pitch-card">
+          <div class="pitch-head">
+            <div>
+              <h2>Your corner</h2>
+              <p class="muted small">Click a zone to add a player. Click a player to remove them.</p>
+            </div>
+            <div class="count-pill" id="count-pill"></div>
+          </div>
+          <div class="pitch-wrap">
+            <svg id="pitch" class="pitch interactive" viewBox="96 0 604 424" role="img" aria-label="Pitch diagram of your corner"></svg>
+          </div>
+          <div class="pitch-legend">
+            <span><i class="lg-dot lg-team"></i>Your players</span>
+            <span><i class="lg-dot lg-gk"></i>Their keeper</span>
+            <span><i class="lg-path"></i>Ball path</span>
+            <span><i class="lg-aim"></i>Target zone</span>
+          </div>
+        </div>
+
+        <div class="side">
+          <aside class="results" id="results" aria-live="polite" aria-label="Rating"></aside>
+          <section class="wins" id="wins" aria-label="Quick wins"></section>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-insights" role="tabpanel" aria-labelledby="tab-insights" hidden>
+      <div class="playbook-head">
+        <h1>Insights</h1>
+        <p class="muted">What actually happened in real corners. No model involved: every bar is a count of real outcomes, with a 90% range.</p>
+      </div>
+      <div id="insights-body"></div>
+    </section>
+
+    <section id="view-playbook" role="tabpanel" aria-labelledby="tab-playbook" hidden>
+      <div class="playbook-head">
+        <h1>Playbook</h1>
+        <p class="muted">Real corners grouped by delivery, target and how many players attacked the box, ranked by what happened. Open a group's average setup in the planner to tweak it.</p>
+      </div>
+      <div class="card filters" id="pb-filters"></div>
+      <div class="notice info">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="10" r="7.5"/><path d="M10 9v5M10 6.2v.1"/></svg>
+        <span>Exact player setups are almost never repeated, so corners are grouped. Small groups are pulled towards the average when ranking, and each card says how much evidence it has.</span>
+      </div>
+      <div class="pb-grid" id="pb-grid"></div>
+      <div class="pb-more"><button class="btn btn-secondary" id="pb-more" type="button" hidden>Show more</button></div>
+    </section>
+  </main>
+
+  <div class="mobile-bar" id="mobile-bar" hidden></div>
+
+  <dialog class="dialog" id="help-dialog" aria-labelledby="help-title">
+    <div class="dialog-head">
+      <h2 id="help-title">How it works</h2>
+      <button class="icon-btn" type="button" id="help-close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+    <div class="dialog-body" id="help-body"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

@@ -1,16 +1,10 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict
 
-import numpy as np
 import pandas as pd
 import yaml
-from sklearn.metrics import (
-    silhouette_score,
-    calinski_harabasz_score,
-    davies_bouldin_score,
-)
 
 CONFIG_PATH = "config.yaml"
 TRAIN_SPLIT = "train"
@@ -35,78 +29,10 @@ def _resolve_comp_seasons(cfg: dict, split: str) -> list[tuple[int, int]]:
         comp_seasons = (cs_cfg.get("train", []) or []) + (cs_cfg.get("test", []) or [])
     else:
         raise ValueError(f"Unknown split: {split}. Expected 'train', 'test', or 'all'.")
-    return [tuple(map(int, pair)) for pair in comp_seasons]
+    return [(int(pair[0]), int(pair[1])) for pair in comp_seasons]
 
 
-def _cluster_eval_table(
-    df_clustered: pd.DataFrame,
-    used_features: List[str],
-    scaler,
-) -> pd.DataFrame:
-    if df_clustered is None or df_clustered.empty or not used_features:
-        return pd.DataFrame(
-            [
-                {
-                    "subset": "all",
-                    "silhouette": np.nan,
-                    "calinski_harabasz": np.nan,
-                    "davies_bouldin": np.nan,
-                }
-            ]
-        )
-
-    df = df_clustered.copy()
-    X = df[used_features].copy()
-    X = X.replace([np.inf, -np.inf], np.nan)
-    X = X.fillna(X.median())
-    X_scaled = scaler.transform(X)
-    labels_all = df["A_id"].to_numpy()
-    rows: List[Dict[str, float]] = []
-
-    def add_subset(name: str, mask: np.ndarray) -> None:
-        if mask.sum() <= len(np.unique(labels_all[mask])):
-            rows.append(
-                {
-                    "subset": name,
-                    "silhouette": np.nan,
-                    "calinski_harabasz": np.nan,
-                    "davies_bouldin": np.nan,
-                }
-            )
-            return
-        try:
-            sil = float(silhouette_score(X_scaled[mask], labels_all[mask]))
-        except Exception:
-            sil = np.nan
-        try:
-            ch = float(calinski_harabasz_score(X_scaled[mask], labels_all[mask]))
-        except Exception:
-            ch = np.nan
-        try:
-            db = float(davies_bouldin_score(X_scaled[mask], labels_all[mask]))
-        except Exception:
-            db = np.nan
-        rows.append(
-            {
-                "subset": name,
-                "silhouette": sil,
-                "calinski_harabasz": ch,
-                "davies_bouldin": db,
-            }
-        )
-
-    all_mask = np.ones(len(df), dtype=bool)
-    add_subset("all", all_mask)
-
-    if "A_confidence" in df.columns:
-        high_mask = df["A_confidence"].astype(float) >= 0.6
-        if high_mask.any():
-            add_subset("high_conf", high_mask.to_numpy())
-
-    return pd.DataFrame(rows)
-
-
-def main() -> None:
+def main(models_only: bool = False) -> None:
     try:
         from src.io_sb import (
             load_competitions,
@@ -127,7 +53,9 @@ def main() -> None:
             plot_archetype_example_freeze_frames,
         )
         from src.clustering import (
+            assign_defensive_shapes,
             cluster_defensive_archetypes,
+            compare_shape_methods,
             plot_cluster_counts,
             plot_cluster_feature_profiles,
             plot_cluster_silhouette,
@@ -158,169 +86,194 @@ def main() -> None:
     figures_dir = split_reports_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
 
-    comp_seasons = _resolve_comp_seasons(cfg, TRAIN_SPLIT)
-    print(f"\n=== Stage 1: data ingestion ({TRAIN_SPLIT.upper()}) ===")
-    print(f"Competition seasons: {comp_seasons}")
-
+    # competition names for the per-competition report
     df_comp = load_competitions(cfg)
-    df_matches = load_matches(cfg, comp_seasons)
 
-    if df_matches is None or df_matches.empty:
-        raise RuntimeError("No matches found for TRAIN split.")
+    if models_only:
+        df_target_path = split_outputs_dir / "df_target_train.csv"
+        if not df_target_path.exists():
+            raise FileNotFoundError(
+                f"{df_target_path} not found. Run the full pipeline (python train.py) once first."
+            )
+        print(f"\n=== Stages 1-5 skipped (--models-only): using {df_target_path} ===")
+        df_master = pd.read_csv(df_target_path, low_memory=False)
+        # redo the defensive shapes, so changing the rules needs no full rerun
+        df_master = assign_defensive_shapes(df_master, cfg)
+        df_master.to_csv(df_target_path, index=False)
+    else:
+        comp_seasons = _resolve_comp_seasons(cfg, TRAIN_SPLIT)
+        print(f"\n=== Stage 1: data ingestion ({TRAIN_SPLIT.upper()}) ===")
+        print(f"Competition seasons: {comp_seasons}")
 
-    match_ids = sorted(df_matches["match_id"].unique().tolist())
-    print(f"Matches loaded: {len(match_ids)}")
+        df_matches = load_matches(cfg, comp_seasons)
 
-    df_events_raw = load_events_by_ids(cfg, match_ids)
-    df_360_raw = load_360_by_ids(cfg, match_ids)
-    df_lineups = load_lineups_by_ids(cfg, match_ids)
+        if df_matches is None or df_matches.empty:
+            raise RuntimeError("No matches found for TRAIN split.")
 
-    n_events_raw = 0 if df_events_raw is None else len(df_events_raw)
-    n_360_raw = 0 if df_360_raw is None else len(df_360_raw)
-    n_lineups = 0 if df_lineups is None else len(df_lineups)
-    print(f"Events rows:  {n_events_raw}")
-    print(f"360 frames:   {n_360_raw}")
-    print(f"Lineups rows: {n_lineups}")
+        match_ids = sorted(df_matches["match_id"].unique().tolist())
+        print(f"Matches loaded: {len(match_ids)}")
 
-    print("\n=== Stage 2: preprocessing ===")
+        df_events_raw = load_events_by_ids(cfg, match_ids)
+        df_360_raw = load_360_by_ids(cfg, match_ids)
+        df_lineups = load_lineups_by_ids(cfg, match_ids)
 
-    df_events_time, df_corners, df_360_clean = stage2_preprocess(
-        df_events_raw=df_events_raw,
-        df_matches=df_matches,
-        df_360_raw=df_360_raw,
-    )
+        n_events_raw = 0 if df_events_raw is None else len(df_events_raw)
+        n_360_raw = 0 if df_360_raw is None else len(df_360_raw)
+        n_lineups = 0 if df_lineups is None else len(df_lineups)
+        print(f"Events rows:  {n_events_raw}")
+        print(f"360 frames:   {n_360_raw}")
+        print(f"Lineups rows: {n_lineups}")
 
-    df_ds_summary = dataset_summary(df_events_time, df_corners)
-    ds_summary_path = split_reports_dir / "dataset_summary_train.csv"
-    df_ds_summary.to_csv(ds_summary_path, index=False)
-    print(f"Dataset summary saved to {ds_summary_path}")
+        print("\n=== Stage 2: preprocessing ===")
 
-    plot_matches_and_corners_by_comp_season(
-        df_matches=df_matches,
-        df_corners=df_corners,
-        out_dir=str(figures_dir),
-    )
-    print(f"Match and corner figures saved to {figures_dir}")
-
-    print("\n=== Stage 3: feature engineering ===")
-
-    df_features = build_defensive_features(
-        df_corners=df_corners,
-        df_360_clean=df_360_clean,
-        df_events_time=df_events_time,
-    )
-
-    atk_cols = [
-        "n_att_near",
-        "n_att_central",
-        "n_att_far",
-        "n_blockers",
-        "n_edge_of_box",
-        "n_rest_defence",
-    ]
-    if all(col in df_features.columns for col in atk_cols):
-        sums = df_features[atk_cols].sum(axis=1)
-        print(
-            "Attacking allocation sanity check "
-            f"(min={sums.min()}, max={sums.max()}, mean={sums.mean():.2f})"
+        df_events_time, df_corners, df_360_clean = stage2_preprocess(
+            df_events_raw=df_events_raw,
+            df_matches=df_matches,
+            df_360_raw=df_360_raw,
         )
 
-    attacking_fig_path = figures_dir / "attacking_direction_pitch.png"
-    plot_attacking_direction_pitch(out_path=attacking_fig_path)
+        df_ds_summary = dataset_summary(df_events_time, df_corners)
+        ds_summary_path = split_reports_dir / "dataset_summary_train.csv"
+        df_ds_summary.to_csv(ds_summary_path, index=False)
+        print(f"Dataset summary saved to {ds_summary_path}")
 
-    zones_fig_path = figures_dir / "zone_definitions_pitch.png"
-    plot_zone_definitions_pitch(out_path=zones_fig_path)
+        plot_matches_and_corners_by_comp_season(
+            df_matches=df_matches,
+            df_corners=df_corners,
+            out_dir=str(figures_dir),
+        )
+        print(f"Match and corner figures saved to {figures_dir}")
 
-    print("Pitch diagrams saved.")
+        print("\n=== Stage 3: feature engineering ===")
 
-    print("\n=== Stage 4: clustering and defensive archetypes ===")
+        df_features = build_defensive_features(
+            df_corners=df_corners,
+            df_360_clean=df_360_clean,
+            df_events_time=df_events_time,
+        )
 
-    df_clustered, kmeans, scaler, used_features, cluster_label_map = (
-        cluster_defensive_archetypes(
-            df_features=df_features,
+        atk_cols = [
+            "n_att_near",
+            "n_att_central",
+            "n_att_far",
+            "n_blockers",
+            "n_edge_of_box",
+            "n_rest_defence",
+        ]
+        if all(col in df_features.columns for col in atk_cols):
+            sums = df_features[atk_cols].sum(axis=1)
+            print(
+                "Attacking allocation sanity check "
+                f"(min={sums.min()}, max={sums.max()}, mean={sums.mean():.2f})"
+            )
+
+        attacking_fig_path = figures_dir / "attacking_direction_pitch.png"
+        plot_attacking_direction_pitch(out_path=attacking_fig_path)
+
+        zones_fig_path = figures_dir / "zone_definitions_pitch.png"
+        plot_zone_definitions_pitch(out_path=zones_fig_path)
+
+        print("Pitch diagrams saved.")
+
+        print("\n=== Stage 4: defensive shapes ===")
+
+        # k-means only as the benchmark for the rules
+        df_kmeans, kmeans, scaler, used_features, cluster_label_map = (
+            cluster_defensive_archetypes(
+                df_features=df_features,
+                cfg=cfg,
+                return_model=True,
+            )
+        )
+        df_clustered = assign_defensive_shapes(df_features, cfg)
+
+        print(f"Labelled corners: {len(df_clustered)}")
+
+        shape_eval_df = compare_shape_methods(df_clustered, df_kmeans, used_features, scaler, cfg)
+        cluster_eval_path = split_reports_dir / "cluster_eval_train.csv"
+        shape_eval_df.to_csv(cluster_eval_path, index=False)
+        print(shape_eval_df.to_string(index=False))
+        print(f"Shape method comparison saved to {cluster_eval_path}")
+
+        cluster_fig_dir = figures_dir / "clustering"
+        cluster_fig_dir.mkdir(parents=True, exist_ok=True)
+
+        plot_cluster_counts(df_clustered=df_clustered, out_dir=str(cluster_fig_dir))
+        plot_cluster_feature_profiles(
+            df_clustered=df_clustered,
+            used_features=used_features,
+            out_dir=str(cluster_fig_dir),
+        )
+        plot_cluster_silhouette(
+            df_clustered=df_clustered,
+            scaler=scaler,
+            used_features=used_features,
+            out_dir=str(cluster_fig_dir),
+        )
+        plot_archetype_example_freeze_frames(
+            df_corners=df_corners,
+            df_360_clean=df_360_clean,
+            df_clustered=df_clustered,
+            out_dir=str(cluster_fig_dir),
+            prefix="archetype_example_freeze_frames",
+        )
+        print(f"Clustering figures saved to {cluster_fig_dir}")
+
+        print("\n=== Stage 5: target engineering ===")
+
+        df_target_path = split_outputs_dir / "df_target_train.csv"
+        df_target = stage5_target_engineering(
+            df_events_time=df_events_time,
+            df_features_clustered=df_clustered,
             cfg=cfg,
-            return_model=True,
+            out_path=str(df_target_path),
         )
-    )
 
-    print(f"Clustered corners: {len(df_clustered)}")
+        print(f"Target rows after filtering: {len(df_target)}")
+        print(f"Target table saved to {df_target_path}")
 
-    cluster_eval_df = _cluster_eval_table(df_clustered, used_features, scaler)
-    cluster_eval_path = split_reports_dir / "cluster_eval_train.csv"
-    cluster_eval_df.to_csv(cluster_eval_path, index=False)
-    print(f"Cluster evaluation metrics saved to {cluster_eval_path}")
+        label_fig_dir = figures_dir / "labels"
+        label_fig_dir.mkdir(parents=True, exist_ok=True)
+        plot_label_balance(df_target=df_target, out_dir=str(label_fig_dir))
+        print(f"Label balance figures saved to {label_fig_dir}")
 
-    cluster_fig_dir = figures_dir / "clustering"
-    cluster_fig_dir.mkdir(parents=True, exist_ok=True)
+        # a sample of first-contact labels with the events behind them, to check by hand
+        check_cols = [
+            "match_id", "minute", "second", "delivery_route", "pass.outcome.name",
+            "first_contact_attack", "first_contact_type", "first_contact_events",
+        ]
+        if "first_contact_attack" in df_target.columns:
+            check = df_target[[c for c in check_cols if c in df_target.columns]]
+            check_path = split_reports_dir / "first_contact_labels_check.csv"
+            check.sample(n=min(40, len(check)), random_state=15).to_csv(check_path, index=False)
+            print(f"First-contact label sample saved to {check_path}")
 
-    plot_cluster_counts(df_clustered=df_clustered, out_dir=str(cluster_fig_dir))
-    plot_cluster_feature_profiles(
-        df_clustered=df_clustered,
-        used_features=used_features,
-        out_dir=str(cluster_fig_dir),
-    )
-    plot_cluster_silhouette(
-        df_clustered=df_clustered,
-        scaler=scaler,
-        used_features=used_features,
-        out_dir=str(cluster_fig_dir),
-    )
-    plot_archetype_example_freeze_frames(
-        df_corners=df_corners,
-        df_360_clean=df_360_clean,
-        df_clustered=df_clustered,
-        out_dir=str(cluster_fig_dir),
-        prefix="archetype_example_freeze_frames",
-    )
-    print(f"Clustering figures saved to {cluster_fig_dir}")
-
-    print("\n=== Stage 5: target engineering ===")
-
-    df_target_path = split_outputs_dir / "df_target_train.csv"
-    df_target = stage5_target_engineering(
-        df_events_time=df_events_time,
-        df_features_clustered=df_clustered,
-        cfg=cfg,
-        out_path=str(df_target_path),
-    )
-
-    print(f"Target rows after filtering: {len(df_target)}")
-    print(f"Target table saved to {df_target_path}")
-
-    label_fig_dir = figures_dir / "labels"
-    label_fig_dir.mkdir(parents=True, exist_ok=True)
-    plot_label_balance(df_target=df_target, out_dir=str(label_fig_dir))
-    print(f"Label balance figures saved to {label_fig_dir}")
-
-    df_master = df_target.copy()
+        df_master = df_target.copy()
 
     print("\n=== Stage 6: model training (TRAIN pooled models) ===")
 
     model_fig_dir = figures_dir / "models"
     model_fig_dir.mkdir(parents=True, exist_ok=True)
 
-    metrics_all: Dict[str, Dict] = stage6_model_training(
+    comp_names: Dict[str, str] = {}
+    if df_comp is not None and {"competition_id", "season_id"}.issubset(df_comp.columns):
+        for rec in df_comp.to_dict("records"):
+            key = f"{rec['competition_id']}-{rec['season_id']}"
+            comp_names[key] = f"{rec.get('competition_name', '')} {rec.get('season_name', '')}".strip()
+
+    model_reports: Dict[str, pd.DataFrame] = stage6_model_training(
         df_target=df_master,
         cfg=cfg,
         out_dir=str(model_fig_dir),
+        holdout_names=comp_names,
     )
 
-    if metrics_all:
-        rows: List[Dict] = []
-        for name, m in metrics_all.items():
-            row = {"model_name": name}
-            row.update(m)
-            rows.append(row)
-
-        metrics_df = pd.DataFrame(rows)
-        metrics_path = split_reports_dir / "model_metrics_train.csv"
-        metrics_df.to_csv(metrics_path, index=False)
-
-        model_names = metrics_df["model_name"].tolist()
-        print(f"Models trained: {', '.join(model_names)}")
-        print(f"Model metrics saved to {metrics_path}")
-    else:
-        print("No model metrics produced. Check Stage 6 configuration.")
+    for name, table in model_reports.items():
+        if table is None or table.empty:
+            continue
+        report_path = split_reports_dir / f"model_{name}_train.csv"
+        table.to_csv(report_path, index=False)
+        print(f"Model {name.replace('_', ' ')} saved to {report_path}")
 
     print("\n=== Stage 7: APV computation (TRAIN) ===")
 
@@ -354,11 +307,6 @@ def main() -> None:
             df_apv=df_apv,
             out_path=apv_fig_dir / "apv_by_archetype_boxplot.png",
         )
-    if hasattr(insights, "plot_apv_vs_pv_against_scatter"):
-        insights.plot_apv_vs_pv_against_scatter(
-            df_apv=df_apv,
-            out_path=apv_fig_dir / "apv_vs_pv_against_scatter.png",
-        )
     print(f"APV figures saved to {apv_fig_dir}")
 
     print("\n=== Stage 8: build runtime artefacts for app ===")
@@ -374,4 +322,12 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Train the corner APV models and build app artefacts.")
+    parser.add_argument(
+        "--models-only",
+        action="store_true",
+        help="skip data loading and feature/target engineering; retrain from the saved target table",
+    )
+    main(models_only=parser.parse_args().models_only)

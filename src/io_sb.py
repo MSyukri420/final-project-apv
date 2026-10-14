@@ -8,7 +8,7 @@ Config = dict[str, Any]
 
 
 def _load_json(path: Path) -> Any:
-    # load a json file and return the parsed object, or None on failure
+    # read a json file; None if it fails
     try:
         with path.open("r", encoding="utf-8") as f:
             return json.load(f)
@@ -22,7 +22,7 @@ def _load_json(path: Path) -> Any:
 
 
 def load_competitions(cfg: Config) -> pd.DataFrame:
-    # load the statsbomb competitions table
+    # the StatsBomb competitions table
     path = Path(cfg["paths"]["competitions"])
     data = _load_json(path)
 
@@ -34,7 +34,7 @@ def load_competitions(cfg: Config) -> pd.DataFrame:
 
 
 def load_matches(cfg: Config, comp_seasons: Sequence[Sequence[int]]) -> pd.DataFrame:
-    # load match json files for a list of (competition_id, season_id) pairs
+    # match files for a list of (competition_id, season_id) pairs
     matches_root = Path(cfg["paths"]["matches"])
     all_matches: List[dict] = []
 
@@ -66,7 +66,7 @@ def load_matches(cfg: Config, comp_seasons: Sequence[Sequence[int]]) -> pd.DataF
 
     df = pd.json_normalize(all_matches)
 
-    # standardise match_id column name if needed
+    # make sure the column is called match_id
     if "match_id" not in df.columns and "id" in df.columns:
         df = df.rename(columns={"id": "match_id"})
 
@@ -74,14 +74,14 @@ def load_matches(cfg: Config, comp_seasons: Sequence[Sequence[int]]) -> pd.DataF
 
 
 def load_events_by_ids(cfg: Config, match_ids: Iterable[int]) -> pd.DataFrame:
-    # load event json files for the given match ids
+    # event files for the given match ids
     root = Path(cfg["paths"]["events"])
     frames: List[pd.DataFrame] = []
 
     for mid in match_ids:
         path = root / f"{int(mid)}.json"
         if not path.exists():
-            # silently skip missing matches to keep behaviour simple
+            # skip missing matches
             continue
 
         data = _load_json(path)
@@ -89,7 +89,7 @@ def load_events_by_ids(cfg: Config, match_ids: Iterable[int]) -> pd.DataFrame:
             continue
 
         for ev in data:
-            # ensure every event has a string event_uuid
+            # every event needs a string event_uuid
             if "event_uuid" not in ev:
                 ev["event_uuid"] = str(ev.get("id"))
             else:
@@ -114,7 +114,7 @@ def load_events_by_ids(cfg: Config, match_ids: Iterable[int]) -> pd.DataFrame:
 
 
 def load_360_by_ids(cfg: Config, match_ids: Iterable[int]) -> pd.DataFrame:
-    # load statsbomb 360 freeze frames for the given match ids
+    # 360 freeze frames for the given match ids
     base = Path(cfg["paths"]["three_sixty"])
     frames: List[pd.DataFrame] = []
 
@@ -205,7 +205,7 @@ def load_360_by_ids(cfg: Config, match_ids: Iterable[int]) -> pd.DataFrame:
 
 
 def load_lineups_by_ids(cfg: Config, match_ids: Iterable[int]) -> pd.DataFrame:
-    # load lineup json files for the given match ids
+    # lineup files for the given match ids
     root = Path(cfg["paths"]["lineups"])
     frames: List[pd.DataFrame] = []
 

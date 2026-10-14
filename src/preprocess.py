@@ -12,7 +12,7 @@ MIN_TOTAL_PLAYERS_IN_FRAME = 18
 
 
 def _get_nested(obj, *keys):
-    # safely read nested dict keys
+    # read nested dict keys safely
     for k in keys:
         if isinstance(obj, dict):
             obj = obj.get(k)
@@ -22,7 +22,7 @@ def _get_nested(obj, *keys):
 
 
 def flatten_fields(df_events_raw: pd.DataFrame) -> pd.DataFrame:
-    # create flat events table with key statsbomb fields
+    # flat events table with the StatsBomb fields we need
     if df_events_raw is None or df_events_raw.empty:
         print("flatten_fields: received empty events dataframe")
         return pd.DataFrame()
@@ -88,7 +88,7 @@ def flatten_fields(df_events_raw: pd.DataFrame) -> pd.DataFrame:
 
 
 def attach_event_time(df_events_flat: pd.DataFrame) -> pd.DataFrame:
-    # attach absolute event time per match
+    # add an absolute time to every event, per match
     if df_events_flat is None or df_events_flat.empty:
         print("attach_event_time: received empty events dataframe")
         return pd.DataFrame()
@@ -120,7 +120,7 @@ def attach_event_time(df_events_flat: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_corners(df_events_time: pd.DataFrame, df_matches: pd.DataFrame) -> pd.DataFrame:
-    # extract corner events and attach basic match context
+    # corner events with basic match info
     if df_events_time is None or df_events_time.empty:
         print("build_corners: received empty events dataframe")
         return pd.DataFrame()
@@ -224,7 +224,7 @@ def build_corners(df_events_time: pd.DataFrame, df_matches: pd.DataFrame) -> pd.
 
 
 def rescale_ff_x_to_statsbomb(df_ff: pd.DataFrame) -> pd.DataFrame:
-    # rescale x to 0–120 if coordinates look compressed
+    # stretch x to 0-120 if the coordinates look squashed
     if df_ff is None or df_ff.empty:
         return df_ff
     if "x" not in df_ff.columns:
@@ -257,7 +257,7 @@ def normalize_360(
     df_360_raw: pd.DataFrame,
     min_players_in_frame: Optional[int] = None,
 ) -> pd.DataFrame:
-    # clean and filter 360 freeze frames
+    # drop 360 frames that show too few players
     if df_360_raw is None or df_360_raw.empty:
         print("normalize_360: received empty 360 dataframe")
         return pd.DataFrame()
@@ -321,7 +321,7 @@ def stage2_preprocess(
     df_360_raw: pd.DataFrame,
     min_players_in_frame: int = MIN_PLAYERS_IN_FRAME,
 ):
-    # run stage 2 preprocessing and return events_time, corners, 360_clean
+    # stage 2: returns events_time, corners and the clean 360 frames
     df_events_flat = flatten_fields(df_events_raw)
     df_events_time = attach_event_time(df_events_flat)
     df_corners = build_corners(df_events_time, df_matches)
@@ -337,7 +337,7 @@ def stage2_preprocess(
 
 
 def dataset_summary(df_events_time: pd.DataFrame, df_corners: pd.DataFrame) -> pd.DataFrame:
-    # return a one-row summary of dataset counts
+    # one-row summary of dataset counts
     n_events = 0 if df_events_time is None or df_events_time.empty else len(df_events_time)
     n_corners = 0 if df_corners is None or df_corners.empty else len(df_corners)
 
@@ -362,7 +362,7 @@ def plot_matches_and_corners_by_comp_season(
     df_corners: pd.DataFrame,
     out_dir: Optional[str] = None,
 ) -> None:
-    # bar chart of matches and corners per competition-season
+    # bar chart: matches and corners per competition-season
     if df_matches is None or df_matches.empty or df_corners is None or df_corners.empty:
         print("plot_matches_and_corners_by_comp_season: empty input, skipping")
         return
